@@ -1,9 +1,9 @@
+import PageRouter from "./components/PageRouter";
+
 function App() {
-  return (
-    <div className="w-full h-screen flex items-center justify-center bg-black">
-      <div className='text-5xl text-emerald-300'>HELLO</div>
-    </div>
-  );
+    return (
+        <PageRouter />
+    );
 }
 
 export default App;
