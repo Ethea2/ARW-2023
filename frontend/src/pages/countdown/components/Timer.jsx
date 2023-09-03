@@ -14,29 +14,29 @@ const Timer = ({ date }) => {
     }
 
     return (
-        <motion.div
-            id="timer-container"
-            className="grid md:grid lg:grid-flow-col lg:gap-10 justify-center items-center font-bit auto-cols-max w-full h-full"
+        <motion.div className="flex flex-col gap-20 justify-center items-center w-9/12"
             onMouseMove={handleMouse}
             style={{
                 x: rotateX,
                 y: rotateY,
                 scale: scale,
-            }}
-        >
-            {
-                Object.keys(date).map((key, index) => {
-                    return (
-                        <div key={index} className="flex flex-col">
-                            <span className="countdown text-emerald-400 drop-shadow-glow text-7xl md:text-8xl lg:text-9xl">
-                                <span style={{ "--value": date[key] }}></span>
-                            </span>
-                            <p className="text-emerald-400 z-10">{key.toUpperCase()}</p>
-                        </div>
-                    )
-                })
-            }
-            <p className="text-emerald-400 drop-shadow-glow">DAYS TIL ARW</p>
+            }}>
+            <div id="timer-container" className="flex flex-col md:flex-row md:flex justify-center items-center font-bit auto-cols-max w-full h-full">
+                {
+                    Object.keys(date).map((key, index) => {
+                        return (
+                            <div key={index} className="flex flex-col w-1/2 lg:w-fit lg:mx-10">
+                                <span className="countdown text-emerald-400 drop-shadow-glow text-7xl md:text-8xl lg:text-9xl">
+                                    <span style={{ "--value": date[key] }}></span>
+                                </span>
+                                <p className="text-emerald-400 z-10 mb-4 md:mb-0">{key.toUpperCase()}</p>
+                            </div>
+                        )
+                    })
+                }
+            </div>
+
+            <p className="text-emerald-400 font-bit drop-shadow-glow text-2xl">UNTIL ANNUAL RECRUITMENT WEEK 2023</p>
         </motion.div>
     )
 }
