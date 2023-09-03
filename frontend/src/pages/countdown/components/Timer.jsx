@@ -1,6 +1,6 @@
 import { motion, useMotionValue, useTransform } from "framer-motion";
 
-const Timer = ({ date }) => {
+const Timer = ({ date, sevenDaysLeft }) => {
     const x = useMotionValue(0);
     const y = useMotionValue(0);
 
@@ -14,7 +14,7 @@ const Timer = ({ date }) => {
     }
 
     return (
-        <motion.div className="flex flex-col gap-20 justify-center items-center w-9/12"
+        <motion.div className={`flex flex-col gap-20 justify-center items-center w-9/12 ${sevenDaysLeft ? 'drop-shadow-glow_red text-red-700' : 'drop-shadow-glow_green text-emerald-400'}`}
             onMouseMove={handleMouse}
             style={{
                 x: rotateX,
@@ -26,17 +26,17 @@ const Timer = ({ date }) => {
                     Object.keys(date).map((key, index) => {
                         return (
                             <div key={index} className="flex flex-col w-1/2 lg:w-fit lg:mx-10">
-                                <span className="countdown text-emerald-400 drop-shadow-glow text-7xl md:text-8xl lg:text-9xl">
+                                <span className="countdown  text-7xl md:text-8xl lg:text-9xl">
                                     <span style={{ "--value": date[key] }}></span>
                                 </span>
-                                <p className="text-emerald-400 z-10 mb-4 md:mb-0">{key.toUpperCase()}</p>
+                                <p className="z-10 mb-4 md:mb-0">{key.toUpperCase()}</p>
                             </div>
                         )
                     })
                 }
             </div>
 
-            <p className="text-emerald-400 font-bit drop-shadow-glow text-2xl">UNTIL ANNUAL RECRUITMENT WEEK 2023</p>
+            <p className="font-bit text-2xl">UNTIL ANNUAL RECRUITMENT WEEK 2023</p>
         </motion.div>
     )
 }

@@ -10,6 +10,14 @@ const Countdown = () => {
         seconds: 0,
     })
     const TARGET_DATE = new Date("9 October 2023")
+    const [sevenDaysLeft, setSevenDaysLeft] = useState()
+
+    const checkIfSevenDaysLeft = () => {
+        const currentDate = new Date();
+        const totalSeconds = Math.max((TARGET_DATE - currentDate) / 1000, 0);
+        const daysLeft = Math.floor(totalSeconds / 3600 / 24)
+        return daysLeft <= 7;
+      };
 
     useEffect(() => {
         const startCountdown = () => {
@@ -22,7 +30,7 @@ const Countdown = () => {
                 minutes: Math.floor(totalSeconds / 60) % 60,
                 seconds: Math.floor(totalSeconds) % 60,
             }
-
+            setSevenDaysLeft(checkIfSevenDaysLeft())
             setDate(updatedDate)
         }
 
@@ -42,7 +50,7 @@ const Countdown = () => {
                     backgroundSize: "cover",
                 }}>
             </div>
-            <Timer date={date} />
+            <Timer date={date} sevenDaysLeft={sevenDaysLeft}/>
 
         </div>
     )
