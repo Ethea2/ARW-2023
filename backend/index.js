@@ -3,9 +3,15 @@ require('dotenv').config()
 const express = require('express')
 const mongoose = require('mongoose')
 const orgRoutes = require('./routes/orgs')
+const cors = require('cors')
 
 // express app
 const app = express()
+app.use(cors())
+app.use(cors({
+    origin: [],
+    methods: ["GET", "POST", "PATCH", "DELETE"]
+}))
 
 //middleware
 app.use(express.json())
