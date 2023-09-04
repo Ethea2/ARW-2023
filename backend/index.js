@@ -3,6 +3,7 @@ require('dotenv').config()
 const express = require('express')
 const mongoose = require('mongoose')
 const orgRoutes = require('./routes/orgs')
+const clusterRoutes = require('./routes/clusters')
 const cors = require('cors')
 
 // express app
@@ -22,6 +23,7 @@ app.use((req, res, next) => {
 
 //routes
 app.use('/api/orgs', orgRoutes)
+app.use('/api/clusters', clusterRoutes)
 
 // connect to db
 mongoose.connect(process.env.MONGO_URI)
