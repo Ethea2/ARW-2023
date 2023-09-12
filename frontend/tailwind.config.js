@@ -20,5 +20,18 @@ module.exports = {
             }
         },
     },
+    daisyui: {
+        themes: [
+            {
+                'arw-theme' : {
+                    'primary': '#FF2955',
+                    'secondary': '#FFD524',
+                    'accent': '#00F6FF',
+                    'neutral': '#F87DA4',
+                    'base-100': '#451F4D',
+                }
+            }
+        ]
+    },
     plugins: [require("daisyui")],
 }
