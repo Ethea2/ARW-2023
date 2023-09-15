@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import useFetch from '../../../hooks/useFetch'
 const OrgShow = ({ orgID }) => {
-    const { data: org, loading, error } = useFetch(`http://localhost:4000/api/orgs/${orgID}`)
+    const { data: org, loading, error } = useFetch(`/api/orgs/${orgID}`)
     const [noOrg, setNoOrg] = useState(true)
 
     useEffect(() => {

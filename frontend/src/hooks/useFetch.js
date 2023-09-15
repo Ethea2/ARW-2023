@@ -8,7 +8,7 @@ const useFetch = (url) => {
     useEffect(() => {
         const getData = async () => {
             try {
-                const response = await fetch(url);
+                const response = await fetch(process.env.REACT_APP_API_URL + url);
                 const data = await response.json();
 
                 if (!response.ok) {

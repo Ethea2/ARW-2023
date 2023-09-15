@@ -4,8 +4,8 @@ import OrgSelector from "./components/OrgSelector"
 import OrgShow from "./components/OrgShow"
 
 const OrgSelect = () => {
-    const { data: orgs, loading, error } = useFetch("http://localhost:4000/api/orgs/")
-    const { data: clusters } = useFetch("http://localhost:4000/api/clusters/")
+    const { data: orgs, loading, error } = useFetch("/api/orgs/")
+    const { data: clusters } = useFetch("/api/clusters/")
     const [orgID, setOrgID] = useState(null)
     const [orgCluster, setOrgCluster] = useState(null)
 
