@@ -13,7 +13,11 @@ const OrgSelect = () => {
         event.preventDefault()
         setOrgID(id)
     }
-
+    useEffect(() => {
+        if (orgs) {
+            console.log(orgs)
+        }
+    }, [orgs])
     const handleClusterSelect = (event, cluster) => {
         event.preventDefault()
         setOrgCluster(orgs.filter(org => org.cluster === cluster))

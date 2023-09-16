@@ -51,7 +51,6 @@ const Countdown = () => {
                 }}>
             </div>
             <Timer date={date} sevenDaysLeft={sevenDaysLeft}/>
-
         </div>
     )
 }
