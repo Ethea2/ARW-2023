@@ -1,8 +1,8 @@
-import PageRouter from "./components/PageRouter";
+import Layout from "./layout/Layout";
 
 function App() {
     return (
-        <PageRouter />
+        <Layout />
     );
 }
 
