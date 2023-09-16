@@ -8,7 +8,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <React.StrictMode>
         <BrowserRouter>
-            <App className="font-bit" />
+            <App />
         </BrowserRouter>
     </React.StrictMode>
 );

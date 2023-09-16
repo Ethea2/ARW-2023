@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 import useFetch from '../../../hooks/useFetch'
+import Loading from '../../../components/loading/Loading'
+import Error from '../../../components/error/Error'
 const OrgShow = ({ orgID }) => {
     const { data: org, loading, error } = useFetch(`/api/orgs/${orgID}`)
     const [noOrg, setNoOrg] = useState(true)
@@ -9,10 +11,14 @@ const OrgShow = ({ orgID }) => {
             setNoOrg(false)
         }
     }, [orgID])
+
+    if(error) {
+        return <Error error={error} />
+    }
+
     return (
         <div className="w-full h-full flex justify-center items-center">
-            {loading && <div>Loading...</div>}
-            {error && <div>{error}</div>}
+            {loading && <Loading />}
             {
                 noOrg ?
                     <div>No Org Selected</div>
