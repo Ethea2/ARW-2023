@@ -12,21 +12,25 @@ const OrgShow = ({ orgID }) => {
         }
     }, [orgID])
 
-    if(error) {
+    if (error) {
         return <Error error={error} />
     }
 
     return (
         <div className="w-full h-full flex justify-center items-center">
-            {loading && <Loading />}
             {
-                noOrg ?
-                    <div>No Org Selected</div>
+                loading
+                    ?
+                    <Loading />
                     :
-                    <div className='flex flex-col gap-5 justify-center items-center'>
-                        <p>ORGNAME: {org.comp_name}</p>
-                        <p>DESCRIPTION: {org.desc}</p>
-                    </div>
+                    noOrg
+                        ?
+                        <div>No Org Selected</div>
+                        :
+                        <div className='flex flex-col gap-5 justify-center items-center'>
+                            <p>ORGNAME: {org.comp_name}</p>
+                            <p>DESCRIPTION: {org.desc}</p>
+                        </div>
             }
         </div>
     )
