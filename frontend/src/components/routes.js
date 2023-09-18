@@ -12,5 +12,5 @@ const routes = [
     // {path: '/crownquest', element: <CrownQuest />},
     {path: '*', element: <ErrorPage />}
 ]
-
+//testpush
 export default routes
