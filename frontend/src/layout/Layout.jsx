@@ -4,7 +4,7 @@ import Drawer from "../components/drawer/Drawer"
 export const Layout = () => {
     return (
         <>
-            <Drawer />
+            {/* <Drawer /> */}
             <PageRouter />
         </>
     )

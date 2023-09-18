@@ -6,10 +6,10 @@ import OrgSelect from '../pages/organization_select/OrgSelect'
 
 const routes = [
     //for now countdown is root route
-    {path: '/homepage', element: <Homepage />},
+    // {path: '/homepage', element: <Homepage />},
     {path: '/', element: <Countdown />},
-    {path: '/orgSelect', element: <OrgSelect />},
-    {path: '/crownquest', element: <CrownQuest />},
+    // {path: '/orgSelect', element: <OrgSelect />},
+    // {path: '/crownquest', element: <CrownQuest />},
     {path: '*', element: <ErrorPage />}
 ]
 
