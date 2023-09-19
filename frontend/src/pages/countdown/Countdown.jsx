@@ -43,7 +43,7 @@ const Countdown = () => {
 
     return (
         <div className="w-full h-screen overflow-hidden relative grid place-items-center">
-            <div id="background" className="absolute inset-0 z-0 blur-sm"
+            <div id="background" className="absolute inset-0 z-0 md:blur-sm"
                 style={{
                     backgroundImage: `url(/countdown-bg.jpg)`,
                     backgroundPosition: "bottom",
