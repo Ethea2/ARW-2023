@@ -1,21 +1,26 @@
 import { motion, useMotionValue, useTransform } from "framer-motion";
 
 const Timer = ({ date, sevenDaysLeft }) => {
-    // const x = useMotionValue(0);
-    // const y = useMotionValue(0);
+    const x = useMotionValue(0);
+    const y = useMotionValue(0);
 
-    // const rotateX = useTransform(y, [0, window.innerHeight], [-10, 10]);
-    // const rotateY = useTransform(x, [0, window.innerWidth], [-10, 10]);
-    // const scale = useTransform(x, [0, window.innerWidth], [0.95, 1.05]);
+    const rotateX = useTransform(y, [0, window.innerHeight], [-10, 10]);
+    const rotateY = useTransform(x, [0, window.innerWidth], [-10, 10]);
+    const scale = useTransform(x, [0, window.innerWidth], [0.95, 1.05]);
 
-    // function handleMouse(event) {
-    //     x.set(event.clientX);
-    //     y.set(event.clientY);
-    // }
+    function handleMouse(event) {
+        x.set(event.clientX);
+        y.set(event.clientY);
+    }
 
     return (
-        <div className="w-full h-screen m-auto flex justify-center items-center"
-            >
+        <motion.div className="w-full h-screen m-auto flex justify-center items-center"
+            onMouseMove={handleMouse}
+            style={{
+                x: rotateX,
+                y: rotateY,
+                scale: scale,
+            }}>
             <div className={`flex flex-col gap-20 justify-center items-center w-9/12 ${sevenDaysLeft ? 'drop-shadow-glow_red text-red-700' : 'drop-shadow-glow_green text-emerald-400'}`}>
                 <div id="timer-container" className="flex flex-col md:flex-row md:flex justify-center items-center font-bit auto-cols-max w-full h-full">
                     {
@@ -34,7 +39,7 @@ const Timer = ({ date, sevenDaysLeft }) => {
 
                 <p className="font-bit text-md md:text-2xl">UNTIL ANNUAL RECRUITMENT WEEK 2023</p>
             </div>
-        </div>
+        </motion.div>
     )
 }
 
