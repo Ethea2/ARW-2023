@@ -22,7 +22,7 @@ const Timer = ({ date, sevenDaysLeft }) => {
                 scale: scale,
             }}>
             <div className={`sm:flex sm:flex-col gap-20 justify-center items-center w-9/12 ${sevenDaysLeft ? 'drop-shadow-glow_red text-red-700' : 'drop-shadow-glow_green text-emerald-400'}`}>
-                <div id="timer-container" className="flex flex-col md:flex-row md:flex justify-center items-center font-bit auto-cols-max w-full h-full">
+                <div id="timer-container" className="flex flex-col md:flex-row md:flex justify-center items-center font-bit auto-cols-max w-full h-full z-20">
                     {
                         Object.keys(date).map((key, index) => {
                             return (
