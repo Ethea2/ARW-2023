@@ -21,7 +21,7 @@ const Timer = ({ date, sevenDaysLeft }) => {
                 y: rotateY,
                 scale: scale,
             }}>
-            <div className={`flex flex-col gap-20 justify-center items-center w-9/12 ${sevenDaysLeft ? 'drop-shadow-glow_red text-red-700' : 'drop-shadow-glow_green text-emerald-400'}`}>
+            <div className={`flex flex-col gap-20 justify-center items-center w-9/12 ${sevenDaysLeft ? ' text-red-700' : ' text-emerald-400'}`}>
                 <div id="timer-container" className="flex flex-col md:flex-row md:flex justify-center items-center font-bit auto-cols-max w-full h-full">
                     {
                         Object.keys(date).map((key, index) => {
