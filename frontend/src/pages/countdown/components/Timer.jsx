@@ -37,7 +37,7 @@ const Timer = ({ date, sevenDaysLeft }) => {
                     }
                 </div>
 
-                <p className="font-bit text-2xl">UNTIL ANNUAL RECRUITMENT WEEK 2023</p>
+                {/* <p className="font-bit text-2xl">UNTIL ANNUAL RECRUITMENT WEEK 2023</p> */}
             </div>
         </motion.div>
     )
