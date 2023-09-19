@@ -2,7 +2,7 @@ import logo from "../../assets/bright-colored-logo.png"
 
 const ErrorPage = () => {
     return (
-        <div className="w-full h-screen overflow-hidden relative flex flex-col justify-center items-center md:gap-10"
+        <div className="w-full h-screen overflow-hidden relative flex flex-col justify-center items-center blur-sm md:gap-10"
             style={{
                 backgroundImage: `url(/countdown-bg.jpg)`,
                 backgroundPosition: "bottom",
