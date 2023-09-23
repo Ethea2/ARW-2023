@@ -1,7 +1,15 @@
+import CrownDetails from "./components/CrownDetails"
+import CrownHeader from "./components/CrownHeader"
+import CrownImage from "./components/CrownImage"
+import CrownSelector from "./components/CrownSelector"
+
 const CrownQuest = () => {
     return (
-        <div className="w-full h-screen flex justify-center items-center">
-            <span className="font-bold font-bit text-9xl">HELLO I AM CROWNQUEST!</span>
+        <div className="w-full h-screen flex flex-col justify-center items-center">
+            <CrownHeader />
+            <CrownImage />
+            <CrownDetails />
+            <CrownSelector />
         </div>
     )
 }
