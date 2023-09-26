@@ -6,7 +6,7 @@ import Homepage from '../pages/homepage/Homepage'
 import OrgSelect from '../pages/organization_select/OrgSelect'
 import IndivOrgPage from '../pages/individual_org/IndivOrgPage'
 import FAQs from '../pages/faqs/FAQs'
-import About from '../pages/about/About'
+import AboutUs from '../pages/aboutus/AboutUs'
 import { GoHome } from 'react-icons/go'
 import { VscOrganization } from 'react-icons/vsc'
 import { LiaCrownSolid } from 'react-icons/lia'
@@ -23,7 +23,7 @@ const routes = [
     { path: '/crownquest', element: <CrownQuest />, name: 'Crown Quest', icon: <LiaCrownSolid /> },
     { path: '/cyberclash', element: <CyberClash />, name: 'Cyber Clash', icon: <BsShield /> },
     { path: '/faqs', element: <FAQs />, name: 'FAQs', icon: <AiOutlineQuestionCircle /> },
-    { path: '/about', element: <About />, name: 'About', icon: <IoMdInformationCircleOutline /> },
+    { path: '/aboutus', element: <AboutUs />, name: 'About Us', icon: <IoMdInformationCircleOutline /> },
     { path: '*', element: <ErrorPage /> }
 ]
 
