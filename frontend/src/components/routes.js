@@ -16,12 +16,15 @@ import { IoMdInformationCircleOutline } from 'react-icons/io'
 
 const routes = [
     //for now countdown is root route
-    {path: '/homepage', element: <Homepage />},
-    {path: '/', element: <Countdown />},
-    {path: '/orgSelect', element: <OrgSelect />},
-    {path: '/indivOrg', element: <IndivOrgPage />},
-    {path: '/crownquest', element: <CrownQuest />},
-    {path: '*', element: <ErrorPage />}
+    { path: '/', element: <Homepage />, name: 'Homepage', icon: <GoHome /> },
+    { path: '/countdown', element: <Countdown /> },
+    { path: '/orgSelect', element: <OrgSelect />, name: 'Organizations', icon: <VscOrganization /> },
+    { path: '/:orgId', element: <IndivOrgPage />, },
+    { path: '/crownquest', element: <CrownQuest />, name: 'Crown Quest', icon: <LiaCrownSolid /> },
+    { path: '/cyberclash', element: <CyberClash />, name: 'Cyber Clash', icon: <BsShield /> },
+    { path: '/faqs', element: <FAQs />, name: 'FAQs', icon: <AiOutlineQuestionCircle /> },
+    { path: '/about', element: <About />, name: 'About', icon: <IoMdInformationCircleOutline /> },
+    { path: '*', element: <ErrorPage /> }
 ]
 
 export default routes
