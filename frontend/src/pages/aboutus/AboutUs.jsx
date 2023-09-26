@@ -1,12 +1,16 @@
 import React from 'react';
+import Drawer from '../../components/drawer/Drawer';
 
 const AboutUs = () => {
+
     return (
         // <div className="w-full h-screen flex justify-center items-center">
-        //     <span className="font-bold font-bit text-9xl">HELLO I AM TITE TITE!</span>
+        //     <span className="font-bold font-bit text-9xl">HELLO I AM 1!</span>
         //     <button className="btn btn-primary">Play</button>
         // </div>
-
+        <div>
+        <Drawer></Drawer>
+        
         <div className="relative h-screen flex flex-col justify-center items-center">
         <div
           id="background"
@@ -28,6 +32,7 @@ const AboutUs = () => {
       </div>
 
 
+      </div>
       </div>
     )
 }
