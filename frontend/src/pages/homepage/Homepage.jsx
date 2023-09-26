@@ -1,5 +1,3 @@
-import './Homepage.css'
-
 const Homepage = () => {
     return(
         <div className="w-full h-screen flex items-center justify-center bg-black">

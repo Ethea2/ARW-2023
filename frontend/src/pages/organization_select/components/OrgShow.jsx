@@ -3,7 +3,6 @@ import useFetch from '../../../hooks/useFetch'
 import Loading from '../../../components/loading/Loading'
 import Error from '../../../components/error/Error'
 import { useNavigate } from 'react-router-dom'
-import "../OrgSelect.css"
 
 const OrgShow = ({ orgID }) => {
     const { data: org, loading, error } = useFetch(`/api/orgs/${orgID}`)
