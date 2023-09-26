@@ -17,7 +17,7 @@ const CrownQuest = () => {
     useEffect(() => console.log(activeElite), [activeElite])
 
     return (
-        <div className="w-full h-screen flex flex-col justify-center items-center">
+        <div className="bg-gradient-radial from-[#F87DA4] to-[#FF2955] w-full h-screen flex flex-col justify-center items-center">
             <CrownHeader activeElite={activeElite} />
             <CrownImage activeElite={activeElite} />
             <CrownDetails activeElite={activeElite} />
