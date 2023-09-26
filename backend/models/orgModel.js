@@ -43,6 +43,30 @@ const orgSchema = new Schema({
         type: Boolean,
         required: true
     },
+    imageURL: {
+        type: [String],
+        required: true
+    },
+    videoURL: {
+        type: String,
+        required: true
+    },
+    logoURL: {
+        type: String,
+        required: true
+    },
+    memURL: {
+        type: String,
+        required: true
+    },
+    mainURL: {
+        type: String,
+        required: true
+    },
+    regURL: {
+        type: String,
+        required: true
+    },
 }, { collection: 'organizations' })
 
 module.exports = mongoose.model('Org', orgSchema)

@@ -4,6 +4,8 @@ const express = require('express')
 const mongoose = require('mongoose')
 const orgRoutes = require('./routes/orgs')
 const clusterRoutes = require('./routes/clusters')
+const crownRoutes = require('./routes/crown')
+const clashRoutes = require('./routes/clash')
 const cors = require('cors')
 
 // express app
@@ -24,6 +26,8 @@ app.use((req, res, next) => {
 //routes
 app.use('/api/orgs', orgRoutes)
 app.use('/api/clusters', clusterRoutes)
+app.use('/api/crown', crownRoutes)
+app.use('/api/clash', clashRoutes)
 
 // connect to db
 mongoose.connect(process.env.MONGO_URI)
