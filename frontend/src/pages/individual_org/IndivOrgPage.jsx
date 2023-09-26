@@ -8,7 +8,8 @@ const IndivOrgPage = () => {
     console.log(orgId)
     return(
         <div className="w-full min-h-screen flex flex-col justify-center items-center">
-            <span className="font-normal font-bit text-7xl">Indiv Org Test</span>
+            {/* <span className="font-normal font-bit text-7xl">Indiv Org Test</span> */}
+            <BottomPageOrg />
         </div>
     )
     // This file will contain the logic that will get the data of the chosen org from "OrgSelect"
