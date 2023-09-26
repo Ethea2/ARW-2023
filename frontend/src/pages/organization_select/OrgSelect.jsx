@@ -4,6 +4,7 @@ import OrgSelector from "./components/OrgSelector"
 import OrgShow from "./components/OrgShow"
 import Loading from "../../components/loading/Loading"
 import Error from "../../components/error/Error"
+import './OrgSelect.css'
 
 const OrgSelect = () => {
     const { data: orgs, loading, error } = useFetch("/api/orgs/")

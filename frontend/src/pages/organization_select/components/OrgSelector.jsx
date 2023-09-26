@@ -1,3 +1,5 @@
+import "../OrgSelect.css"
+
 const OrgSelector = ({ orgs, clusters, handleOrgSelect, handleClusterSelect }) => {
     return (
         <div className="p-2 h-full">
