@@ -1,8 +1,34 @@
+import React from 'react';
+
 const AboutUs = () => {
     return (
-        <div className="w-full h-screen flex justify-center items-center">
-            <span className="font-bold font-bit text-9xl">HELLO I AM TITE!</span>
-        </div>
+        // <div className="w-full h-screen flex justify-center items-center">
+        //     <span className="font-bold font-bit text-9xl">HELLO I AM TITE TITE!</span>
+        //     <button className="btn btn-primary">Play</button>
+        // </div>
+
+        <div className="relative h-screen flex flex-col justify-center items-center">
+        <div
+          id="background"
+          className="absolute inset-0 z-0"
+          style={{
+            backgroundImage: `url(/aboutus-bg1.svg)`,
+            backgroundSize: "cover",
+          }}
+        ></div>
+
+    <div className="relative z-10 p-8 text-center">
+        <span className="font-bold font-bit text-4xl sm:text-6xl lg:text-9xl">
+          About Us
+        </span>
+
+        <button className="btn btn-primary mt-4">
+          Play
+        </button>
+      </div>
+
+
+      </div>
     )
 }
 
