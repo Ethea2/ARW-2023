@@ -11,12 +11,14 @@ const CyberClash = () => {
       game.teams.map((vs) => {
         console.log(`GAME: ${game.game} || ${vs[0].org} vs. ${vs[1].org}`)
       })
-    } )
+    })
   }, [cyberClash])
 
   return (
     <div className="flex justify-center items-center w-full h-screen">
-      <GameContainer />
+      <div id="container" className="flex justify-center items-center border-2 border-accent w-64 h-64">
+        <GameContainer />
+      </div>
     </div>
   )
 }
