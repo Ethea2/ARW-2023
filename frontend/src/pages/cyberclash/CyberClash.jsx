@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import useFetch from "../../hooks/useFetch"
+import GameContainer from "./components/GameContainer"
 
 const CyberClash = () => {
   const { data: cyberClash } = useFetch('/api/clash')
@@ -15,7 +16,7 @@ const CyberClash = () => {
 
   return (
     <div className="flex justify-center items-center w-full h-screen">
-      Hello
+      <GameContainer />
     </div>
   )
 }
