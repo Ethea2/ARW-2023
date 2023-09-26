@@ -1,15 +1,25 @@
+import { useEffect, useState } from "react"
+import useFetch from "../../hooks/useFetch"
 import CrownDetails from "./components/CrownDetails"
 import CrownHeader from "./components/CrownHeader"
 import CrownImage from "./components/CrownImage"
 import CrownSelector from "./components/CrownSelector"
 
 const CrownQuest = () => {
+    const {data: elites} = useFetch('/api/crown/')
+    const [activeElite, setActiveElite] = useState()
+
+    const handleSelect = (e, elite) => {
+        e.preventDefault()
+        setActiveElite(elite)
+    }
+    
     return (
         <div className="w-full h-screen flex flex-col justify-center items-center">
-            <CrownHeader />
-            <CrownImage />
-            <CrownDetails />
-            <CrownSelector />
+            <CrownHeader activeElite={activeElite} />
+            <CrownImage activeElite={activeElite} />
+            <CrownDetails activeElite={activeElite} />
+            <CrownSelector elites={elites} handleSelect={handleSelect}/>
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CrownDetails = () => {
+const CrownDetails = ({ activeElite }) => {
   return (
     <div>CrownDetails</div>
   )

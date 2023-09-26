@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CrownImage = () => {
+const CrownImage = ({ activeElite }) => {
   return (
     <div>CrownImage</div>
   )

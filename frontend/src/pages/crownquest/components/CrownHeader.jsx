@@ -1,6 +1,6 @@
 import React from 'react'
 
-const CrownHeader = () => {
+const CrownHeader = ({ activeElite }) => {
   return (
     <div>CrownHeader</div>
   )
