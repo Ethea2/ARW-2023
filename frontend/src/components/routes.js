@@ -10,7 +10,8 @@ const routes = [
     {path: '/homepage', element: <Homepage />},
     {path: '/', element: <Countdown />},
     {path: '/orgSelect', element: <OrgSelect />},
-    {path: '/:orgId', element: <IndivOrgPage />},
+    // {path: '/:orgId', element: <IndivOrgPage />}, to be fixed
+    {path: '/indivOrg', element: <IndivOrgPage />},
     {path: '/crownquest', element: <CrownQuest />},
     {path: '*', element: <ErrorPage />}
 ]
