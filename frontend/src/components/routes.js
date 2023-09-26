@@ -4,6 +4,7 @@ import ErrorPage from '../pages/errorpage/ErrorPage'
 import Homepage from '../pages/homepage/Homepage'
 import OrgSelect from '../pages/organization_select/OrgSelect'
 import IndivOrgPage from '../pages/individual_org/IndivOrgPage'
+import AboutUs from '../pages/aboutus/AboutUs'
 
 const routes = [
     //for now countdown is root route
@@ -12,6 +13,7 @@ const routes = [
     {path: '/orgSelect', element: <OrgSelect />},
     {path: '/indivOrg', element: <IndivOrgPage />},
     {path: '/crownquest', element: <CrownQuest />},
+    {path: '/aboutus', element: <AboutUs />},
     {path: '*', element: <ErrorPage />}
 ]
 
