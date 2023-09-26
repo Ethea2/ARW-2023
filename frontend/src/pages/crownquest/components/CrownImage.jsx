@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
 
 const CrownImage = ({ activeElite }) => {
   return (
-    <div>CrownImage</div>
-  )
-}
+    <div>
+      {activeElite ? (
+        <img src={activeElite} alt="Active Elite Crown" />
+      ) : (
+        <p>Select an Elite</p>
+      )}
+    </div>
+  );
+};
 
-export default CrownImage
+export default CrownImage;
