@@ -6,7 +6,7 @@ import CrownImage from "./components/CrownImage"
 import CrownSelector from "./components/CrownSelector"
 
 const CrownQuest = () => {
-    const {data: elites} = useFetch('/api/crown/')
+    const {data: elites, loading, error} = useFetch('/api/crown/')
     const [activeElite, setActiveElite] = useState()
 
     const handleSelect = (e, elite) => {
@@ -14,6 +14,8 @@ const CrownQuest = () => {
         setActiveElite(elite)
     }
     
+    useEffect(() => console.log(activeElite), [activeElite])
+
     return (
         <div className="w-full h-screen flex flex-col justify-center items-center">
             <CrownHeader activeElite={activeElite} />
