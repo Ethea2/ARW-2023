@@ -34,7 +34,8 @@ module.exports = {
                     'base-100': '#451F4D',
                 }
             }
-        ]
+        ],
+        base: false
     },
     plugins: [require("daisyui")],
 }

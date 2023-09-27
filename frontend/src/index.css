@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    @apply bg-gradient-radial from-[#F87DA4] to-[#FF2955]
+:root {
+    background-image: radial-gradient(circle, #F87DA4, #FF2955);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
