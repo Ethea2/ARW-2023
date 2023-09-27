@@ -18,16 +18,16 @@ const CrownQuest = () => {
 
   return (
     <div className="w-full h-screen flex flex-col justify-center items-center">
-      <div className="header w-full h-1/5 bg-gray-200">
+      <div className="header w-full h-1/5">
         <CrownHeader activeElite={activeElite} />
       </div>
 
-      <div className="body w-full h-3/5 bg-red-200 flex flex-col lg:flex-row">
+      <div className="body w-full h-3/5 flex flex-col lg:flex-row">
         <CrownImage activeElite={activeElite} />
         <CrownDetails activeElite={activeElite} />
       </div>
 
-      <div className="footer w-full h-1/5 bg-blue-200">
+      <div className="footer w-full h-1/5">
         <CrownSelector elites={elites} handleSelect={handleSelect} />
       </div>
     </div>

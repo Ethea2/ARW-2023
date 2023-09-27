@@ -1,12 +1,16 @@
-import React from 'react'
+import React from "react";
 
 const CrownHeader = ({ activeElite }) => {
   return (
-    <div className="relative top-0 left-0 w-full bg-neutral-600/50 p-4 text-center h-52 shrink" >
-      <div className="text-8xl text-[#FFD524] font-normal font-header text-header-shadow mt-7">LSCS</div>
-      <div className="font-header text-xl text-center text-[#FFF]">LA SALLE COMPUTER SOCIETY</div>
+    <div className="w-full h-full bg-black/50 p-4 flex flex-col items-center justify-center">
+      <div className="text-6xl text-[#FFD524] font-normal font-header text-header-shadow">
+        LSCS
+      </div>
+      <div className="font-header text-md lg:text-sm text-center text-[#FFF]">
+        LA SALLE COMPUTER SOCIETY
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default CrownHeader
+export default CrownHeader;
