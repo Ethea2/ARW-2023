@@ -17,7 +17,7 @@ const OrgSelector = ({ orgs, clusters, handleOrgSelect, handleClusterSelect }) =
                 <div className="flex flex-col">
                     {
                         orgs?.map(org => (
-                            <button className="btn btn-primary m-2" key={org._id} onClick={(e) => handleOrgSelect(e, org.abbrv_name)}>
+                            <button className="btn btn-primary m-2" key={org._id} onClick={(e) => handleOrgSelect(e, org._id)}>
                                 {org.abbrv_name}
                             </button>
                         ))

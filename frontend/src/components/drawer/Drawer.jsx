@@ -15,11 +15,11 @@ const Drawer = () => {
 
     return (
         <nav className="drawer drawer-end absolute flex justify-end p-5 z-10 font-bit">
-            <input id="my-drawer" type="checkbox" checked={open} className="drawer-toggle" />
+            <input id="my-drawer" type="checkbox" checked={open} onChange={handleToggle} className="drawer-toggle" />
             {
                 !open &&
                 <div className="drawer-content">
-                    <div onClick={handleToggle} className="btn btn-primary drawer-button text-2xl"><GiHamburgerMenu /></div>
+                    <div onClick={handleToggle} className="btn bg-slate-50 border-2 border-dashed drawer-button text-2xl text-black hover:bg-slate-300"><GiHamburgerMenu /></div>
                 </div>
             }
             <div className="drawer-side">
@@ -33,7 +33,7 @@ const Drawer = () => {
                     {
                         routes.map((route, index) => (
                             route.name &&   
-                            <li className='flex flex-col w-full justify-between items-center my-5'>
+                            <li key={index} className='flex flex-col w-full justify-between items-center my-5'>
                                 <Link className='w-full text-xl' to={route.path}>
                                     {route.icon}
                                     {route.name}

@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 
 // get list of orgs
 const getOrgList = async(req, res) => {
-    const orgList = await Org.find({}, 'cluster comp_name abbrv_name').sort({ cluster: 1, abbrv_name: 1 })
+    const orgList = await Org.find({}).sort({ cluster: 1, abbrv_name: 1 })
 
     res.status(200).json(orgList)
 }
