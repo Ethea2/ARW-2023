@@ -6,7 +6,8 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                'bit': ['"Press Start 2P"', 'cursive']
+                'bit': ['"Press Start 2P"', 'cursive'],
+                'header': ['"Bungee"', 'cursive']
             },
             dropShadow: {
                 glow_red: [
@@ -34,7 +35,8 @@ module.exports = {
                     'base-100': '#451F4D',
                 }
             }
-        ]
+        ],
+        base: false
     },
     plugins: [require("daisyui")],
 }
