@@ -1,5 +1,5 @@
-import React from 'react'
-import VSContainer from './VSContainer'
+import React from "react";
+import VSContainer from "./VSContainer";
 
 const GameContainer = ({ game }) => {
   return (
@@ -14,4 +14,4 @@ const GameContainer = ({ game }) => {
   )
 }
 
-export default GameContainer
+export default GameContainer;

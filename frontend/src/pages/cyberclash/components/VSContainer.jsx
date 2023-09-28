@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const VSContainer = ({ team1, team2 }) => {
     return (
@@ -6,4 +6,4 @@ const VSContainer = ({ team1, team2 }) => {
     )
 }
 
-export default VSContainer
+export default VSContainer;
