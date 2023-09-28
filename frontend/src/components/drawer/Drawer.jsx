@@ -3,6 +3,7 @@ import routes from "../routes";
 import { useEffect, useState } from "react";
 import arwLogo from "../../assets/arw-logo-transparent.png";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { AiOutlineClose } from "react-icons/ai";
 
 const Drawer = () => {
     const [open, setOpen] = useState(false);
@@ -38,6 +39,9 @@ const Drawer = () => {
                     className="drawer-overlay"
                 ></label>
                 <ul className="menu p-4 min-h-full bg-base-200 md:bg-black/25 text-base-content flex justify-start items-center w-full md:w-1/3">
+                    <div className="absolute text-3xl text-gray-500/50 flex justify-end items-start w-full px-3">
+                        <AiOutlineClose onClick={handleToggle} className="cursor-pointer hover:bg-gray-300 transition ease-in rounded-md"/>
+                    </div>
                     <div className="h-full w-full text-3xl flex justify-center gap-5 items-center my-10">
                         <img src={arwLogo} width="50" height="50" />
                         ARW 2023
