@@ -17,7 +17,7 @@ const FAQs = () => {
   return (
     <div className="flex flex-col items-center justify-center">
         <h1 className="mt-faq-header mb-4 text-7xl font-bit">FAQs</h1>
-        <div className = "px-8 min-w-full join join-vertical">
+        <div className = "px-8 w-full join join-vertical lg:w-3/5">
           {
             QA.map((q, i) => (
               <Question QA={q} key ={i}/>
