@@ -13,3 +13,7 @@
 .text-header-shadow {
     text-shadow: 3px 2px 0px #451F4D;
 }
+
+.dark-bg {
+    background-color: rgba(30, 30, 30, 0.5);
+}

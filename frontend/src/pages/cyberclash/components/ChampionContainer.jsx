@@ -4,17 +4,17 @@ import React from 'react'
 const ChampionContatiner = ({cyberClash}) => {
     return (
         
-        <div className = 'border-2 border-orange-500 flex bg-stone-900'>
+        <div className = 'flex justify-center flex-row items-center border-2 border-orange-500 rounded-xl w-11/12 dark-bg p-3'>
             
-            <div  className="grid content-center">
-                <img src="#" alt="CrownImg" className=""/>
+            <div  className="grid content-center w-1/4 aspect-square  mr-2.5">
+                <img src="../crown.png" alt="CrownImg" className=""/>
             </div>
 
-            <div>
-                <div className="text-6xl text-[#FFFFFF] font-normal font-header text-header-shadow">
+            <div className='flex justify-center flex-col items-center w-3/4 '>
+                <div className="text-3xl text-[#FFFFFF] font-normal font-header text-header-shadow ">
                     Champions
                 </div>
-                <div className='bg-zinc-300 rounded-md'>
+                <div className='bg-zinc-300 rounded-md w-full'>
                     NameDisplay
                 </div>
             </div>
