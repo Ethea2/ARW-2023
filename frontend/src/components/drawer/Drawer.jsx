@@ -50,8 +50,8 @@ const Drawer = () => {
                     {routes.map(
                         (route, index) =>
                             route.name && (
-                                <Link key={index} className="">
-                                    <div className="flex items-center gap-2 w-full text-md rounded-lg p-2 w-full hover:bg-black/30" to={route.path}>
+                                <Link to={route.path} key={index} className="">
+                                    <div className="flex items-center gap-2 text-md rounded-lg p-2 w-full hover:bg-black/30" to={route.path}>
                                         <div className="nav-icon">
                                             {route.icon}
                                         </div>
