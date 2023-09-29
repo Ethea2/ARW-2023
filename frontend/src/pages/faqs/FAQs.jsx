@@ -3,8 +3,8 @@ import Answer from './components/Answer'
 
 const FAQs = () => {
   return (
-    <div>
-      <h1>FAQs</h1>
+    <div className="flex flex-col items-center justify-center">
+        <h1 className="mt-faq-header mb-4 text-8xl font-bit">FAQs</h1>
       <Answer />
     </div>
   )

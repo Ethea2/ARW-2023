@@ -17,8 +17,22 @@ module.exports = {
                     "0 0px 20px rgba(167, 243, 208, 0.35)",
                     "0 0px 65px rgba(52, 211, 153, 0.2)"
                 ]
-            }
+            },
+            margin: {
+                'faq-header': '120px',
+            },
         },
+        borderRadius: {
+            'none': '0',
+            'sm': '0.125rem',
+            DEFAULT: '0.25rem',
+            'md': '0.375rem',
+            'lg': '0.5rem',
+            'full': '9999px',
+            'large': '12px',
+            'faq-ans-custom': '44px',
+        },
+        
     },
     daisyui: {
         themes: [
