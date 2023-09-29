@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    @apply bg-gradient-radial from-[#F87DA4] to-[#FF2955]
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Coustard:wght@400;900&family=Press+Start+2P&display=swap');
+
+:root {
+    background-image: radial-gradient(circle, #F87DA4, #FF2955);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-header-shadow {
+    text-shadow: 3px 2px 0px #451F4D;
 }
