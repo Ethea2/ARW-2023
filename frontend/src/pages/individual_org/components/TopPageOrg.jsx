@@ -3,7 +3,7 @@ const TopPageOrg = () => {
     return (
         <>
         
-        <div className="top-page-org  w-full flex flex-col mt-20 justify-center items-center">
+        <div className="top-page-org  w-full flex flex-col mt-20 justify-center items-center shadow-2xl">
             <section className="gallery w-1/2 py-0.5 lg:py-7">
                 <img src="https://scontent.fmnl17-5.fna.fbcdn.net/v/t39.30808-6/334090620_881525203057263_2025812858826874813_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=52f669&_nc_eui2=AeHTAefJWJf6LsHCjb38UcAInIdZDS_D1MOch1kNL8PUw1Kqmlz-jokNpWkQU5qtSc02yi0lz8Lr7twBEhYygADt&_nc_ohc=b_BD66CLzSIAX91Pzur&_nc_ht=scontent.fmnl17-5.fna&oh=00_AfB0kzkyd3WuSIZgfxpKKPiAMT6hcRZ4sk1XYIkqF5_D4g&oe=651B2C34" className="rounded-lg"></img>
             </section>
