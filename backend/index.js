@@ -30,7 +30,9 @@ app.use('/api/crown', crownRoutes)
 app.use('/api/clash', clashRoutes)
 
 // connect to db
-if (process.env.NODE_ENV === 'production') {
+console.log(process.env.NODE_ENV)
+
+if (process.env.NODE_ENV) {
     mongoose.connect(process.env.MONGO_URI)
         .then(() => {
             // listen for request
