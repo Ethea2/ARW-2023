@@ -1,5 +1,41 @@
 const name = "ARW 2023";
 
+/* Temporary pictures (public domain) */
+const carousel = [
+    {
+        imageSrc: "https://upload.wikimedia.org/wikipedia/commons/d/d8/Noli_Me_Tangere_Picture_1.jpg",
+        imageAlt: "Noli Me Tangere Picture 1"
+    },
+    {
+        imageSrc: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Noli_Me_Tangere_Picture_4.jpg",
+        imageAlt: "Noli Me Tangere Picture 4"
+    },
+    {
+        imageSrc: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Noli_Me_Tangere_Picture_5.jpg",
+        imageAlt: "Noli Me Tangere Picture 5"
+    },
+    {
+        imageSrc: "https://upload.wikimedia.org/wikipedia/commons/5/53/Noli_Me_Tangere_Picture_6.jpg",
+        imageAlt: "Noli Me Tangere Picture 6"
+    },
+    {
+        imageSrc: "https://upload.wikimedia.org/wikipedia/commons/4/48/Noli_Me_Tangere_Picture_7.jpg",
+        imageAlt: "Noli Me Tangere Picture 7"
+    },
+    {
+        imageSrc: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Noli_Me_Tangere_Picture_8.jpg",
+        imageAlt: "Noli Me Tangere Picture 8"
+    },
+    {
+        imageSrc: "https://upload.wikimedia.org/wikipedia/commons/d/de/Noli_Me_Tangere_Picture_9.jpg",
+        imageAlt: "Noli Me Tangere Picture 9"
+    },
+    {
+        imageSrc: "https://upload.wikimedia.org/wikipedia/commons/2/2c/Noli_Me_Tangere_Picture_10.jpg",
+        imageAlt: "Noli Me Tangere Picture 10"
+    },
+]
+
 const Homepage = () => {
 
     const glowOuter = {
@@ -227,22 +263,26 @@ const Homepage = () => {
                         {/* Image carousel */}
                         <div className="rounded-xl border-4 border-teal-300 text-center carousel w-full  h-60 lg:h-96" style={{ ...glowInner }}>
 
-                            {/* Temporary pictures (public domain) */}
-                            <div id="item1" className="carousel-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d8/Noli_Me_Tangere_Picture_1.jpg" />
-                            </div>
-                            <div id="item2" className="carousel-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Noli_Me_Tangere_Picture_4.jpg" />
-                            </div>
-                            <div id="item3" className="carousel-item">
-                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Noli_Me_Tangere_Picture_10.jpg" />
-                            </div>
+                            { /* Convert `carousel` to components */
 
+                                carousel.map((value, index, array) => {
+                                    return (
+                                        <div id={"photo-"+index} className="carousel-item">
+                                            <img src={value.imageSrc} alt={value.imageAlt} title={value.imageAlt}/>
+                                        </div>
+                                    );
+                                })
+                            }
                         </div>
                         <div className="flex justify-center w-full py-2 gap-2">
-                            <a href="#item1" className="btn btn-xs">1</a>
-                            <a href="#item2" className="btn btn-xs">2</a>
-                            <a href="#item3" className="btn btn-xs">3</a>
+                            {
+                                carousel.map((value, index, array) => {
+                                    // I am not sure whether to put the index number as text or to leave it blank.
+                                    return (
+                                        <a href={"#photo-" + index} className="btn btn-xs">{index + 1}</a>
+                                    );
+                                })
+                            }
                         </div>
 
                     </div>
