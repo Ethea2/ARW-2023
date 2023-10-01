@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="outer-glow-25" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur" stdDeviation="2"/>
+      <feFlood flood-color="#fc8900" flood-opacity="1"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <text class="cls-10" transform="matrix(0.9716320037841796, -0.23649901151657102, 0.23649901151657102, 0.9716320037841796, 37.24184799194335, 115.0084991455078)" style="font-size: 537.4px; white-space: pre; fill: rgb(3, 5, 0); filter: url('#outer-glow-25'); font-family: ArialRoundedMTBold, 'Arial Rounded MT Bold'; perspective-origin: 131.328px 236.484px; stroke: rgb(245, 146, 29); stroke-miterlimit: 10; stroke-width: 2px;" x="0" y="0" dx="24.142" dy="356.975">?</text>
+</svg>

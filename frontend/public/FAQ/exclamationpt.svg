@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="186.789 70.046 189.066 273.349" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="outer-glow-31" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-6" stdDeviation="2"/>
+      <feFlood flood-color="#1700f9" flood-opacity="1"/>
+      <feComposite in2="blur-6" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <text class="cls-9" transform="matrix(0.989042043685913, -0.14763699471950528, 0.14763699471950528, 0.989042043685913, 258.7921752929687, 108.63566589355466)" style="fill: rgb(3, 5, 0); font-family: ArialRoundedMTBold, 'Arial Rounded MT Bold'; font-size: 289.7px; letter-spacing: -40.56px; stroke: rgb(43, 57, 142); stroke-miterlimit: 10; stroke-width: 2px; white-space: pre; filter: url('#outer-glow-31');" x="0" y="0" dx="-11.917" dy="199.101">!</text>
+  <text class="cls-9" transform="matrix(0.989042043685913, -0.14763699471950528, 0.14763699471950528, 0.989042043685913, 197.85787963867185, 117.55758666992185)" style="fill: rgb(3, 5, 0); font-family: ArialRoundedMTBold, 'Arial Rounded MT Bold'; font-size: 289.7px; letter-spacing: -40.56px; stroke: rgb(43, 57, 142); stroke-miterlimit: 10; stroke-width: 2px; white-space: pre; filter: url('#outer-glow-31');" x="0" y="0" dx="-11.917" dy="199.101">!</text>
+</svg>
