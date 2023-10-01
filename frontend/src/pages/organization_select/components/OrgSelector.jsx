@@ -42,17 +42,19 @@ const OrgSelector = ({
             </h1>
             {/*Pokedex-Like Table*/}
             <div className="w-[80%] mb-6">
-                <div className="bg-[#B60000] rounded-t-md flex py-2 px-4 justify-between">
-                    <img src={icon_map} alt="" className=" w-8 h-8" />
-                    <div className="flex items-center w-[80%] md:w-[40%]">
+                <div className="bg-[#B60000] p-2 rounded-t-md flex justify-between">
+                    <div>
+                        <img src={icon_map} alt="" className=" w-8 h-8" />
+                    </div>
+                    <div className=" flex items-center w-[80%] md:w-[40%]">
                         <input
                             type="text"
                             value={search}
                             onChange={(e) => setSearch(e.target.value)}
-                            className="rounded-md w-full px-4 py-1 outline-none focus:ring focus:border-blue-300 text-black" // Changed text color to black
+                            className="w-full rounded-md w-full px-4 py-1 outline-none focus:ring focus:border-blue-300 text-black" // Changed text color to black
                             placeholder="Search..."
                         />
-                        <FaSearch className="text-black bg-white text-xl relative right-8" />
+                        <FaSearch className="text-black/50 bg-white text-xl relative right-8" />
                     </div>
                 </div>
                 {/*Buttons Grid*/}
