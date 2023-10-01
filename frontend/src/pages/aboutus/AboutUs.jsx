@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Drawer from "../../components/drawer/Drawer";
 import Card from "./components/Card";
-// SVG Imports
-import BG from "../../assets/aboutus/background.svg";
-import biggerTextContainer from "../../assets/aboutus/text-container-bigger.svg";
-// Import Project Head Images
+import ARWDesc from "./components/ARWDesciption";
+import SpaceBackground from "./components/spaceBackground";
+// Import Images
 import phead1 from "../../assets/aboutus/TaoHu.gif";
+import invaders from "../../assets/aboutus/invaders.svg";
 
 const AboutUs = () => {
   const [showContent, setShowContent] = useState(false);
@@ -22,38 +22,12 @@ const AboutUs = () => {
       {showContent ? (
         // Display the content after pressing the button
         <div className="relative h-full flex flex-col justify-center items-center">
-          <div
-            id="background"
-            className="absolute inset-0 z-0"
-            style={{
-              backgroundImage: `url(${BG})`,
-            }}
-          ></div>
+          {/* Set Page Background - edit in spaceBackground.jsx in components*/}
+          <SpaceBackground />
 
-          <div className="my-20 z-10 text-center">
-            {/* ABOUT ARW */}
-            <div
-              className="mt-10 bg-no-repeat bg-cover py-36 px-8"
-              style={{
-                backgroundImage: `url(${biggerTextContainer})`,
-              }}
-            >
-              <div className="p-5 border-8 rounded-3xl border-red-900 border-solid bg-white">
-                <span className="font-bit">
-                  ANNUAL RECRUITMENT WEEK <br></br>
-                </span>
-                <span className="text-black">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
-                </span>
-              </div>
-            </div>
+          <div className="my-28 z-10 text-center">
+            {/* ABOUT ARW - edit in ARWDescription.jsx in components*/}
+            <ARWDesc></ARWDesc>
 
             <div className="mx-8">
               {/* Central Committee Project Heads */}
@@ -85,15 +59,12 @@ const AboutUs = () => {
         </div>
       ) : (
         // Display the play button initially
-        <div className="w-full h-screen flex justify-center items-center">
-          <div
-            id="background"
-            className="absolute inset-0 z-0"
-            style={{
-              backgroundImage: `url(${BG})`,
-              backgroundSize: "cover",
-            }}
-          ></div>
+        <div className="w-full h-screen flex flex-col justify-center items-center">
+          {/* Set Page Background - edit in spaceBackground.jsx in components*/}
+          <SpaceBackground bgSize="cover" />
+          {/* Invaders SVG - to fix for both desktop and mobile*/}
+          <img className="relative mb-20" src={invaders} alt="Logo" />
+
           <div className="relative z-10 p-8 text-center">
             <span className="font-bold font-bit text-4xl sm:text-6xl lg:text-9xl">
               About Us
