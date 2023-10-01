@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Drawer from "../../components/drawer/Drawer";
 import Card from "./components/Card";
-import BG from "../../assets/aboutus/aboutus-bg1.svg"
+// SVG Imports
+import BG from "../../assets/aboutus/background.svg";
+import biggerTextContainer from "../../assets/aboutus/text-container-bigger.svg";
 // Import Project Head Images
-//import phead1 from "image url for phead1";
+import phead1 from "../../assets/aboutus/TaoHu.gif";
 
 const AboutUs = () => {
   const [showContent, setShowContent] = useState(false);
@@ -25,14 +27,18 @@ const AboutUs = () => {
             className="absolute inset-0 z-0"
             style={{
               backgroundImage: `url(${BG})`,
-              backgroundSize: "cover",
             }}
           ></div>
 
-          <div className="my-12 z-10 p-8 text-center">
-            {/* Add your content here */}
-            <div class="grid grid-rows-3 gap-4">
-              <div className="my-3 p-3 border-8 rounded-3xl border-red-900 border-solid bg-white">
+          <div className="my-20 z-10 text-center">
+            {/* ABOUT ARW */}
+            <div
+              className="mt-10 bg-no-repeat bg-cover py-36 px-8"
+              style={{
+                backgroundImage: `url(${biggerTextContainer})`,
+              }}
+            >
+              <div className="p-5 border-8 rounded-3xl border-red-900 border-solid bg-white">
                 <span className="font-bit">
                   ANNUAL RECRUITMENT WEEK <br></br>
                 </span>
@@ -47,7 +53,11 @@ const AboutUs = () => {
                   mollit anim id est laborum.
                 </span>
               </div>
-              <div>
+            </div>
+
+            <div className="mx-8">
+              {/* Central Committee Project Heads */}
+              <div className="mt-10">
                 <span>ARW 2023</span>
                 <br></br>
                 <span>CENTRAL COMMITTEE</span>
@@ -55,16 +65,20 @@ const AboutUs = () => {
                   <span>PROJECT HEADS</span>
                   <br></br>
                   <div class="grid grid-cols-2 gap-5 md:grid-cols-4 md:gap-10 md:mx-20">
-                    <Card name="Person 1"></Card>
-                    <Card name="Person 2"></Card>
-                    <Card name="Person 3"></Card>
-                    <Card name="Person 4"></Card>
+                    <Card name="Person 1" imgURL={phead1}></Card>
+                    <Card name="Person 2" imgURL={phead1}></Card>
+                    <Card name="Person 3" imgURL={phead1}></Card>
+                    <Card name="Person 4" imgURL={phead1}></Card>
                   </div>
                 </div>
               </div>
-              <div>
+              {/* Executive Committee */}
+              <div className="mt-10">
                 <span>EXECUTIVE COMMITTEE</span>
-                {/* Executive Committee - todo: think of way to display*/}
+                <br></br>
+                <div className="p-5 border-8 rounded-3xl border-red-900 border-solid bg-white">
+                  PLACEHOLDER
+                </div>
               </div>
             </div>
           </div>
