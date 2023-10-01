@@ -36,9 +36,10 @@ const CrownQuest = () => {
           </div>
 
           {!activeElite && (
-            <div className="text-2xl md:text-6xl text-[#FFD524] font-normal font-header text-header-shadow flex justify-center items-center">
-              Select an elite!
-            </div>
+            // <div className="text-md md:text-6xl text-[#FFD524] font-normal font-header text-header-shadow flex justify-center items-center">
+            //   Select an elite!
+            // </div>
+            <></>
           )}
           <div className="footer w-full h-1/5">
             <CrownSelector elites={elites} handleSelect={handleSelect} />

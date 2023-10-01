@@ -6,11 +6,11 @@ const CrownSelector = ({ elites, handleSelect }) => {
       {elites?.map((elite) => (
         <div
           onClick={(e) => handleSelect(e, elite)}
-          className="avatar shrink-0 snap-center hover:scale-105 w-24 transition ease-in"
+          className="avatar w-24 shrink-0 snap-center hover:scale-105 transition ease-in"
         >
           <img
             src={elite.orglogo}
-            className="border-2 border-white rounded-xl bg-black/50"
+            className="border-2 border-white rounded-xl bg-black/50 hover:border-[#FFD524] transition ease-in ease-out"
           />
         </div>
       ))}
