@@ -6,7 +6,9 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                'bit': ['"Press Start 2P"', 'cursive']
+                'bit': ['"Press Start 2P"', 'cursive'],
+                'monda':['"Monda"', '"sans-serif"'],
+                'header': ['"Bungee"', 'cursive']
             },
             dropShadow: {
                 glow_red: [
@@ -17,13 +19,16 @@ module.exports = {
                     "0 0px 20px rgba(167, 243, 208, 0.35)",
                     "0 0px 65px rgba(52, 211, 153, 0.2)"
                 ]
+            },
+            backgroundImage: {
+                'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
             }
         },
     },
     daisyui: {
         themes: [
             {
-                'arw-theme' : {
+                'arw-theme': {
                     'primary': '#FF2955',
                     'secondary': '#FFD524',
                     'accent': '#00F6FF',
@@ -31,7 +36,8 @@ module.exports = {
                     'base-100': '#451F4D',
                 }
             }
-        ]
+        ],
+        base: false
     },
     plugins: [require("daisyui")],
 }

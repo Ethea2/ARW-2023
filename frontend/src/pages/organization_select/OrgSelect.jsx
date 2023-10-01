@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react"
-import useFetch from "../../hooks/useFetch"
-import OrgSelector from "./components/OrgSelector"
-import OrgShow from "./components/OrgShow"
-import Loading from "../../components/loading/Loading"
-import Error from "../../components/error/Error"
+import { useEffect, useState } from "react";
+import useFetch from "../../hooks/useFetch";
+import OrgSelector from "./components/OrgSelector";
+import OrgShow from "./components/OrgShow";
+import Loading from "../../components/loading/Loading";
+import Error from "../../components/error/Error";
 
 const OrgSelect = () => {
     const { data: orgs, loading, error } = useFetch("/api/orgs/");
@@ -18,6 +18,9 @@ const OrgSelect = () => {
         });
     };
     const handleClusterSelect = (event, cluster) => {
+        event.preventDefault();
+        setOrgCluster(orgs.filter((org) => org.cluster === cluster));
+    };
         event.preventDefault();
         setOrgCluster(orgs.filter((org) => org.cluster === cluster));
     };
@@ -36,7 +39,7 @@ const OrgSelect = () => {
             {orgs && <OrgSelector orgCluster={orgCluster} clusters={clusters} handleOrgSelect={handleOrgSelect} handleClusterSelect={handleClusterSelect} orgs={orgs}/>}
             {loading && <Loading />}
         </div>
-    )
-}
+    );
+};
 
-export default OrgSelect
+export default OrgSelect;

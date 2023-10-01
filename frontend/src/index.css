@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Coustard:wght@400;900&family=Press+Start+2P&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Monda&display=swap");
+
+:root {
+    background-image: radial-gradient(circle, #f87da4, #ff2955);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-header-shadow {
+    text-shadow: 3px 2px 0px #451f4d;
+}

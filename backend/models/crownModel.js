@@ -17,6 +17,9 @@ const crownSchema = new Schema({
     },
     longorgname: {
         type: String
+    },
+    orglogo: {
+        type: String
     }
 
 }, { collection: 'crown-quest' })
