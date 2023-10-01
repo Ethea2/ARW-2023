@@ -15,7 +15,7 @@ const Drawer = () => {
     useEffect(() => setOpen(false), [location]);
 
     return (
-        <nav className="drawer drawer-end absolute flex justify-end p-5 z-10 font-bit">
+        <nav className="drawer drawer-end absolute flex justify-end p-5 z-10 font-mono-bold">
             <input
                 id="my-drawer"
                 type="checkbox"
@@ -27,9 +27,9 @@ const Drawer = () => {
                 <div className="drawer-content">
                     <div
                         onClick={handleToggle}
-                        className="btn bg-slate-50 border-2 border-dashed drawer-button text-2xl text-black hover:bg-slate-300"
+                        className="btn border-none bg-inherit drawer-button text-2xl hover:scale-125 hover:bg-inherit transitione ease-in duration-70"
                     >
-                        <GiHamburgerMenu />
+                        <GiHamburgerMenu className="text-white" />
                     </div>
                 </div>
             )}
@@ -55,10 +55,10 @@ const Drawer = () => {
                             route.name && (
                                 <li
                                     key={index}
-                                    className="flex flex-col w-full justify-between items-center my-5"
+                                    className="flex flex-col w-full justify-between items-center my-3"
                                 >
                                     <Link
-                                        className="w-full text-xl"
+                                        className="w-full text-3xl"
                                         to={route.path}
                                     >
                                         {route.icon}
