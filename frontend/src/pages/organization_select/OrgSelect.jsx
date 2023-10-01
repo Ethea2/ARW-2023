@@ -21,9 +21,6 @@ const OrgSelect = () => {
         event.preventDefault();
         setOrgCluster(orgs.filter((org) => org.cluster === cluster));
     };
-        event.preventDefault();
-        setOrgCluster(orgs.filter((org) => org.cluster === cluster));
-    };
 
     if (error) {
         return (
