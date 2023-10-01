@@ -1,5 +1,6 @@
 import icon_map from "../../../assets/icon-map.png";
 import { useEffect, useState } from "react";
+import {FaSearch} from "react-icons/fa"
 
 const OrgSelector = ({
   orgCluster,
@@ -41,8 +42,7 @@ const OrgSelector = ({
       <div className="w-[80%] mb-6">
         <div className="bg-[#B60000] rounded-t-md flex py-2 px-4 justify-between    ">
           <img src={icon_map} alt="" className=" w-8 h-8" />
-          <div>
-            {/* <FaSearch className="absolute left-3 top-1/2 transform -translate-y-1/2 text-white" /> */}
+          <div className="flex items-center">
             <input
               type="text"
               value={search}
@@ -50,6 +50,7 @@ const OrgSelector = ({
               className="rounded-md px-4 py-1 outline-none focus:ring focus:border-blue-300 text-black" // Changed text color to black
               placeholder="Search..."
             />
+            <FaSearch className="text-black bg-white text-3xl" />
           </div>
         </div>
         {/*Buttons Grid*/}
