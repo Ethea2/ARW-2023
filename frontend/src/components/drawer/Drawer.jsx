@@ -15,7 +15,7 @@ const Drawer = () => {
     useEffect(() => setOpen(false), [location]);
 
     return (
-        <nav className="drawer drawer-end absolute flex justify-end p-5 z-10 font-mono-bold">
+        <nav className="drawer drawer-end absolute flex justify-end p-5 z-10 font-monda">
             <input
                 id="my-drawer"
                 type="checkbox"
