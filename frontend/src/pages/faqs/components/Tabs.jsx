@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { TABS } from "../constants/queries";
 const Tabs = ({ selected, setSelected }) => {
     return (
-        <div className="w-full relative z-10 flex flex-wrap items-center justify-center gap-4">
+        <div className="w-full relative z-[1] flex flex-wrap items-center justify-center gap-4">
             {TABS.map((tab) => (
                 <button
                     onClick={() => setSelected(tab)}
@@ -15,7 +15,7 @@ const Tabs = ({ selected, setSelected }) => {
                     }`}
                     key={tab}
                 >
-                    <span className="relative z-10 text-black text-md font-semibold">{tab}</span>
+                    <span className="relative z-[1] text-black text-md font-semibold">{tab}</span>
                     <AnimatePresence>
                         {selected === tab && (
                             <motion.span
