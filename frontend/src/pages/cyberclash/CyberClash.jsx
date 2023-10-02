@@ -22,10 +22,9 @@ const CyberClash = () => {
                         </h1>
                     </div>
                     <div className="flex flex-col items-center bg-black/50 w-full py-8 px-6 border-[#451F4D] border-4 gap-8 ">
-                        <div className="w-full bg-green-200 m-auto flex justify-center p-10 border-black border-2">
-                            {/* <ChampionContatiner /> */}
-                            <p>Champions container goes here</p>
-                        </div>
+                       
+                        <ChampionContatiner />
+                        
                         <div className="w-full flex flex-col items-center gap-6">
                             {cyberClash?.map((game) => (
                                 <GameContainer game={game} className="" />
