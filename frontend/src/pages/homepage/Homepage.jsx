@@ -1,5 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./homepage.css";
+import { useEffect, useState } from "react";
 const name = "ARW 2023";
 
 /* Temporary pictures (public domain) */
@@ -47,6 +48,22 @@ const carousel = [
 ];
 
 const Homepage = () => {
+    const [activeSlide, setActiveSlide] = useState(0);
+
+    const goToPreviousSlide = () => {
+        if (activeSlide === 0) return setActiveSlide(carousel.length - 1);
+        setActiveSlide(activeSlide - 1);
+    };
+
+    const goToNextSlide = () => {
+        if (activeSlide === carousel.length - 1) return setActiveSlide(0);
+        setActiveSlide(activeSlide + 1);
+    };
+
+    useEffect(() => {
+        window.location.hash = `#photo-${activeSlide}`;
+    });
+
     const glowOuter = {
         boxShadow: "0px 0px 5px 2px rgb(107,33,168)",
     };
@@ -118,40 +135,48 @@ const Homepage = () => {
                     >
                         {/* Image carousel */}
                         <div
-                            className="rounded-xl border-4 border-teal-300 text-center carousel w-full  h-60 lg:h-96"
+                            className="rounded-xl border-4 border-teal-300 text-center carousel w-full  h-60 lg:h-96 relative"
                             style={{ ...glowInner }}
                         >
-                            {
-                                /* Convert `carousel` to components */
-
-                                carousel.map((value, index, array) => {
-                                    return (
-                                        <div
-                                            id={"photo-" + index}
-                                            className="carousel-item"
-                                        >
-                                            <img
-                                                src={value.imageSrc}
-                                                alt={value.imageAlt}
-                                                title={value.imageAlt}
-                                            />
-                                        </div>
-                                    );
-                                })
-                            }
-                        </div>
-                        <div className="flex justify-center w-full py-2 gap-2">
-                            {carousel.map((value, index, array) => {
-                                // I am not sure whether to put the index number as text or to leave it blank.
-                                return (
-                                    <a
-                                        href={"#photo-" + index}
-                                        className="btn btn-xs"
+                            <div
+                                className="rounded-xl border-4 border-teal-300 text-center carousel w-full h-60 lg:h-96 relative"
+                                style={{ ...glowInner }}
+                            >
+                                {carousel.map((value, index) => (
+                                    <div
+                                        key={`photo-${index}`}
+                                        className={`carousel-item ${
+                                            index === activeSlide
+                                                ? "active"
+                                                : ""
+                                        }`}
+                                        id={`photo-${index}`}
                                     >
-                                        {index + 1}
-                                    </a>
-                                );
-                            })}
+                                        <img
+                                            src={value.imageSrc}
+                                            alt={value.imageAlt}
+                                            title={value.imageAlt}
+                                            className="object-contain"
+                                        />
+                                    </div>
+                                ))}
+                            </div>
+
+                            {/* Left navigation button inside the carousel */}
+                            <button
+                                className="bg-black/50 btn btn-circle left-button absolute top-1/2 left-4 transform -translate-y-1/2 text-white text-2xl z-10"
+                                onClick={goToPreviousSlide}
+                            >
+                                ❮
+                            </button>
+
+                            {/* Right navigation button inside the carousel */}
+                            <button
+                                className="bg-black/50 right-button btn btn-circle absolute top-1/2 right-4 transform -translate-y-1/2 text-white text-2xl z-10"
+                                onClick={goToNextSlide}
+                            >
+                                ❯
+                            </button>
                         </div>
                     </div>
                 </div>
