@@ -21,17 +21,17 @@ const TopPageOrg = () => {
                     </div>
                 </div>
                 <div className="flex justify-center w-full py-2 gap-2">
-                    <a href="#item1" className="btn btn-sm md:btn-md">
+                    <a href="#item1" className="btn btn-sm md:btn-md font-monda">
                         1
                     </a>
-                    <a href="#item2" className="btn btn-sm md:btn-md">
+                    <a href="#item2" className="btn btn-sm md:btn-md font-monda">
                         2
                     </a>
                 </div>
-                <section className="org-initials text-3xl lg:text-4xl xl:text-5xl font-sans font-bold text-black mt-8">
+                <section className="org-initials text-3xl lg:text-4xl xl:text-5xl font-header font-bold text-black mt-8">
                     CSO
                 </section>
-                <section className="org-bio text-lg lg:text-xl xl:text-2xl font-sans font-normal text-black">
+                <section className="org-bio text-lg lg:text-xl xl:text-2xl font-monda font-normal text-black">
                     Always for service
                 </section>
                 <section className="org-logo flex justify-center items-center lg:w-[80%] py-3 lg:py-7">

@@ -10,12 +10,12 @@ const BottomPageOrg = () => {
                     />
                 </section>
                 <section className="org-title text-center mt-10">
-                    <span className="text-3xl lg:text-4xl xl:text-5xl font-sans font-bold text-black">
+                    <span className="text-3xl lg:text-4xl xl:text-5xl font-header font-bold text-black">
                         Association of Computer Engineering Students
                     </span>
                 </section>
                 <section className="org-desc text-justify mt-14">
-                    <span className="text-lg lg:text-xl xl:text-2xl font-sans font-normal text-black">
+                    <span className="text-lg lg:text-xl xl:text-2xl font-monda font-normal text-black">
                         ACCESS is a professional organization of Computer
                         Engineering students who strive to be Lasallian
                         achievers. This organization offers academic and
@@ -32,10 +32,10 @@ const BottomPageOrg = () => {
                 </section>
                 <div className="vision-mission grid grid-cols-1 lg:grid-cols-2 content-start mt-14">
                     <section className="mission flex flex-col content-start lg:border-r-2 border-black lg:pr-10 pb-10">
-                        <span className="text-2xl lg:text-3xl xl:text-4xl font-sans text-center font-bold text-black mb-10">
+                        <span className="text-2xl lg:text-3xl xl:text-4xl font-header text-center font-bold text-black mb-10">
                             Mission
                         </span>
-                        <span className="text-lg lg:text-xl xl:text-2xl font-sans font-normal text-black text-justify">
+                        <span className="text-lg lg:text-xl xl:text-2xl font-monda font-normal text-black text-justify">
                             Lorem, ipsum dolor sit amet consectetur adipisicing
                             elit. Excepturi ipsum voluptatem, voluptatum soluta
                             rem quisquam ex! Esse obcaecati sint dolorum quas
@@ -63,10 +63,10 @@ const BottomPageOrg = () => {
                         </span>
                     </section>
                     <section className="vision flex flex-col lg:pl-10 pb-10">
-                        <span className="text-2xl lg:text-3xl xl:text-4xl font-sans text-center font-bold text-black mb-10">
+                        <span className="text-2xl lg:text-3xl xl:text-4xl font-header text-center font-bold text-black mb-10">
                             Vision
                         </span>
-                        <span className="text-lg lg:text-xl xl:text-2xl font-sans font-normal text-black text-justify">
+                        <span className="text-lg lg:text-xl xl:text-2xl font-monda font-normal text-black text-justify">
                             Lorem ipsum, dolor sit amet consectetur adipisicing
                             elit. Molestias ipsum a quaerat, assumenda qui
                             accusantium ad dolore quam deleniti harum! Explicabo
@@ -101,8 +101,8 @@ const BottomPageOrg = () => {
                         </span>
                     </section>
                 </div>
-                <section className="org-facebook-link flex flex-col justify-center border-t-2 border-black items-center pt-10 w-9/12 hover:underline">
-                    <span className="text-sm lg:text-lg xl:text-2xl font-sans text-black font-bold">
+                <section className="org-facebook-link flex flex-col justify-center border-t-2 border-black items-center pt-10 w-9/12">
+                    <span className="text-sm lg:text-lg xl:text-2xl font-monda text-black font-bold hover:underline hover:text-red-500">
                         <a
                             href="https://www.facebook.com/AccessDLSU"
                             className="w-full"
