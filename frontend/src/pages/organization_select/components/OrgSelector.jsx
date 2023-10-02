@@ -51,7 +51,7 @@ const OrgSelector = ({
                             type="text"
                             value={search}
                             onChange={(e) => setSearch(e.target.value)}
-                            className="w-full rounded-md w-full px-4 py-1 outline-none focus:ring focus:border-blue-300 text-black" // Changed text color to black
+                            className="w-full rounded-md px-4 py-1 outline-none focus:ring focus:border-blue-300 text-black" // Changed text color to black
                             placeholder="Search..."
                         />
                         <FaSearch className="text-black/50 bg-white text-xl relative right-8" />
