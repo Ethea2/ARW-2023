@@ -25,6 +25,14 @@
     
 }
 
+
+@media (min-width: 768px) {
+    .text-outline-champion {
+        text-shadow: -2px -2px #FFD524, 2px -2px #FFD524, -2px 2px #FFD524, 2px 2px #FFD524;
+    }
+}
+
+
 @media (max-width: 768px) {
     .text-outline{
         text-shadow: -2px -2px #451F4D, 2px -2px #451F4D, -2px 2px #451F4D, 2px 2px #451F4D;

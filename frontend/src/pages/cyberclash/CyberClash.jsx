@@ -30,7 +30,7 @@ const CyberClash = () => {
 
                         <ChampionContatiner />
 
-                                <div className="h-full w-full flex flex-col md:w-11/12 md:grid md:grid-flow-col md:grid-cols-3 justify-start items-center">
+                                <div className="h-full w-full flex flex-col md:w-11/12 md:grid md:grid-flow-col md:grid-cols-3">
                                     {cyberClash?.map((game) => (
                                         <GameContainer game={game} />
                                     ))}
