@@ -8,46 +8,44 @@ import Loading from "../../components/loading/Loading";
 import Error from "../../components/error/Error";
 
 const CrownQuest = () => {
-  const { data: elites, loading, error } = useFetch("/api/crown/");
-  const [activeElite, setActiveElite] = useState();
+    const { data: elites, loading, error } = useFetch("/api/crown/");
+    const [activeElite, setActiveElite] = useState();
 
-  const handleSelect = (e, elite) => {
-    e.preventDefault();
-    setActiveElite(elite);
-  };
+    const handleSelect = (e, elite) => {
+        e.preventDefault();
+        setActiveElite(elite);
+    };
 
-  useEffect(() => console.log(activeElite), [activeElite]);
+    useEffect(() => console.log(activeElite), [activeElite]);
 
-  return (
-    <div className="w-full h-screen flex flex-col justify-center items-center">
-      {loading ? (
-        <Loading color={'text-slate-200'}/>
-      ) : error ? (
-        <Error error={error} />
-      ) : (
-        <>
-          <div className="header w-full h-1/5">
-            <CrownHeader activeElite={activeElite} />
-          </div>
+    return (
+        <div className="w-full h-screen flex flex-col justify-center items-center">
+            {loading ? (
+                <Loading color={"text-slate-200"} />
+            ) : error ? (
+                <Error error={error} />
+            ) : (
+                <>
+                    <div className="header w-full h-1/5">
+                        <CrownHeader activeElite={activeElite} />
+                    </div>
 
-          <div className="body w-full h-3/5 flex flex-col lg:flex-row">
-            <CrownImage activeElite={activeElite} />
-            <CrownDetails activeElite={activeElite} />
-          </div>
+                    <div className="body w-full h-3/5 flex flex-col lg:flex-row">
+                        <CrownImage activeElite={activeElite} />
+                        <CrownDetails activeElite={activeElite} />
+                    </div>
 
-          {!activeElite && (
-            // <div className="text-md md:text-6xl text-[#FFD524] font-normal font-header text-header-shadow flex justify-center items-center">
-            //   Select an elite!
-            // </div>
-            <></>
-          )}
-          <div className="footer w-full h-1/5">
-            <CrownSelector elites={elites} handleSelect={handleSelect} />
-          </div>
-        </>
-      )}
-    </div>
-  );
+                    <div className="footer w-full h-1/5">
+                        <CrownSelector
+                            elites={elites}
+                            handleSelect={handleSelect}
+                            selectedElite={activeElite}
+                        />
+                    </div>
+                </>
+            )}
+        </div>
+    );
 };
 
 export default CrownQuest;
