@@ -1,18 +1,49 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const CrownHeader = ({ activeElite }) => {
-    console.log(activeElite);
+    const textVariants = {
+        hidden: { opacity: 0, y: -20 },
+        visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+    };
+
     return (
         <div className="w-full h-full bg-black/50 p-4 flex flex-col items-center justify-center">
             <div className="text-5xl text-[#FFD524] font-normal font-header text-header-shadow">
                 {activeElite ? (
-                    <p>{activeElite.orgname}</p>
+                    <motion.p
+                        initial="hidden"
+                        animate={activeElite ? "visible" : "hidden"}
+                        variants={textVariants}
+                        key={
+                            activeElite
+                                ? activeElite.orgname
+                                : "Select an Elite!"
+                        }
+                    >
+                        {activeElite.orgname}
+                    </motion.p>
                 ) : (
                     "Select an Elite!"
                 )}
             </div>
             <div className="font-header text-xs lg:text-sm text-center text-[#FFF]">
-                {activeElite ? <p>{activeElite.longorgname}</p> : ""}
+                {activeElite ? (
+                    <motion.p
+                        initial="hidden"
+                        animate={activeElite ? "visible" : "hidden"}
+                        variants={textVariants}
+                        key={
+                            activeElite
+                                ? activeElite.orgname
+                                : "Select an Elite!"
+                        }
+                    >
+                        {activeElite.longorgname}
+                    </motion.p>
+                ) : (
+                    ""
+                )}
             </div>
         </div>
     );
