@@ -60,7 +60,7 @@ const OrgShow = ({ org, error }) => {
 
       <div className="flex flex-col mb-7 justify-center content-center text-center md:text-left">
         <div>
-            <h1 className="px-5 text-2xl md:pt-10 pb-3 px-5 text-2xl">
+            <h1 className="px-5 text-2xl md:pt-10 px-5 text-2xl">
             {org.abbrv_name}
             </h1>
 
