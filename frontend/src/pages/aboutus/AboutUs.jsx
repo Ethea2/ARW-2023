@@ -3,6 +3,8 @@ import Drawer from "../../components/drawer/Drawer";
 import Card from "./components/Card";
 import ARWDesc from "./components/ARWDesciption";
 import SpaceBackground from "./components/spaceBackground";
+import { motion } from "framer-motion"; // Import motion from Framer Motion
+
 // Import Images
 import phead1 from "../../assets/aboutus/TaoHu.gif";
 import invaders from "../../assets/aboutus/invaders.svg";
@@ -16,12 +18,18 @@ const AboutUs = () => {
   };
 
   return (
-    <div>
+    <div className="w-full min-h-screen bg-black">
       <Drawer />
 
       {showContent ? (
-        // Display the content after pressing the button
-        <div className="relative h-full flex flex-col justify-center items-center">
+        // Display the content after pressing the button with animation
+        <motion.div
+          initial={{ opacity: 0, y: 1000}}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: 1000 }}
+          transition={{ duration: 2 }}
+          className="relative h-full flex flex-col justify-center items-center"
+        >
           {/* Set Page Background - edit in spaceBackground.jsx in components*/}
           <SpaceBackground />
 
@@ -38,7 +46,7 @@ const AboutUs = () => {
                 <div>
                   <span>PROJECT HEADS</span>
                   <br></br>
-                  <div class="grid grid-cols-2 gap-5 md:grid-cols-4 md:gap-10 md:mx-20">
+                  <div className="grid grid-cols-2 gap-5 md:grid-cols-4 md:gap-10 md:mx-20">
                     <Card name="Person 1" imgURL={phead1}></Card>
                     <Card name="Person 2" imgURL={phead1}></Card>
                     <Card name="Person 3" imgURL={phead1}></Card>
@@ -56,7 +64,7 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       ) : (
         // Display the play button initially
         <div className="w-full h-screen flex flex-col justify-center items-center">
@@ -69,7 +77,7 @@ const AboutUs = () => {
             <span className="font-bold font-bit text-4xl sm:text-6xl lg:text-9xl">
               About Us
             </span>
-            <div className="mt4">
+            <div className="mt-4">
               <button className="btn btn-primary" onClick={handlePlayClick}>
                 Play
               </button>
