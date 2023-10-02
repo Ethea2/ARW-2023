@@ -19,3 +19,14 @@
 .dark-bg {
     background-color: rgba(30, 30, 30, 0.5);
 }
+
+.text-outline {
+    text-shadow: -5px -5px #451F4D, 5px -5px #451F4D, -5px 5px #451F4D, 5px 5px #451F4D;
+    
+}
+
+@media (max-width: 768px) {
+    .text-outline{
+        text-shadow: -2px -2px #451F4D, 2px -2px #451F4D, -2px 2px #451F4D, 2px 2px #451F4D;
+    }
+}
