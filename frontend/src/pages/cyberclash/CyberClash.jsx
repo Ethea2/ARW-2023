@@ -9,38 +9,64 @@ const CyberClash = () => {
     const { data: cyberClash, loading, error } = useFetch("/api/clash");
 
     return (
-        <div className="flex justify-center items-center flex-col w-full h-full pb-10 ">
-            
+        <div class="w-full h-[100vh] flex">
             {loading ? (
-                    <Loading color={"text-slate-200"} />
-                ) : error ? (
-                    <Error error={error} />
-                ) : (
-                    <>
-                    <div
-                        id="container"
-                        className="flex flex-col items-center border-8 rounded-xl border-base-100 w-10/12 h-4/5 mt-20 pb-10"
-                    >
-                        <div
-                            id="title"
-                            className="relative -top-5 text-3xl text-[#FFD524] text-outline font-normal font-header  md:text-7xl md:-top-10"
-                        >
-                            LEADERBOARDS
-                        </div>
-
-                        <ChampionContatiner />
-
-                                <div className="h-full w-full flex flex-col md:w-11/12 md:grid md:grid-flow-col md:grid-cols-3">
-                                    {cyberClash?.map((game) => (
-                                        <GameContainer game={game} />
-                                    ))}
-                                </div>
-                            
+                <Loading color={"text-slate-200"} />
+            ) : error ? (
+                <Error error={error} />
+            ) : (
+                <div className="w-[90%] h-full flex flex-col justify-center items-center m-auto">
+                    <div className="relative top-5">
+                        <h1 className="text-3xl text-[#FFD524] text-outline font-normal font-header">
+                            LEADERBOARD
+                        </h1>
                     </div>
-                    </>
+                    <div className="flex flex-col items-center bg-black/50 w-full py-8 px-6 border-[#451F4D] border-4 gap-8 ">
+                        <div className="w-full bg-green-200 m-auto flex justify-center p-10 border-black border-2">
+                            {/* <ChampionContatiner /> */}
+                            <p>Champions container goes here</p>
+                        </div>
+                        <div className="w-full flex flex-col items-center gap-6">
+                            {cyberClash?.map((game) => (
+                                <GameContainer game={game} className="" />
+                            ))}
+                        </div>
+                    </div>
+                </div>
             )}
         </div>
     );
 };
 
 export default CyberClash;
+
+// //
+// <div className="flex justify-center items-center flex-col w-full h-[100vh] pb-10 ">
+//             {loading ? (
+//                 <Loading color={"text-slate-200"} />
+//             ) : error ? (
+//                 <Error error={error} />
+//             ) : (
+//                 <>
+//                     <div
+//                         id="container"
+//                         className="flex flex-col items-center border-8 rounded-xl border-base-100 bg-black/50 w-10/12 h-4/5 mt-20 pb-10"
+//                     >
+//                         <div
+//                             id="title"
+//                             className="relative -top-5 text-3xl text-[#FFD524] text-outline font-normal font-header  md:text-7xl md:-top-10"
+//                         >
+//                             LEADERBOARDS
+//                         </div>
+
+//                         <ChampionContatiner />
+
+//                         <div className="h-full w-full bg-green-200">
+//                             {cyberClash?.map((game) => (
+//                                 <GameContainer game={game} className="" />
+//                             ))}
+//                         </div>
+//                     </div>
+//                 </>
+//             )}
+//         </div>
