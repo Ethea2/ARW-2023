@@ -26,16 +26,16 @@ const CrownQuest = () => {
                 <Error error={error} />
             ) : (
                 <>
-                    <div className="header w-full h-1/5">
+                    <div className="header w-full h-[25%]">
                         <CrownHeader activeElite={activeElite} />
                     </div>
 
-                    <div className="body w-full h-3/5 flex flex-col lg:flex-row">
+                    <div className="body w-full h-[50%] flex flex-col lg:flex-row">
                         <CrownImage activeElite={activeElite} />
                         <CrownDetails activeElite={activeElite} />
                     </div>
 
-                    <div className="footer w-full h-1/5">
+                    <div className="footer w-full h-[25%]">
                         <CrownSelector
                             elites={elites}
                             handleSelect={handleSelect}

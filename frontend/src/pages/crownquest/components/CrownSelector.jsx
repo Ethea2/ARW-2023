@@ -19,7 +19,7 @@ const CrownSelector = ({ elites, handleSelect, selectedElite }) => {
                             <motion.img
                                 src={Crown}
                                 className="absolute bottom-12 left-10"
-                                initial={{ opacity: 0, scale: 1, rotate: 30  }}
+                                initial={{ opacity: 0, scale: 1, rotate: 30 }}
                                 animate={{ opacity: 1, scale: 0.5 }}
                                 exit={{ opacity: 0, scale: 1 }}
                                 transition={{ ease: "easeOut", duration: 0.3 }}
