@@ -1,40 +1,19 @@
 import React from "react";
 
 const VSContainer = ({ team1, team2 }) => {
-    const containerStyle = {
-        display: "flex",
-        alignItems: "center", 
-        justifyContent: "center", 
-        height: "100%",
-    };
-
-    const vsStyle = {
-        fontSize: "25px", 
-        color: "#FFD524",     
-        fontWeight: "normal",
-        fontFamily: "Bungee, sans-serif",
-        WebkitTextStroke: "1.5px black", 
-        textShadow: "1px 1px 4px rgba(0, 0, 0, 0.2)",
-    };
-
-    const teamStyle = {
-        backgroundColor: "rgba(217, 217, 217)", 
-        width:"90px",
-        padding: "0.5rem 1rem", 
-        borderRadius: "5px", 
-        margin: "0 10px", 
-        fontFamily: "Bungee, sans-serif",
-        textAlign: "center", 
-        
-    };
-
-    return (
-        <div className style={containerStyle}>
-            <span style={teamStyle}>{team1.org}</span>
-            <span style={vsStyle}>VS</span>
-            <span style={teamStyle}>{team2.org}</span>
-        </div>
-    );
-}
+  return (
+    <div className="flex items-center justify-center h-full">
+      <span className="bg-gray-300 w-90 p-2 rounded-lg m-2 font-bungee text-center">
+        {team1.org}
+      </span>
+      <span className=" text-[#FFD524] font-normal font-header text-header-shadow">
+        VS
+      </span>
+      <span className="bg-gray-300 w-90 p-2 rounded-lg m-2 font-bungee text-center">
+        {team2.org}
+      </span>
+    </div>
+  );
+};
 
 export default VSContainer;
