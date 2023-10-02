@@ -3,15 +3,15 @@ import VSContainer from "./VSContainer";
 
 const GameContainer = ({ game }) => {
     return (
-        <div className="flex md:grid justify-center flex-row items-center border-2 border-orange-500 rounded-xl w-11/12 dark-bg p-3 mt-6">
-            <div className="grid content-center w-1/4  aspect-square  mr-2.5">
+        <div className="w-full p-4 flex items-center gap-4 bg-[#451F4D]/50 border-2 border-[#FFD524] rounded-lg">
+            <div className="w-1/4">
                 <img
                     src={game.gamelogo}
                     alt={game.game}
-                    className="rounded-full"
+                    className="object-cover object-center rounded-full borde-white border-2"
                 />
             </div>
-            <div className="flex justify-center flex-col items-center w-3/4 ">
+            <div className="w-3/4 h-full">
                 {game.teams.map((vs) => (
                     <VSContainer team1={vs[0]} team2={vs[1]} />
                 ))}

@@ -1,19 +1,25 @@
 import React from "react";
 
 const VSContainer = ({ team1, team2 }) => {
-  return (
-    <div className="flex items-center justify-center h-full">
-      <span className="bg-gray-300 w-90 p-2 rounded-lg m-2 font-bungee text-center">
-        {team1.org}
-      </span>
-      <span className=" text-[#FFD524] font-normal font-header text-header-shadow">
-        VS
-      </span>
-      <span className="bg-gray-300 w-90 p-2 rounded-lg m-2 font-bungee text-center">
-        {team2.org}
-      </span>
-    </div>
-  );
+    return (
+        <div className="w-full flex justify-between items-center font-monda text-white my-[10px] ">
+            <h3 className="text-lg bg-black/30 p-2 rounded-lg border-2 border-[#FFD524]/80">
+                {team1.org}
+            </h3>
+            <h3 className="text-2xl text-[#FFD524] text-outline font-normal font-header">
+                VS
+            </h3>
+            <h3 className="text-lg bg-black/30 p-2 rounded-lg border-2 border-[#FFD524]/80">
+                {team2.org}
+            </h3>
+        </div>
+    );
 };
 
 export default VSContainer;
+
+{
+    /* <span className="">{team1.org}</span>
+<span className="">VS</span>
+<span className="">{team2.org}</span> */
+}
