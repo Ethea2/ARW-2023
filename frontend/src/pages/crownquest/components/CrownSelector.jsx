@@ -1,4 +1,5 @@
 import React from "react";
+import Crown from "../../../assets/Crown";
 
 const CrownSelector = ({ elites, handleSelect, selectedElite }) => {
     return (
@@ -12,14 +13,17 @@ const CrownSelector = ({ elites, handleSelect, selectedElite }) => {
                             : ""
                     }`}
                 >
-                    <img
-                        src={elite.orglogo}
-                        className={`border-2 border-white rounded-xl bg-black/50 hover:border-[#FFD524] transition ease-in ease-out ${
-                            selectedElite?.orgname === elite.orgname
-                                ? "border-[#FFD524]"
-                                : ""
-                        }`}
-                    />
+                    <div className="flex">
+                        <Crown />
+                        <img
+                            src={elite.orglogo}
+                            className={`border-2  rounded-xl bg-black/50 hover:border-[#FFD524] transition ease-in ease-out ${
+                                selectedElite?.orgname === elite.orgname
+                                    ? "border-[#FFD524]"
+                                    : "border-white"
+                            }`}
+                        />
+                    </div>
                 </div>
             ))}
         </div>
