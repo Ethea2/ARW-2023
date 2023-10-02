@@ -1,5 +1,5 @@
-import PageRouter from "../components/PageRouter"
-import Drawer from "../components/drawer/Drawer"
+import PageRouter from "../components/PageRouter";
+import Drawer from "../components/drawer/Drawer";
 
 export const Layout = () => {
     return (
@@ -7,7 +7,7 @@ export const Layout = () => {
             <Drawer />
             <PageRouter />
         </>
-    )
-}
+    );
+};
 
-export default Layout
+export default Layout;
