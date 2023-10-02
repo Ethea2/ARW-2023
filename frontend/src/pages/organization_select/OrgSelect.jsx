@@ -38,7 +38,7 @@ const OrgSelect = () => {
 
     return (
         <div
-            className="grid grid-flow-row w-full h-screen font-bit"
+            className="grid grid-flow-row w-full h-screen font-monda"
             style={{ gridTemplateRows: "1fr 1fr" }}
         >
             {orgs && <OrgShow org={org} error={error} />}
