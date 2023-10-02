@@ -7,6 +7,7 @@ module.exports = {
         extend: {
             fontFamily: {
                 'bit': ['"Press Start 2P"', 'cursive'],
+                'monda':['"Monda"', '"sans-serif"'],
                 'header': ['"Bungee"', 'cursive']
             },
             dropShadow: {

@@ -15,7 +15,7 @@ const Drawer = () => {
     useEffect(() => setOpen(false), [location]);
 
     return (
-        <nav className="drawer drawer-end absolute flex justify-end p-6 z-10 font-bit">
+        <nav className="drawer drawer-end absolute flex justify-end p-5 z-10 font-monda">
             <input
                 id="my-drawer"
                 type="checkbox"
@@ -34,36 +34,40 @@ const Drawer = () => {
                 </div>
             )}
             <div className="drawer-side">
-                <label onClick={handleToggle} className="drawer-overlay"></label>
-                <div className="menu min-h-full lg:bg-[#451F4D]/60 md:bg-[#451F4D]/60 bg-[#451F4D] flex flex-col justify-start items-center w-full md:w-1/3">
-                    <div className="p-4 text-3xl text-gray-500/50 flex justify-end items-center w-full">
-                        <AiOutlineClose onClick={handleToggle} className="cursor-pointer text-white text-2xl hover:scale-125 transition ease-in rounded-md"/>
+                <label
+                    onClick={handleToggle}
+                    className="drawer-overlay"
+                ></label>
+                {/* <ul className="menu p-4 min-h-full bg-base-200 md:bg-black/25 text-base-content flex justify-start items-center w-full md:w-1/3"> */}
+                <div className="menu p-4 min-h-full bg-base-200/80 text-base-content flex justify-start items-center w-full md:w-1/3">
+                    <div className="text-3xl text-white/80 flex justify-end items-start w-full px-3">
+                        <AiOutlineClose
+                            onClick={handleToggle}
+                            className="cursor-pointer hover:scale-125 transition ease-in rounded-md"
+                        />
                     </div>
-
-                    <div className="w-[90%] bg-inherit text-2xl flex justify-start items-center gap-5">
+                    <div className="h-full w-full text-3xl flex justify-center gap-5 items-center my-4">
                         <img src={arwLogo} width="30" height="30" />
-                        <p className="text-3xl">ARW 2023</p>
+                        <p className="font-black">ARW 2023</p>
                     </div>
-
-                    {/* <div className="divider"></div> */}
-                    <div className="w-[90%] flex flex-col gap-2">
+                    <div className="divider"></div>
                     {routes.map(
                         (route, index) =>
                             route.name && (
-                                <Link key={index} className="">
-                                    <div className="flex items-center gap-2 w-full text-md rounded-lg p-2 w-full hover:bg-black/30" to={route.path}>
-                                        <div className="nav-icon">
-                                            {route.icon}
-                                        </div>
-                                        <div className="nav-name">
-                                            {route.name}
-                                        </div>
-                                    </div>
-                                </Link>
-                                
+                                <li
+                                    key={index}
+                                    className="flex flex-col w-full my-2 items-center font-semibold"
+                                >
+                                    <Link
+                                        className="w-full text-2xl"
+                                        to={route.path}
+                                    >
+                                        {route.icon}
+                                        {route.name}
+                                    </Link>
+                                </li>
                             )
                     )}
-                    </div>
                 </div>
             </div>
         </nav>

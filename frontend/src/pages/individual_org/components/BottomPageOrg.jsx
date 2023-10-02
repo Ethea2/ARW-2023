@@ -1,7 +1,7 @@
 const BottomPageOrg = () => {
     return (
         <>
-            <div className="bottom-page-org bg-white w-full lg:w-[95%] xl:w-[90%] min-h-full flex flex-col justify-center items-center px-8 py-20 lg:px-20 xl:px-48">
+            <div className="bottom-page-org -z-20 bg-white w-full lg:w-[95%] xl:w-[90%] min-h-full flex flex-col justify-center items-center px-8 py-20 lg:px-20 xl:px-48">
                 <section className="org-main-pub bg-[#b92f2f] w-full lg:w-3/5 xl:w-4/5 rounded-xl text-center">
                     <img
                         src="https://scontent.fmnl33-1.fna.fbcdn.net/v/t39.30808-6/327588422_1218255715783046_8261840084813120595_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a2f6c7&_nc_eui2=AeEy1JZIXszSz1fwbrmUcBXiRFl2sH5pGSZEWXawfmkZJscmAkJ0BUkbHN8NQ5aYslI&_nc_ohc=cZa9Cwr6c5AAX8DBhJB&_nc_ht=scontent.fmnl33-1.fna&oh=00_AfBtzn287Yyun80fiZ_oyvvN9aXPXceBUYUO_1EU3S7FeA&oe=65175AA5"
