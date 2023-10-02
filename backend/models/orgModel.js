@@ -35,12 +35,36 @@ const orgSchema = new Schema({
         type: String,
         required: true
     },
-    num_imgs: {
-        type: Number,
+    imageURL: {
+        type: [String],
         required: true
     },
-    video: {
-        type: Boolean,
+    videoURL: {
+        type: String,
+        required: true
+    },
+    logoURL: {
+        type: String,
+        required: true
+    },
+    logo2URL: {
+        type: String,
+        required: true
+    },
+    memURL: {
+        type: String,
+        required: true
+    },
+    mainURL: {
+        type: String,
+        required: true
+    },
+    regURL: {
+        type: String,
+        required: true
+    },
+    bgURL: {
+        type: String,
         required: true
     },
 }, { collection: 'organizations' })
