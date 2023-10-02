@@ -26,69 +26,68 @@ const OrgShow = ({ org, error }) => {
             {noOrg ? (
                 <div>No Org Selected</div>
             ) : (
-                <div className="mt-10 p-5 border justify-center items-center  border-black">
-
-
-
-<div className="p-2 h-full w-full flex flex-col items-center">
-            <div className="w-[80%] mb-6">
-                <div className="bg-[#B60000] p-2 rounded-t-md flex justify-between">
-                    <div>
-                        <p
-                        className="w-full rounded-t-md w-full py-1 text-white" // Changed text color to black
-                        >
-                            ENGAGE
-                        </p>
-                    </div>
-                </div>
-
-                <div className="flex flex-wrap bg-[#C6C6C6] rounded-b-md md:flex-nowrap">
-
-                    <div>
-                        <div className="w-64 carousel rounded-box">
-                            <div className="carousel-item w-full">
-                                <img
-                                    src={org.logoURL}
-                                    className="w-full p-5 "
-                                    alt=""
-                                />
+                <div className="mt-10 p-5 justify-center items-center">
+                    {console.log(org)}
+                    <div className="p-2 h-full w-full flex flex-col items-center">
+                        <div className="w-[100%] mb-6">
+                            <div className="bg-[#B60000] p-4 rounded-t-md flex justify-between">
+                                <div>
+                                    <p
+                                        className="w-full rounded-t-md w-full  px-1 text-white" // Changed text color to black
+                                    >
+                                        {org.cluster}
+                                    </p>
+                                </div>
                             </div>
+
+                            <div className="flex flex-wrap flex-row bg-[#C6C6C6]  rounded-b-md md:flex-nowrap items-start justify-center">
+  <div className="p-5 gap-5 flex md:items-start justify-center">
+    <div className="w-64 carousel rounded-box">
+      <div className="carousel-item w-full">
+        <img
+          src={org.logoURL}
+          className="w-full px-5 md:p-5"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+
+  {/* Use flex classes to center the inner div */}
+  <div className="flex items-center justify-center">
+
+    <div className="p-5 gap-5">
+
+      <div className="flex flex-col mb-7 justify-center content-center text-center md:text-left">
+        <div>
+            <h1 className="px-5 text-2xl md:pt-10 pb-3 px-5 text-2xl">
+            {org.abbrv_name}
+            </h1>
+
+            <h1 className="px-5 text-xl md:pt-5 px-5 text-xs">
+            {org.comp_name}
+            </h1>
+
+        </div>
+      </div>
+
+
+      <div className="flex flex-col gap-5">
+
+      <button
+        className="btn btn-xs rounded-full sm:btn-sm md:btn-md lg:btn-lg bg-[#B60000]"
+        onClick={handleClick}
+      >
+        LEARN MORE
+      </button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
                         </div>
                     </div>
-                        
-                        <div className="gap-5 p-5">
-
-                        <div className="flex flex-col border border-black ">
-                            <h1 className="text-2xl">{org.abbrv_name}</h1>
-                        </div>
-
-                        <div className="flex flex-col gap-5 border border-black ">
-                            <p className="text-sm">{org.comp_name}</p>
-                        </div>
-
-                        <div className="flex flex-col border border-black ">
-                            <p className="px-5 text-xs">{org.desc}</p>
-                        </div>
-
-
-                        <button className="btn btn-xs rounded-full sm:btn-sm md:btn-md lg:btn-lg mb-5 bg-[#B60000]">LEARN MORE</button>
-
-
-                        
-                        </div>
-
-
-                        
-
-
-
-
-                </div>
-
-            </div>
-
-
-        </div>                    
                 </div>
             )}
         </div>
