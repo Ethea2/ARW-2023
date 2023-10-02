@@ -35,14 +35,6 @@ const orgSchema = new Schema({
         type: String,
         required: true
     },
-    num_imgs: {
-        type: Number,
-        required: true
-    },
-    video: {
-        type: Boolean,
-        required: true
-    },
     imageURL: {
         type: [String],
         required: true
@@ -55,6 +47,10 @@ const orgSchema = new Schema({
         type: String,
         required: true
     },
+    logo2URL: {
+        type: String,
+        required: true
+    },
     memURL: {
         type: String,
         required: true
@@ -64,6 +60,10 @@ const orgSchema = new Schema({
         required: true
     },
     regURL: {
+        type: String,
+        required: true
+    },
+    bgURL: {
         type: String,
         required: true
     },
