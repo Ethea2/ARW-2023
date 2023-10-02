@@ -33,6 +33,10 @@ module.exports = {
             'full': '9999px',
             'large': '12px',
             'faq-ans-custom': '44px',
+            },
+            backgroundImage: {
+                'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+            }
         },
         
     },

@@ -3,6 +3,15 @@ import React from 'react'
 function FAQDesign() {
   return (
     <>
+        {/* Black BG */}
+        <style>
+            {`
+                html{
+                    background-color:black !important;
+            `}
+        </style>
+
+
         {/* Question Mark */}
         <div className = "fixed w-44 right-0 top-20" style = {{zIndex:"-1", marginRight:"-1rem"}}>
             <img src = "FAQ/questionmark.svg"></img>

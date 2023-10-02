@@ -1,57 +1,27 @@
-import { AnimatePresence, motion } from "framer-motion";
-import { FiPlus } from "react-icons/fi";
-import React, { useState } from "react";
+import React, { useState } from 'react'
+import Answer from './Answer'
 
-const Question = ({ question, answer }) => {
-    const [open, setOpen] = useState(false);
+const Question = ({QA}) => {
+  const [isClicked, setIsClicked] = useState(false);
 
-    return (
-        <motion.div
-            animate={open ? "open" : "closed"}
-            className={`m-4 rounded-xl border-[1px] border-slate-700 px-4 transition-colors ${
-                open ? "bg-slate-800" : "bg-slate-900"
-            }`}
-        >
-            <button
-                onClick={() => setOpen((pv) => !pv)}
-                className="flex w-full items-center justify-between gap-4 py-4"
-            >
-                <span
-                    className={`text-left text-lg font-medium transition-colors ${
-                        open ? "text-slate-50" : "text-slate-400"
-                    }`}
-                >
-                    {question}
-                </span>
-                <motion.span
-                    variants={{
-                        open: {
-                            rotate: "45deg",
-                        },
-                        closed: {
-                            rotate: "0deg",
-                        },
-                    }}
-                >
-                    <FiPlus
-                        className={`text-2xl transition-colors ${
-                            open ? "text-slate-50" : "text-slate-400"
-                        }`}
-                    />
-                </motion.span>
-            </button>
-            <motion.div
-                initial={false}
-                animate={{
-                    height: open ? "fit-content" : "0px",
-                    marginBottom: open ? "24px" : "0px",
-                }}
-                className="overflow-hidden text-slate-400"
-            >
-                <p>{answer}</p>
-            </motion.div>
-        </motion.div>
-    );
-};
+  const toggleClicked = () => {
+    setIsClicked(!isClicked);
+    console.log('i have been clicked')
+    console.log(isClicked)
+  };
+
+  return (
+    <div className="collapse collapse-plus join-item">
+        <input type="checkbox" /* uncomment for radio : name = "test" */ onClick={toggleClicked} />
+        <div className= {`collapse-title text-md font-medium rounded-none bg-${isClicked ? 'primary' : 'neutral'}`} >
+        {/* <div className= "collapse-title text-md font-medium rounded-none bg-neutral" > */}
+            {QA.question}
+        </div>
+        <div className="collapse-content bg-white rounded-none"> 
+            <Answer answer = {QA.answer}/>
+        </div>
+    </div>
+  );
+}
 
 export default Question;
