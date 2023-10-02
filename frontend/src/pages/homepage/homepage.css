@@ -360,7 +360,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .layers::before,
 .layers::after {
-    content: "${name}";
+    content: attr(data-name);
     font-family: "Press Start 2P", cursive;
     position: absolute;
     width: 110%;

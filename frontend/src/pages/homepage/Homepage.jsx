@@ -96,6 +96,7 @@ const Homepage = () => {
                         >
                             <div
                                 className="glitch layers relative"
+                                data-name={name}
                                 style={{
                                     zIndex: 2,
                                 }}
