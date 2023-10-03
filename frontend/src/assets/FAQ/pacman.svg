@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="74.601 11.96 211.275 177.676" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="outer-glow-33" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-8" stdDeviation="2"/>
+      <feFlood flood-color="#fc8900" flood-opacity="1"/>
+      <feComposite in2="blur-8" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="outer-glow-32" filterUnits="userSpaceOnUse">
+      <feOffset dx="0" dy="0"/>
+      <feGaussianBlur result="blur-7" stdDeviation="1"/>
+      <feFlood flood-color="#ffab50" flood-opacity="1"/>
+      <feComposite in2="blur-7" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect class="cls-14" x="206.521" y="129.01" width="20.329" height="19.76" style="fill: none; filter: url('#outer-glow-33'); stroke: rgb(239, 90, 41); stroke-miterlimit: 10; stroke-width: 2px;" rx="9.88" ry="9.88" transform="matrix(0.9999999999999999, 0, 0, 0.9999999999999999, -7.105427357601002e-15, -7.105427357601002e-15)"/>
+  <rect class="cls-14" x="176.908" y="101.105" width="19.76" height="19.76" rx="9.23" ry="9.23" style="fill: none; filter: url('#outer-glow-33'); stroke: rgb(239, 90, 41); stroke-miterlimit: 10; stroke-width: 2px;" transform="matrix(0.9999999999999999, 0, 0, 0.9999999999999999, -7.105427357601002e-15, -7.105427357601002e-15)"/>
+  <g class="cls-1" style="filter: url('#outer-glow-32');" transform="matrix(0.9999999999999999, 0, 0, 0.9999999999999999, 87.7473220825195, 27.152215957641594)">
+    <path class="cls-13" d="M81.37,131C43.71,141.58,4.62,119.63-5.96,81.98-16.54,44.32,5.41,5.23,43.06-5.35c37.65-10.58,76.75,11.37,87.33,49.02L62.21,62.82l19.15,68.18Z" style="fill: none; stroke: rgb(245, 146, 29); stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 2px;"/>
+    <circle class="cls-13" cx="84.7" cy="23.2" r="12.58" style="fill: none; stroke: rgb(245, 146, 29); stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 2px;"/>
+  </g>
+</svg>
