@@ -191,59 +191,8 @@ const Homepage = () => {
                             </div>
                         </div>
 
-                        <div className="flex flex-row text-emerald-300 bg-gray-700 my-3 px-5 py-5 items-center">
-                            {/* Left Main Row */}
-                            <div className="flex flex-wrap px-2 py-2 w-full justify-between">
-                                {/* Main Column */}
-                                <div className="flex flex-col">
-                                    {/* Group 1*/}
-                                    <div className="flex flex-row py-2 w-1/2 h-20">
-                                        <div className="flex flex-col px-2 place-self-stretch">
-                                            <div className="">
-                                                {" "}
-                                                Crown Quest{" "}
-                                            </div>
-
-                                            <Link to="/crownquest">
-                                                <span class="video-game-button w-4 h-6"></span>
-                                            </Link>
-                                        </div>
-                                        <div className="flex flex-col px-2 ">
-                                            Cyber Clash
-                                            <Link to="/cyberclash">
-                                                <span class="video-game-button w-4 h-6">
-                                                </span>
-                                            </Link>
-                                        </div>
-                                    </div>
-                                    {/* Group 2*/}
-                                    <div className="flex flex-row py-2 w-1/2 h-20">
-                                        <div className="flex flex-col px-2">
-                                        <Link to="/faqs"><span class="video-game-button w-4 h-6"></span></Link>
-                                            FAQS
-                                        </div>
-                                        <div className="flex flex-col px-2">
-                                            <Link to="/about"><span class="video-game-button w-4 h-6"></span></Link>
-                                            About
-                                        </div>
-                                        <div className="flex flex-col px-2">
-                                            <Link to="/orgselect"><span class="video-game-button w-4 h-6"></span></Link>
-                                            Orgs
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {/* Right Main Row */}
-                            <div className="flex flex-row h-full px-2 py-2 ">
-                                <span class="video-game-button w-4 h-6">A</span>
-
-                                <span class="video-game-button w-4 h-6">B</span>
-                                
-                            </div>
-                        </div>
-
                         {/* Divider Line */}
-                        <hr className="border-t-2 border-emerald-300 w-16 my-4 items-center" />
+                        <div className="w-full h-1 bg-purple-800 rounded-xl" />
 
                         {/* Sponsors */}
                         <div className="block text-4xl text-emerald-300">
