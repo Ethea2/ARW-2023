@@ -9,7 +9,7 @@ const Question = ({ question, answer }) => {
         <motion.div
             animate={open ? "open" : "closed"}
             className={`m-4 rounded-xl border-[1px] border-slate-700 px-4 transition-colors ${
-                open ? "bg-slate-800" : "bg-slate-900"
+                open ? "bg-[#00FF88]/80" : "bg-[#00F6FF]/80"
             }`}
         >
             <button
@@ -18,7 +18,7 @@ const Question = ({ question, answer }) => {
             >
                 <span
                     className={`text-left text-lg font-medium transition-colors ${
-                        open ? "text-slate-50" : "text-slate-400"
+                        open ? "text-black" : "text-black"
                     }`}
                 >
                     {question}
