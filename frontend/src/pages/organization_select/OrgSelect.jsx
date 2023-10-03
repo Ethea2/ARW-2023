@@ -33,7 +33,7 @@ const OrgSelect = () => {
             <div className="h-screen w-full">
                 <Error error={error} textSize="text-5xl" />
             </div>
-        );
+        ); 
     }
 
     return (
