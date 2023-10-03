@@ -193,7 +193,7 @@ const Homepage = () => {
 
                         <div className="flex flex-row text-emerald-300 bg-gray-700 my-3 px-5 py-5 items-center">
                             {/* Left Main Row */}
-                            <div className="flex flex-wrap px-2 py-2">
+                            <div className="flex flex-wrap px-2 py-2 w-full justify-between">
                                 {/* Main Column */}
                                 <div className="flex flex-col">
                                     {/* Group 1*/}
@@ -234,10 +234,11 @@ const Homepage = () => {
                                 </div>
                             </div>
                             {/* Right Main Row */}
-                            <div className="flex flex-row flex-wrap px-2 py-2 h-9">
-                                <span class="video-game-button w-4 h-6"></span>
+                            <div className="flex flex-row h-full px-2 py-2 ">
+                                <span class="video-game-button w-4 h-6">A</span>
 
-                                <span class="video-game-button w-4 h-6"></span>
+                                <span class="video-game-button w-4 h-6">B</span>
+                                
                             </div>
                         </div>
 
