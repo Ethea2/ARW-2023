@@ -1,6 +1,9 @@
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./homepage.css";
 import { useEffect, useState } from "react";
+import routes from "../../components/routes";
+import TranslateWrapper from "./components/TranslateWrapper";
+import { LogoItemsBottom, LogoItemsTop } from "./components/LogoTest";
 const name = "ARW 2023";
 
 /* Temporary pictures (public domain) */
@@ -53,16 +56,14 @@ const Homepage = () => {
     const goToPreviousSlide = () => {
         if (activeSlide === 0) return setActiveSlide(carousel.length - 1);
         setActiveSlide(activeSlide - 1);
+        window.location.hash = `#photo-${activeSlide}`;
     };
 
     const goToNextSlide = () => {
         if (activeSlide === carousel.length - 1) return setActiveSlide(0);
         setActiveSlide(activeSlide + 1);
-    };
-
-    useEffect(() => {
         window.location.hash = `#photo-${activeSlide}`;
-    });
+    };
 
     const glowOuter = {
         boxShadow: "0px 0px 50px 10px rgb(107,33,168)",
@@ -87,10 +88,10 @@ const Homepage = () => {
                     backgroundSize: "cover",
                 }}
             />
-            <div className="w-full pt-[20vh] h-screen block items-center justify-center bg-black/50">
+            <div className="w-full h-screen block items-center justify-center bg-black/50">
                 {/* TOP PART*/}
 
-                <div className="flex justify-center w-full">
+                <div className="flex justify-center w-screen">
                     <div className="block ">
                         {/* Title part*/}
                         <div
@@ -192,17 +193,72 @@ const Homepage = () => {
                         </div>
 
                         {/* Divider Line */}
-                        <div className="w-full h-1 bg-purple-800 rounded-xl" />
-
+                        <div className="w-full flex justify-center items-center">
+                            <div
+                                className="grid grid-flow-row md:grid-cols-3 gap-5 justify-center font-monda p-2 md:w-full w-[90%] border-4 border-purple-800 min-h-1/5 rounded-md bg-black"
+                                style={{ ...glowOuter }}
+                            >
+                                {routes.map(
+                                    (route, index) =>
+                                        route.name && (
+                                            <div className="flex justify-center items-center">
+                                                <div className="group relative w-fit transition-transform duration-300 active:scale-95">
+                                                    <Link to={route.path}>
+                                                        <button className="relative z-10 rounded-lg bg-gradient-to-br from-indigo-500 to-fuchsia-500 p-0.5 duration-300 group-hover:scale-110">
+                                                            <span className="block rounded-md bg-slate-950 px-4 py-2 font-semibold text-slate-100 duration-300 group-hover:bg-slate-950/50 group-hover:text-slate-50 group-active:bg-slate-950/80">
+                                                                {route.name}
+                                                            </span>
+                                                        </button>
+                                                        <span className="pointer-events-none absolute -inset-4 z-0 transform-gpu rounded-2xl bg-gradient-to-br from-indigo-500 to-fuchsia-500 opacity-30 blur-xl transition-all duration-300 group-hover:opacity-90 group-active:opacity-50" />
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        )
+                                )}
+                            </div>
+                        </div>
                         {/* Sponsors */}
-                        <div className="block text-4xl text-emerald-300">
-                            Sponsors
+
+                        <div
+                            className="glitch layers relative mt-3"
+                            style={{
+                                zIndex: 2,
+                            }}
+                        >
+                            <span
+                                className="font-bit text-xl w-full flex justify-center items-center lg:text-4xl text-emerald-300"
+                                style={{
+                                    textShadow: "0px 0px 15px rgb(110,231,183)", //glow effect
+                                    filter: "drop-shadow(0 1px 2px rgb(94,234,212))",
+                                }}
+                            >
+                                SPONSORS
+                            </span>
                         </div>
                     </div>
                 </div>
-
-                {/* Divider Line */}
-                <hr className="border-t-2 border-emerald-300 w-16 my-4 items-center" />
+                <div className="flex w-full overflow-hidden">
+                    <TranslateWrapper>
+                        <LogoItemsTop />
+                    </TranslateWrapper>
+                    <TranslateWrapper>
+                        <LogoItemsTop />
+                    </TranslateWrapper>
+                    <TranslateWrapper>
+                        <LogoItemsTop />
+                    </TranslateWrapper>
+                </div>
+                <div className="flex overflow-hidden mt-4">
+                    <TranslateWrapper reverse>
+                        <LogoItemsBottom />
+                    </TranslateWrapper>
+                    <TranslateWrapper reverse>
+                        <LogoItemsBottom />
+                    </TranslateWrapper>
+                    <TranslateWrapper reverse>
+                        <LogoItemsBottom />
+                    </TranslateWrapper>
+                </div>
             </div>
         </>
     );
