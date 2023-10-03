@@ -33,37 +33,17 @@ app.use("/api/clash", clashRoutes);
 
 // connect to db
 
-if (process.env.NODE_ENV.trim() === String(1)) {
-    console.log(process.env.NODE_ENV);
-    mongoose
-        .connect(process.env.MONGO_URI)
-        .then(() => {
-            
-            // listen for request
-            app.listen(process.env.PORT, () => {
-                console.log(
-                    "connected to db and listening on port (PRODUCTION)",
-                    process.env.PORT
-                );
-            });
-        })
-        .catch((error) => {
-            console.log(error);
+mongoose
+    .connect(process.env.MONGO_URI_DEV)
+    .then(() => {
+        // listen for request
+        app.listen(process.env.PORT, () => {
+            console.log(
+                "connected to db and listening on port (production)",
+                process.env.PORT
+            );
         });
-} else {
-    console.log(process.env.NODE_ENV);
-    mongoose
-        .connect(process.env.MONGO_URI_DEV)
-        .then(() => {
-            // listen for request
-            app.listen(process.env.PORT, () => {
-                console.log(
-                    "connected to db and listening on port (DEVELOPMENT)",
-                    process.env.PORT
-                );
-            });
-        })
-        .catch((error) => {
-            console.log(error);
-        });
-}
+    })
+    .catch((error) => {
+        console.log(error);
+    });
