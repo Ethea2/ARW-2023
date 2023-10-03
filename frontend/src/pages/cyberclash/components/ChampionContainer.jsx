@@ -2,31 +2,24 @@ import React from "react";
 
 const ChampionContatiner = ({ cyberClash }) => {
     return (
-        <div className="w-full">
-            
-            <div className="relative top-7 right-8 md:left-4 z-10 w-full ">
-                <div className="text-white font-header md:text-5xl md:-top-10  md:text-black text-outline-champion text-end">
+        <div className="w-full flex flex-col items-center justify-center">
+            <div className="relative top-[18px] bg-[#FFD524] rounded-lg px-8 rotate-[-2deg]">
+                <h3 className="text-xl lg:text-3xl text-[#FF2955]/80 font-header">
                     Champions
-                </div>
-                
+                </h3>
             </div>
 
-            <div className="relative flex justify-evenly  border-2 border-[#FFD524] rounded-xl w-full bg-[#451F4D]/50 w-full">
-                <div className="grid content-center w-1/4 aspect-square  items-center justify-center">
+            <div className="w-full md:w-[80%] lg:w-[60%] flex px-4 py-8 lg:px-10 pb-4 gap-2 border-2 border-[#FFD524] rounded-xl bg-black/30 items-center ">
+                <div className="w-1/4 p-2 aspect-square flex justify-center">
                     <img
                         src="../crown.png"
                         alt="CrownImg"
-                        className="rounded-full w-30 p-4"
+                        className="rounded-full object-cover objcet-center"
                     />
                 </div>
 
-                <div className="w-full flex items-center justify-center">
-                    <div className="bg-zinc-300 rounded-md w-5/6 h-1/2 flex items-center justify-center">
-                        <div className="font-monda font-bold text-black">
-                            NameDisplay
-                        </div>
-                    </div>
-                    
+                <div className="w-full h-full bg-black/50 border-2 border-[#FFD524] rounded-md flex items-center justify-center p-2">
+                    <h1 className="font-monda font-bold text-white">?</h1>
                 </div>
             </div>
         </div>

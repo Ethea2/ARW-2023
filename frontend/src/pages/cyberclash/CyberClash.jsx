@@ -15,16 +15,15 @@ const CyberClash = () => {
             ) : error ? (
                 <Error error={error} />
             ) : (
-                <div className="w-[90%] h-full flex flex-col justify-center items-center m-auto">
+                <div className="w-[90%] md:w-[60%] h-full flex flex-col justify-center items-center m-auto md:my-auto lg:my-auto">
                     <div className="relative top-5">
-                        <h1 className="text-3xl text-[#FFD524] text-outline font-normal font-header">
+                        <h1 className="text-2xl md:text-4xl lg:text-5xl text-[#FFD524] text-outline-leaderboard font-normal font-header">
                             LEADERBOARD
                         </h1>
                     </div>
                     <div className="flex flex-col items-center bg-black/50 w-full py-8 px-6 border-[#451F4D] border-4 gap-8 ">
-                       
                         <ChampionContatiner />
-                        
+
                         <div className="w-full flex flex-col items-center gap-6">
                             {cyberClash?.map((game) => (
                                 <GameContainer game={game} className="" />
