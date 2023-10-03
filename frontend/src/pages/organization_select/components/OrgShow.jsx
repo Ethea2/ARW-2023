@@ -15,7 +15,7 @@ const OrgShow = ({ org, error }) => {
     }, [org]);
 
     const handleClick = () => {
-        nav("/" + org._id);
+        nav("/" + org.abbrv_name);
     };
     if (error) {
         return <Error error={error} />;
