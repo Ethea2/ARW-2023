@@ -24,7 +24,7 @@ const routes = [
         name: "Organizations",
         icon: <VscOrganization />,
     },
-    { path: "/:orgId", element: <IndivOrgPage /> },
+    { path: "/:orgname", element: <IndivOrgPage /> },
     {
         path: "/crownquest",
         element: <CrownQuest />,
