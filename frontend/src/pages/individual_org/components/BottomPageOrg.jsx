@@ -1,7 +1,7 @@
 const BottomPageOrg = ({ org }) => {
     return (
         <>
-            <div className="bottom-page-org bg-white w-full lg:w-[95%] xl:w-[88%] min-h-full flex flex-col justify-center items-center px-8 py-20 lg:px-20 xl:px-48">
+            <div className="bottom-page-org lg:w-[95%] xl:w-[88%] min-h-full flex flex-col justify-center items-center px-8 py-20 lg:px-20 xl:px-48">
                 <section className="org-main-pub bg-[#b92f2f] w-full lg:w-1/5 xl:w-2/5 rounded-xl text-center">
                     <img
                         src= {org.mainURL}
