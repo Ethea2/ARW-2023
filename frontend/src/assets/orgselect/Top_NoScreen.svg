@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1101.03 498.22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-2 {
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        fill: #ff3e75;
+      }
+
+      .cls-3 {
+        opacity: .65;
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-6 {
+        fill: #6d091a;
+      }
+
+      .cls-7 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-8 {
+        fill: #00032d;
+        opacity: .5;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="502.1" y1="586.75" x2="618.89" y2="-75.58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a8022a"/>
+      <stop offset="1" stop-color="#cc2b4e"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="208.19" y1="162.93" x2="242.83" y2="-33.56" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="208.19" y1="162.93" x2="243.1" y2="-35.07" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b51c48"/>
+      <stop offset="1" stop-color="#ed2b55"/>
+    </linearGradient>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="3"/>
+      <feGaussianBlur result="blur" stdDeviation="0"/>
+      <feFlood flood-color="#000" flood-opacity=".46"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <path class="cls-4" d="m1081.03,0H468.43l-72,72h-166.91l-48,48H0v372h1101.03V20c0-11.05-8.95-20-20-20Z"/>
+      <path class="cls-4" d="m229.51,72h166.91L468.43,0H20C8.95,0,0,8.95,0,20v100h181.51l48-48Z"/>
+      <path class="cls-7" d="m1081.03,6.22H468.43l-72,72h-166.91l-48,48H0v372h1101.03V26.22c0-11.05-8.95-20-20-20Z"/>
+      <path class="cls-1" d="m229.51,78.22h166.91L468.43,6.22H20C8.95,6.22,0,15.17,0,26.22v100h181.51l48-48Z"/>
+      <path class="cls-8" d="m234.62,87.63h163.8L479.84,6.22H22.73C11.68,6.22,0,26.58,0,37.63v98h184.62l50-48Z"/>
+      <g class="cls-3">
+        <path class="cls-6" d="m1061.62,15.94c10.23,0,18.55,8.32,18.55,18.55v454.01H20.86V15.94h1040.76m0-.72H20.14v474h1060.74V34.49c0-10.64-8.63-19.27-19.27-19.27h0Z"/>
+      </g>
+      <path class="cls-5" d="m229.51,78.22h166.91L468.43,6.22H20C8.95,6.22,0,15.17,0,26.22v100h181.51l48-48Z"/>
+      <image class="cls-2" width="1114" height="1376" transform="translate(236.56 110.22) rotate(15.53) scale(.21)" xlink:href="D:\Libraries\Downloads\Arcade Sticker copy.png"/>
+    </g>
+  </g>
+</svg>
