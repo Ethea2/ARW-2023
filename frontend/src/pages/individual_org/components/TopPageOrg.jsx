@@ -68,7 +68,7 @@ const TopPageOrg = ({ org }) => {
                         ))}
                     </div>
                 </div>
-                <div className="bg-base-200/50 flex flex-col justify-center items-center">
+                <div className="bg-base-200/75 flex flex-col justify-center items-center">
                     <section className="org-initials text-3xl lg:text-4xl xl:text-5xl font-header font-bold text-[#FF7D7D] mt-8 drop-shadow-md">
                         {org.abbrv_name}
                     </section>
