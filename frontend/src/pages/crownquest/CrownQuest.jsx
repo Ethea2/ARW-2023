@@ -30,12 +30,12 @@ const CrownQuest = () => {
                         <CrownHeader activeElite={activeElite} />
                     </div>
 
-                    <div className="body w-full h-[50%] flex flex-col lg:flex-row">
+                    <div className="body w-full h-[75%] flex flex-col lg:flex-row">
                         <CrownImage activeElite={activeElite} />
                         <CrownDetails activeElite={activeElite} />
                     </div>
 
-                    <div className="footer w-full h-[25%]">
+                    <div className="footer w-full h-[30%]">
                         <CrownSelector
                             elites={elites}
                             handleSelect={handleSelect}

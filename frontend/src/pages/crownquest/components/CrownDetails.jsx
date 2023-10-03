@@ -8,7 +8,7 @@ const CrownDetails = ({ activeElite }) => {
       visible: { opacity: 1, transition: { duration: 1 } },
     };
     return (
-        <div className="w-full min-h-1/3 lg:w-1/2 lg:h-full flex m-auto items-center bg-black/50 lg:bg-inherit">
+        <div className="w-full min-h-1/3 lg:w-1/2 lg:h-full flex m-auto items-center bg-black/50 lg:bg-inherit font-monda lg:font-semibold">
             {activeElite ? (
                 <motion.p
                     initial="hidden"
