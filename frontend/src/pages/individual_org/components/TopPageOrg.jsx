@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-
 const TopPageOrg = ({ org }) => {
     const [activeSlide, setActiveSlide] = useState(1);
-    
 
     const goToPreviousSlide = () => {
         if (activeSlide === 1) return setActiveSlide(org?.imageURL.length);
@@ -70,19 +68,21 @@ const TopPageOrg = ({ org }) => {
                         ))}
                     </div>
                 </div>
-                <section className="org-initials text-3xl lg:text-4xl xl:text-5xl font-header font-bold text-[#FF7D7D] mt-8 drop-shadow-md">
-                    {org.abbrv_name}
-                </section>
-                <section className="org-bio text-lg lg:text-xl xl:text-2xl font-monda font-normal text-center text-[#FF7D7D] drop-shadow-md">
-                    {org.tagline}
-                </section>
-                <section className="org-logo flex justify-center object-contain items-center w-[90%] py-3 lg:py-7">
-                    <img
-                        src={org.logoURL}
-                        alt="org-logo"
-                        className="w-1/4 object-contain rounded-lg"
-                    />
-                </section>
+                <div className="bg-base-200/50 flex flex-col justify-center items-center">
+                    <section className="org-initials text-3xl lg:text-4xl xl:text-5xl font-header font-bold text-[#FF7D7D] mt-8 drop-shadow-md">
+                        {org.abbrv_name}
+                    </section>
+                    <section className="org-bio text-lg lg:text-xl xl:text-2xl font-monda font-normal text-center text-[#FF7D7D] drop-shadow-md">
+                        {org.tagline}
+                    </section>
+                    <section className="org-logo flex justify-center object-contain items-center w-[90%] py-3 lg:py-7">
+                        <img
+                            src={org.logoURL}
+                            alt="org-logo"
+                            className="w-1/4 object-contain rounded-lg"
+                        />
+                    </section>
+                </div>
             </div>
         </>
     );
