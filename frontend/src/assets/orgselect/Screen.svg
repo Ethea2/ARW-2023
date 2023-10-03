@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 426.24 452.86">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #570c0c;
+      }
+
+      .cls-3 {
+        fill: #e5e5e5;
+        stroke: rgba(0, 0, 0, .2);
+        stroke-miterlimit: 10;
+        stroke-width: .72px;
+      }
+
+      .cls-4 {
+        filter: url(#luminosity-invert);
+      }
+
+      .cls-5 {
+        isolation: isolate;
+      }
+
+      .cls-5, .cls-6, .cls-7 {
+        fill: none;
+      }
+
+      .cls-6 {
+        mask: url(#mask);
+      }
+
+      .cls-7 {
+        mix-blend-mode: multiply;
+        opacity: .3;
+      }
+
+      .cls-8 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <filter id="luminosity-invert" x="14.8" y="40.28" width="393" height="394" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feColorMatrix result="cm" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+    </filter>
+    <mask id="mask" x="14.8" y="40.28" width="393" height="394" maskUnits="userSpaceOnUse">
+      <g class="cls-4">
+        <image width="393" height="394" transform="translate(14.8 40.28)" xlink:href="data:image/png;base64,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"/>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient" x1="393.8" y1="30.29" x2="385.8" y2="16.43" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a8022a"/>
+      <stop offset="1" stop-color="#cc2b4e"/>
+    </linearGradient>
+  </defs>
+  <g class="cls-5">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="Layer_1-2" data-name="Layer 1">
+        <g>
+          <g>
+            <rect x="4.36" y="4.36" width="421.88" height="448.5" rx="3.73" ry="3.73"/>
+            <rect class="cls-3" x=".36" y=".36" width="421.88" height="448.5" rx="3.73" ry="3.73"/>
+            <g>
+              <rect class="cls-1" x="17.37" y="42.68" width="387.85" height="389.11" rx="1.51" ry="1.51"/>
+              <g class="cls-6">
+                <g class="cls-7">
+                  <rect x="17.37" y="42.68" width="387.85" height="389.11" rx="1.51" ry="1.51"/>
+                </g>
+              </g>
+            </g>
+          </g>
+          <circle class="cls-2" cx="390.8" cy="24.36" r="8"/>
+          <circle class="cls-8" cx="389.8" cy="23.36" r="8"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

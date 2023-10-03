@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1101.03 498.22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #570c0c;
+      }
+
+      .cls-4 {
+        fill: #e5e5e5;
+        stroke: rgba(0, 0, 0, .2);
+        stroke-miterlimit: 10;
+        stroke-width: .72px;
+      }
+
+      .cls-5 {
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 {
+        fill: none;
+      }
+
+      .cls-10 {
+        filter: url(#luminosity-invert);
+      }
+
+      .cls-6 {
+        isolation: isolate;
+      }
+
+      .cls-11 {
+        fill: #ff3e75;
+      }
+
+      .cls-7 {
+        mask: url(#mask);
+      }
+
+      .cls-8 {
+        mix-blend-mode: multiply;
+        opacity: .3;
+      }
+
+      .cls-9 {
+        opacity: .65;
+      }
+
+      .cls-12 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-13 {
+        fill: #6d091a;
+      }
+
+      .cls-14 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-15 {
+        fill: #00032d;
+        opacity: .5;
+      }
+
+      .cls-16 {
+        fill: url(#linear-gradient-4);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="502.1" y1="586.75" x2="618.89" y2="-75.58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a8022a"/>
+      <stop offset="1" stop-color="#cc2b4e"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="208.19" y1="162.93" x2="242.83" y2="-33.56" xlink:href="#linear-gradient"/>
+    <linearGradient id="linear-gradient-3" x1="208.19" y1="162.93" x2="243.1" y2="-35.07" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b51c48"/>
+      <stop offset="1" stop-color="#ed2b55"/>
+    </linearGradient>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="3"/>
+      <feGaussianBlur result="blur" stdDeviation="0"/>
+      <feFlood flood-color="#000" flood-opacity=".46"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="luminosity-invert" x="481.51" y="67.72" width="393" height="394" color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse">
+      <feColorMatrix result="cm" values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/>
+    </filter>
+    <mask id="mask" x="481.51" y="67.72" width="393" height="394" maskUnits="userSpaceOnUse">
+      <g class="cls-10">
+        <image width="393" height="394" transform="translate(481.51 67.72)" xlink:href="data:image/png;base64,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"/>
+      </g>
+    </mask>
+    <linearGradient id="linear-gradient-4" x1="860.51" y1="58.15" x2="852.51" y2="44.29" xlink:href="#linear-gradient"/>
+  </defs>
+  <g class="cls-6">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="Layer_1-2" data-name="Layer 1">
+        <g>
+          <path class="cls-11" d="m1081.03,0H468.43l-72,72h-166.91l-48,48H0v372h1101.03V20c0-11.05-8.95-20-20-20Z"/>
+          <path class="cls-11" d="m229.51,72h166.91L468.43,0H20C8.95,0,0,8.95,0,20v100h181.51l48-48Z"/>
+          <path class="cls-14" d="m1081.03,6.22H468.43l-72,72h-166.91l-48,48H0v372h1101.03V26.22c0-11.05-8.95-20-20-20Z"/>
+          <path class="cls-1" d="m229.51,78.22h166.91L468.43,6.22H20C8.95,6.22,0,15.17,0,26.22v100h181.51l48-48Z"/>
+          <path class="cls-15" d="m234.62,87.63h163.8L479.84,6.22H22.73C11.68,6.22,0,26.58,0,37.63v98h184.62l50-48Z"/>
+          <g class="cls-9">
+            <path class="cls-13" d="m1061.62,15.94c10.23,0,18.55,8.32,18.55,18.55v454.01H20.86V15.94h1040.76m0-.72H20.14v474h1060.74V34.49c0-10.64-8.63-19.27-19.27-19.27h0Z"/>
+          </g>
+          <path class="cls-12" d="m229.51,78.22h166.91L468.43,6.22H20C8.95,6.22,0,15.17,0,26.22v100h181.51l48-48Z"/>
+          <image class="cls-5" width="1114" height="1376" transform="translate(236.56 110.22) rotate(15.53) scale(.21)" xlink:href="D:\Libraries\Downloads\Arcade Sticker copy.png"/>
+        </g>
+        <g>
+          <g>
+            <rect x="471.07" y="32.22" width="421.88" height="448.5" rx="3.73" ry="3.73"/>
+            <rect class="cls-4" x="467.07" y="28.22" width="421.88" height="448.5" rx="3.73" ry="3.73"/>
+            <g>
+              <rect class="cls-2" x="484.09" y="70.54" width="387.85" height="389.11" rx="1.51" ry="1.51"/>
+              <g class="cls-7">
+                <g class="cls-8">
+                  <rect x="484.09" y="70.54" width="387.85" height="389.11" rx="1.51" ry="1.51"/>
+                </g>
+              </g>
+            </g>
+          </g>
+          <circle class="cls-3" cx="857.51" cy="52.22" r="8"/>
+          <circle class="cls-16" cx="856.51" cy="51.22" r="8"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

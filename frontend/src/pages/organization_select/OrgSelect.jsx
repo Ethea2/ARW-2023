@@ -8,21 +8,15 @@ import Error from "../../components/error/Error";
 const OrgSelect = () => {
     const { data: orgs, loading, error } = useFetch("/api/orgs/");
     const { data: clusters } = useFetch("/api/clusters/");
-    const [org, setOrg] = useState(null);
-    const [orgCluster, setOrgCluster] = useState(null);
+    const [org, setOrg] = useState(null)
+    const [orgCluster, setOrgCluster] = useState(null)
 
     const handleOrgSelect = (event, id) => {
         event.preventDefault();
-        console.log(orgs);
         orgs.map((org) => {
             if (org._id === id) setOrg(org);
         });
     };
-    useEffect(() => {
-        if (org) {
-            console.log(org);
-        }
-    }, [org]);
     const handleClusterSelect = (event, cluster) => {
         event.preventDefault();
         setOrgCluster(orgs.filter((org) => org.cluster === cluster));
@@ -37,19 +31,9 @@ const OrgSelect = () => {
     }
 
     return (
-        <div
-            className="grid grid-flow-row w-full h-screen font-monda"
-            style={{ gridTemplateRows: "1fr 1fr" }}
-        >
+        <div className="grid grid-flow-row w-full h-screen font-bit" style={{ gridTemplateRows: '1fr 1fr' }}>
             {orgs && <OrgShow org={org} error={error} />}
-            {orgs && (
-                <OrgSelector
-                    orgs={orgCluster}
-                    clusters={clusters}
-                    handleOrgSelect={handleOrgSelect}
-                    handleClusterSelect={handleClusterSelect}
-                />
-            )}
+            {orgs && <OrgSelector orgCluster={orgCluster} clusters={clusters} handleOrgSelect={handleOrgSelect} handleClusterSelect={handleClusterSelect} orgs={orgs}/>}
             {loading && <Loading />}
         </div>
     );
