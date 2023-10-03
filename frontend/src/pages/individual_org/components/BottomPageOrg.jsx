@@ -49,12 +49,20 @@ const BottomPageOrg = ({ org }) => {
                         </a>
                     </span>
                 </section>
-                <section className="org-membership-pub bg-[#b92f2f] w-full xl:w-2/5 rounded-xl text-center mt-10">
+                <section className="org-membership-pub w-full xl:w-2/5 rounded-xl text-center mt-10">
                     <img
                         src={org.memURL}
                         alt="membership-pub"
                         className="w-full  object-contain rounded-xl"
                     />
+                    <a
+                            href={org.regURL}
+                            className="w-full"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            <button className="btn btn-neutral mt-5 font-monda">Register Here</button>
+                    </a>
                 </section>
             </div>
         </>
