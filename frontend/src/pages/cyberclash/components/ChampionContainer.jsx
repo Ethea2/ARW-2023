@@ -5,14 +5,14 @@ const ChampionContatiner = ({ cyberClash }) => {
         <div className="w-full">
             
             <div className="relative top-7 right-8 md:left-4 z-10 w-full ">
-                <div className="text-white font-header md:text-5xl md:-top-10  md: text-black text-outline-champion text-end">
+                <div className="text-white font-header md:text-5xl md:-top-10  md:text-black text-outline-champion text-end">
                     Champions
                 </div>
                 
             </div>
 
-            <div className="relative flex justify-evenly border-2 border-2 border-[#FFD524] rounded-xl w-full bg-[#451F4D]/50 w-full">
-                <div className="grid content-center w-1/4 aspect-square flex items-center justify-center">
+            <div className="relative flex justify-evenly  border-2 border-[#FFD524] rounded-xl w-full bg-[#451F4D]/50 w-full">
+                <div className="grid content-center w-1/4 aspect-square  items-center justify-center">
                     <img
                         src="../crown.png"
                         alt="CrownImg"

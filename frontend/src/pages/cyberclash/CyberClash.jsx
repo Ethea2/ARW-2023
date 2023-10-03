@@ -9,7 +9,7 @@ const CyberClash = () => {
     const { data: cyberClash, loading, error } = useFetch("/api/clash");
 
     return (
-        <div class="w-full h-[100vh] flex">
+        <div class="w-full min-h-screen flex">
             {loading ? (
                 <Loading color={"text-slate-200"} />
             ) : error ? (
