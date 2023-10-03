@@ -34,7 +34,7 @@ app.use("/api/clash", clashRoutes);
 // connect to db
 
 mongoose
-    .connect(process.env.MONGO_URI_DEV)
+    .connect(process.env.MONGO_URI)
     .then(() => {
         // listen for request
         app.listen(process.env.PORT, () => {
