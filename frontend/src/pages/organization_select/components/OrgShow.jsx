@@ -40,7 +40,7 @@ const OrgShow = ({ org, error }) => {
                                 </div>
                             </div>
 
-                            <div className="flex flex-wrap flex-row bg-[#C6C6C6]  rounded-b-md md:flex-nowrap items-start justify-center">
+                            <div className="flex flex-wrap flex-row bg-[#C6C6C6] rounded-b-md md:flex-nowrap items-start justify-center">
   <div className="p-5 gap-5 flex md:items-start justify-center">
     <div className="w-64 carousel rounded-box">
       <div className="carousel-item w-full">
@@ -60,11 +60,11 @@ const OrgShow = ({ org, error }) => {
 
       <div className="flex flex-col mb-7 justify-center content-center text-center md:text-left">
         <div>
-            <h1 className="px-5 text-2xl md:pt-10 px-5 text-2xl">
+            <h1 className="px-5 text-4xl md:pt-10 px-5 text-2xl" style={{ fontFamily: 'tomorrow', fontWeight: 'bold' }}>
             {org.abbrv_name}
             </h1>
 
-            <h1 className="px-5 text-xl md:pt-5 px-5 text-xs">
+            <h1 className="px-5 text-2xl md:text-xl pt-3 px-5" style={{ fontFamily: 'tomorrow' }}>
             {org.comp_name}
             </h1>
 
