@@ -90,7 +90,7 @@ const TopPageOrg = ({ org }) => {
                         <img
                             src={org.logoURL}
                             alt="org-logo"
-                            className="w-1/4 object-contain rounded-lg"
+                            className="w-3/5 object-contain rounded-lg"
                         />
                     </section>
                 </div>
