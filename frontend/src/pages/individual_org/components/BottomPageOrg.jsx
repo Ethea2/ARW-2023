@@ -69,20 +69,20 @@ const BottomPageOrg = ({ org }) => {
                             alt="membership-pub"
                             className="w-full object-contain rounded-lg border-2 border-[#242640] object-scale-down xl:h-[60%] xl:w-[60%] lg:h-[100%] lg:w-[100%]  "
                         />
-                        <section className="org-button flex flex-col ">
+                        <section className="org-button flex flex-row gap-2">
                             <a
                                 href={org.regURL}
                                 className="w-full"
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <button className="btn btn-neutral mt-10 px-18 p-11 pt-5 font-monda text-white text-lg text-center h-center drop-shadow-md">
+                                <button className="btn btn-neutral mt-10  font-monda text-white text-lg text-center h-center drop-shadow-md lg:px-5 lg:p-5 lg:pt-1 xl:px-18 xl:p-11 xl:pt-5">
                                     REGISTER
                                 </button>
                             </a>
                             <a
                                         href={org.fb_link}
-                                        className="btn btn-neutral mt-10 px-18 p-11 pt-5   h-center drop-shadow-md "
+                                        className="btn btn-neutral mt-10  h-center drop-shadow-md lg:px-5 lg:p-5 lg:pt-5  xl:px-10 xl:p-8 "
                                         target="_blank"
                                         rel="noreferrer"
                                     >
