@@ -40,13 +40,13 @@ const AboutUs = () => {
             <div className="mx-8">
               {/* Central Committee Project Heads */}
               <div className="mt-10">
-                <span>ARW 2023</span>
-                <br></br>
-                <span>CENTRAL COMMITTEE</span>
+              <span className="font-bold font-bit text-4xl sm:text-6xl lg:text-9xl text-primary">ARW 2023</span>
+              <br />
+              <span className="font-bold font-bit text-4xl sm:text-2xl lg:text-6xl text-neutral">CENTRAL COMMITTEE</span>
                 <div>
-                  <span>PROJECT HEADS</span>
-                  <br></br>
-                  <div className="grid grid-cols-2 gap-5 md:grid-cols-4 md:gap-10 md:mx-20">
+                  <span className="font-bold font-bit text-4xl sm:text-2xl lg:text-6xl text-neutral">PROJECT HEADS</span>
+                  <br />
+                  <div className="mt-10 grid grid-cols-2 gap-5 md:grid-cols-4 md:gap-10 md:mx-20">
                     <Card name="Person 1" imgURL={phead1}></Card>
                     <Card name="Person 2" imgURL={phead1}></Card>
                     <Card name="Person 3" imgURL={phead1}></Card>
@@ -56,7 +56,7 @@ const AboutUs = () => {
               </div>
               {/* Executive Committee */}
               <div className="mt-10">
-                <span>EXECUTIVE COMMITTEE</span>
+                <span className="font-bold font-bit text-4xl sm:text-2xl lg:text-6xl text-neutral">EXECUTIVE COMMITTEE</span>
                 <br></br>
                 <div className="p-5 border-8 rounded-3xl border-red-900 border-solid bg-white">
                   PLACEHOLDER
@@ -74,12 +74,12 @@ const AboutUs = () => {
           <img className="relative mb-20" src={invaders} alt="Logo" />
 
           <div className="relative z-10 p-8 text-center">
-            <span className="font-bold font-bit text-4xl sm:text-6xl lg:text-9xl">
-              About Us
+            <span className="font-bold font-bit text-4xl sm:text-6xl lg:text-9xl text-primary">
+              ABOUT US
             </span>
             <div className="mt-4">
               <button className="btn btn-primary" onClick={handlePlayClick}>
-                Play
+                PLAY
               </button>
             </div>
           </div>

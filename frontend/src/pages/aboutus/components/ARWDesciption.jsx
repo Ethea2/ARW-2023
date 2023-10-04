@@ -6,7 +6,7 @@ import containerBottom from "../../../assets/aboutus/bit-container-bottom.svg";
 const arwDesciption = () => {
   return (
     <div>
-      <span className="text-5xl">ABOUT US</span>
+      <span className="font-bold font-bit text-4xl sm:text-6xl lg:text-9xl text-primary">ABOUT US</span>
 
       {/* Top portion of container */}
       <img className="w-screen mt-10" src={containerTop} alt="bit-top" />
