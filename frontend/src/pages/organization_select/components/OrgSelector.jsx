@@ -72,7 +72,7 @@ const OrgSelector = ({
                         ))}
                     </div>
                     {/*Orgs*/}
-                    <div className="flex flex-col pt-4 px-4">
+                    <div className="flex flex-col pt-4 px-4 max-h-[408px] overflow-y-auto">
                         {filtered
                             ? filtered.map((org) => (
                                   <button
