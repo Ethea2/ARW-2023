@@ -7,14 +7,21 @@ const TopPageOrg = ({ org }) => {
     const goToPreviousSlide = () => {
         if (activeSlide === 1) return setActiveSlide(org?.imageURL.length);
         setActiveSlide(activeSlide - 1);
-        window.location.hash = `#item${activeSlide}`;
     };
 
     const goToNextSlide = () => {
         if (activeSlide === org?.imageURL.length) return setActiveSlide(1);
         setActiveSlide(activeSlide + 1);
-        window.location.hash = `#item${activeSlide}`;
     };
+
+    useEffect(() => {
+        if (window.location.hash === "") {
+            window.location.hash = `#item${activeSlide}`;
+            window.scrollTo(0, 0);
+        } 
+        else
+            window.location.hash = `#item${activeSlide}`;
+    }, [activeSlide]);
 
     return (
         <>
