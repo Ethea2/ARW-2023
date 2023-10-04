@@ -69,16 +69,37 @@ const BottomPageOrg = ({ org }) => {
                             alt="membership-pub"
                             className="w-full object-contain rounded-lg border-2 border-[#242640] object-scale-down xl:h-[60%] xl:w-[60%] lg:h-[100%] lg:w-[100%]  "
                         />
-                        <a
-                            href={org.regURL}
-                            className="w-full"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <button className="btn btn-neutral mt-10 px-18 p-11 pt-5 font-monda text-white text-lg text-center h-center drop-shadow-md">
-                                REGISTER
-                            </button>
-                        </a>
+                        <section className="org-button flex flex-col ">
+                            <a
+                                href={org.regURL}
+                                className="w-full"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <button className="btn btn-neutral mt-10 px-18 p-11 pt-5 font-monda text-white text-lg text-center h-center drop-shadow-md">
+                                    REGISTER
+                                </button>
+                            </a>
+                            <a
+                                        href={org.fb_link}
+                                        className="btn btn-neutral mt-10 px-18 p-11 pt-5   h-center drop-shadow-md "
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            className="h-6 w-6"
+                                            fill="white"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path
+                                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
+                                            />
+                                        </svg>
+                            </a>
+                        </section>
+                        
+
                     </section>
                 </div>
             </div>
