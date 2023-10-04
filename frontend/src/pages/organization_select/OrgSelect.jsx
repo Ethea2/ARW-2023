@@ -32,7 +32,7 @@ const OrgSelect = () => {
 
     return (
         <div className="grid grid-flow-row w-full h-screen font-bit" style={{ gridTemplateRows: '1fr 1fr' }}>
-            {orgs && <OrgShow org={org} error={error} />}
+            {orgs && <OrgShow org={org} initial={orgs[3]} error={error} />}
             {orgs && <OrgSelector orgCluster={orgCluster} clusters={clusters} handleOrgSelect={handleOrgSelect} handleClusterSelect={handleClusterSelect} orgs={orgs}/>}
             {loading && <Loading />}
         </div>
