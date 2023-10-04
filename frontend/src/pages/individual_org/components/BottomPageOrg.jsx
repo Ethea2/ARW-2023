@@ -63,11 +63,11 @@ const BottomPageOrg = ({ org }) => {
                         </section>
                     </div>
 
-                    <section className="org-membership-pub mx-5 text-center mt-10">
+                    <section className="org-membership-pub mx-5 text-center flex flex-col  items-center mt-10">
                         <img
                             src={org.memURL}
                             alt="membership-pub"
-                            className="w-full object-contain rounded-lg border-2 border-[#242640]"
+                            className="w-full object-contain rounded-lg border-2 border-[#242640] object-scale-down lg:h-[60%] lg:w-[60%] "
                         />
                         <a
                             href={org.regURL}
