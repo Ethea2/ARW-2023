@@ -67,7 +67,7 @@ const BottomPageOrg = ({ org }) => {
                         <img
                             src={org.memURL}
                             alt="membership-pub"
-                            className="w-full object-contain rounded-lg border-2 border-[#242640] object-scale-down lg:h-[60%] lg:w-[60%] "
+                            className="w-full object-contain rounded-lg border-2 border-[#242640] object-scale-down xl:h-[60%] xl:w-[60%] lg:h-[100%] lg:w-[100%]  "
                         />
                         <a
                             href={org.regURL}
