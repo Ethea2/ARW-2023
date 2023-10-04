@@ -15,6 +15,7 @@ const TopPageOrg = ({ org }) => {
         setActiveSlide(activeSlide + 1);
         window.location.hash = `#item${activeSlide}`;
     };
+
     return (
         <>
             <div
@@ -39,6 +40,7 @@ const TopPageOrg = ({ org }) => {
                 <div className="relative">
                     {/* Left navigation button inside the carousel */}
                     <button
+                        type="button"
                         className="bg-black/50 btn btn-circle left-button absolute top-1/2 left-4 transform -translate-y-1/2 text-white text-2xl z-10"
                         onClick={goToPreviousSlide}
                     >
@@ -47,6 +49,7 @@ const TopPageOrg = ({ org }) => {
 
                     {/* Right navigation button inside the carousel */}
                     <button
+                        type="button"
                         className="bg-black/50 right-button btn btn-circle absolute top-1/2 right-4 transform -translate-y-1/2 text-white text-2xl z-10"
                         onClick={goToNextSlide}
                     >
@@ -68,11 +71,12 @@ const TopPageOrg = ({ org }) => {
                         ))}
                     </div>
                 </div>
-                <div className="bg-base-200/75 flex flex-col justify-center items-center">
-                    <section className="org-initials text-3xl lg:text-4xl xl:text-5xl font-header font-bold text-[#FF7D7D] mt-8 drop-shadow-md">
+
+                <div className="bg-[#242640] bg-opacity-80 flex flex-col justify-center items-center rounded-lg drop-shadow-lg md:mt-10 lg:mt-5">
+                    <section className="org-initials text-3xl lg:text-4xl xl:text-5xl font-header font-bold text-[#F6F5F5] mt-8 drop-shadow-md">
                         {org.abbrv_name}
                     </section>
-                    <section className="org-bio text-lg lg:text-xl xl:text-2xl font-monda font-normal text-center text-[#FF7D7D] drop-shadow-md">
+                    <section className="org-bio text-lg lg:text-xl xl:text-2xl font-monda font-normal text-center text-[#F6F5F5] drop-shadow-md">
                         {org.tagline}
                     </section>
                     <section className="org-logo flex justify-center object-contain items-center w-[90%] py-3 lg:py-7">
