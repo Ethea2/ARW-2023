@@ -19,14 +19,14 @@ const clashSchema = new Schema({
         Type: String
     },
     teams: {
-        Type: [[{
+        Type: [{
           org: {
             type: String
           },
           orglogo: {
             type: String
           },
-        }]]
+        }]
     },
 }, { collection: 'cyber-clash' })
 
