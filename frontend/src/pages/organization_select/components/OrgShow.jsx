@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import useFetch from "../../../hooks/useFetch";
 import Loading from "../../../components/loading/Loading";
 import Error from "../../../components/error/Error";
-import Top from "../../../assets/orgselect/Top_NoScreen.svg"
+import Top from "../../../assets/orgselect/Top.png"
 import { useNavigate } from "react-router-dom";
 
 const OrgShow = ({ org, error, initial }) => {
@@ -23,7 +23,7 @@ const OrgShow = ({ org, error, initial }) => {
     }
 
     return (
-        <div className="w-full h-full min-h-[505px] flex justify-center items-center p-2 bg-no-repeat bg-cover bg-top xl:bg-contain l:top-large top-small">
+        <div className="w-full h-full min-h-[503px] flex justify-center items-center p-2 bg-no-repeat bg-cover bg-top sm:bg-cover xl:bg-contain top">
                 <div className="flex p-5 justify-center items-center w-[100%] h-[100%] ">
                     {console.log(org)}
                     <div className="p-2 h-full w-[80%] flex flex-col items-center justify-center sm:w-[70%] md:w-[70%] lg:w-[70%] xl:w-[50%]">
