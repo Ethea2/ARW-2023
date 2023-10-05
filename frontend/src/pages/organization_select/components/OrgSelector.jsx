@@ -1,3 +1,4 @@
+import '../css/OrgSelect.css'
 import icon_map from "../../../assets/icon-map.png";
 import { useEffect, useState } from "react";
 import { FaSearch } from "react-icons/fa";
@@ -36,22 +37,19 @@ const OrgSelector = ({
     }, [search]);
 
     return (
-        <div className="p-2 h-full bg-[#FF4444] w-full flex flex-col items-center">
-            <h1 className="text-xl font-bold text-center">
-                Select your organization
-            </h1>
+        <div className="p-2 h-full min-h-[524px] w-full flex flex-col items-center bg-no-repeat bg-cover bg-top xl:bg-contain l:large-bg small-bg">
             {/*Pokedex-Like Table*/}
-            <div className="w-[80%] mb-6">
+            <div className="xl:w-[28%] xl:ml-[15%] md:w-[80%] mb-6 w-[80%] mt-2">
                 <div className="bg-[#B60000] p-2 rounded-t-md flex justify-between">
                     <div>
                         <img src={icon_map} alt="" className=" w-8 h-8" />
                     </div>
-                    <div className=" flex items-center w-[80%] md:w-[40%]">
+                    <div className="flex items-center w-[80%] md:w-[40%]">
                         <input
                             type="text"
                             value={search}
                             onChange={(e) => setSearch(e.target.value)}
-                            className="w-full rounded-md px-4 py-1 outline-none focus:ring focus:border-blue-300 text-black" // Changed text color to black
+                            className="w-full rounded-md px-4 py-1 outline-none focus:ring focus:border-blue-300 text-black text-[.7rem]" // Changed text color to black
                             placeholder="Search..."
                         />
                         <FaSearch className="text-black/50 bg-white text-xl relative right-8" />
@@ -72,7 +70,7 @@ const OrgSelector = ({
                         ))}
                     </div>
                     {/*Orgs*/}
-                    <div className="flex flex-col pt-4 px-4">
+                    <div className="flex flex-col pt-4 px-4 max-h-[408px] overflow-y-auto">
                         {filtered
                             ? filtered.map((org) => (
                                   <button
