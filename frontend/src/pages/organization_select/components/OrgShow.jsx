@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 const OrgShow = ({ org, error, initial }) => {
     const [noOrg, setNoOrg] = useState(true);
     const nav = useNavigate();
-
+  
     useEffect(() => {
         if (org !== null) {
             setNoOrg(false);
