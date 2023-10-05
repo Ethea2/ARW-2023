@@ -1,24 +1,28 @@
 import React from "react";
-import VSContainer from "./VSContainer";
+
 import TeamContainer from "./TeamContainer";
 
 const GameContainer = ({ game }) => {
     return (
-        <div className="w-full md:w-[80%] lg:w-[60%] lg:px-10 p-4 flex justify-center items-center gap-4 bg-[#451F4D]/50 border-2 border-[#FFD524] rounded-lg">
-            <div className="w-1/4">
-                <img
-                    src={game.gamelogo}
-                    alt={game.game}
-                    className="object-cover object-center rounded-full border-white border-2"
-                />
+        <div className="w-full md:w-[70%] lg:w-[60%] lg:px-10 p-4 flex flex-col justify-center items-center gap-4 bg-[#451F4D]/50 border-2 border-[#FFD524] rounded-lg">
+            <div className="flex flex-col justify-center items-center px-4">
+                <div className="flex justify-center gap-4 items-center p-4">
+                    <img
+                        src={game.gamelogo}
+                        alt={game.game}
+                        className="w-1/4 md:w-[15%] object-cover object-center rounded-full "
+                    />
+
+                    <h2 className="font-monda font-bold text-xl text-white">
+                        {game.game}
+                    </h2>
+                </div>
+                <div className="divider"></div>
             </div>
-            {/* <div className="w-3/4 h-full md:flex md:flex-col md:items-center">
-                {game.teams.map((vs) => (
-                    <VSContainer team1={vs[0]} team2={vs[1]} />
+            <div className="flex gap-4 flex-wrap justify-center items-center">
+                {game.teams.map((team) => (
+                    <TeamContainer team={team.org} image={team.orglogo} />
                 ))}
-            </div> */}
-            <div className="teams">
-                <TeamContainer />
             </div>
         </div>
     );
