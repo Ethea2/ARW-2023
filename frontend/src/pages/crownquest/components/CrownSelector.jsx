@@ -4,18 +4,18 @@ import { motion } from "framer-motion";
 
 const CrownSelector = ({ elites, handleSelect, selectedElite }) => {
     return (
-        <div className="w-full h-full flex items-center gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth touch-pan-x before:shrink-0 after:shrink-0 after:w-[3vw]">
+        <div className="w-full h-full flex lg:justify-center items-center gap-6 overflow-x-auto snap-x snap-mandatory scroll-smooth touch-pan-x before:shrink-0 after:shrink-0 after:w-[3vw]">
             {elites?.map((elite) => (
                 <div
                     onClick={(e) => handleSelect(e, elite)}
                     className={`avatar w-24 shrink-0 snap-center hover:scale-105 transition ease-in ${
-                        selectedElite?.orgname === elite.orgname
+                        selectedElite?._id === elite._id
                             ? "scale-105"
                             : ""
                     }`}
                 >
                     <div className="flex">
-                        {selectedElite?.orgname === elite.orgname && (
+                        {selectedElite?._id === elite._id && (
                             <motion.img
                                 src={Crown}
                                 className="absolute bottom-12 left-10"
@@ -28,8 +28,8 @@ const CrownSelector = ({ elites, handleSelect, selectedElite }) => {
 
                         <img
                             src={elite.orglogo}
-                            className={`border-2  rounded-xl bg-black/50 hover:border-[#FFD524] transition ease-in ease-out ${
-                                selectedElite?.orgname === elite.orgname
+                            className={`border-2  rounded-xl bg-black/50 hover:border-[#FFD524] transition ease-i ${
+                                selectedElite?._id === elite._id
                                     ? "border-[#FFD524]"
                                     : "border-white"
                             }`}

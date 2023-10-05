@@ -18,14 +18,14 @@ const CrownHeader = ({ activeElite }) => {
                         key={
                             activeElite
                                 ? activeElite.orgname
-                                : "Select an Elite!"
+                                : "Choose Your Elite!"
                         }
                         className="overflow-hidden"
                     >
                         {activeElite.orgname}
                     </motion.p>
                 ) : (
-                    "Select an Elite!"
+                    "Choose Your Elite!"
                 )}
             </div>
             <div className="font-header text-xs lg:text-sm text-center text-[#FFF]">

@@ -6,6 +6,7 @@ import CrownImage from "./components/CrownImage";
 import CrownSelector from "./components/CrownSelector";
 import Loading from "../../components/loading/Loading";
 import Error from "../../components/error/Error";
+import LockedDetails from "./components/LockedDetails";
 
 const CrownQuest = () => {
     const { data: elites, loading, error } = useFetch("/api/crown/");
@@ -32,7 +33,8 @@ const CrownQuest = () => {
 
                     <div className="body w-full h-[75%] flex flex-col lg:flex-row">
                         <CrownImage activeElite={activeElite} />
-                        <CrownDetails activeElite={activeElite} />
+                        {/* <CrownDetails activeElite={activeElite} /> */}
+                        <LockedDetails activeElite={activeElite}/>
                     </div>
 
                     <div className="footer w-full h-[30%]">
