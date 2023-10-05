@@ -13,11 +13,11 @@ const FAQs = () => {
             <div className="w-full min-h-screen font-monda">
                 <FAQDesign />
                 <div className="flex flex-col items-center justify-center">
-                    <div className="w-full w-1/4 p-10 bg-black/50 flex flex-col gap-4 justify-center items-center">
-                        <div className="w-full bg-green-200 flex justify-center">
+                    <div className="w-full p-10 flex flex-col gap-4 justify-center items-center">
+                        <div className="w-full flex justify-center">
                             <h1 className="text-5xl font-bit">FAQs</h1>
                         </div>
-                        <div className="w-full">
+                        <div className="justify-center items-center">
                             <Tabs
                                 selected={selected}
                                 setSelected={setSelected}
