@@ -18,7 +18,7 @@ const TopPageOrg = ({ org }) => {
         if (window.location.hash === "") {
             window.location.hash = `#item${activeSlide}`;
             window.scrollTo(0, 0);
-        } 
+        }
         else
             window.location.hash = `#item${activeSlide}`;
     }, [activeSlide]);
@@ -90,7 +90,7 @@ const TopPageOrg = ({ org }) => {
                         <img
                             src={org.logoURL}
                             alt="org-logo"
-                            className="w-3/5 object-contain rounded-lg"
+                            className="w-1/2 object-contain rounded-lg"
                         />
                     </section>
                 </div>
