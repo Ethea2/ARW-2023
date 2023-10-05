@@ -7,15 +7,18 @@ import Error from "../../components/error/Error";
 
 const CyberClash = () => {
     const { data: cyberClash, loading, error } = useFetch("/api/clash");
+    useEffect(() => {
+        console.log(cyberClash);
+    }, [cyberClash]);
 
     return (
-        <div class="w-full min-h-screen flex">
+        <div class="w-full min-h-screen flex py-10 px-6">
             {loading ? (
                 <Loading color={"text-slate-200"} />
             ) : error ? (
                 <Error error={error} />
             ) : (
-                <div className="w-[90%] md:w-[60%] h-full flex flex-col justify-center items-center m-auto md:my-auto lg:my-auto">
+                <div className="w-[90%] md:w-[90%] h-full flex flex-col justify-center items-center m-auto md:my-auto lg:my-auto">
                     <div className="relative top-5">
                         <h1 className="text-2xl md:text-4xl lg:text-5xl text-[#FFD524] text-outline-leaderboard font-normal font-header">
                             LEADERBOARD
@@ -26,7 +29,17 @@ const CyberClash = () => {
 
                         <div className="w-full flex flex-col items-center gap-6">
                             {cyberClash?.map((game) => (
-                                <GameContainer game={game} className="" />
+                                <>
+                                    {game.showgame ? (
+                                        <GameContainer
+                                            game={game}
+                                            className=""
+                                            showteams={game.showteams}
+                                        />
+                                    ) : (
+                                        ""
+                                    )}
+                                </>
                             ))}
                         </div>
                     </div>
