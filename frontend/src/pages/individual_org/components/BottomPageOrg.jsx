@@ -1,3 +1,5 @@
+import { FiFacebook } from "react-icons/fi";
+
 const BottomPageOrg = ({ org }) => {
     return (
         <>
@@ -21,25 +23,6 @@ const BottomPageOrg = ({ org }) => {
                                 <span className="text-md xl:text-lg font-monda font-normal text-[#242640]">
                                     {org.desc}
                                 </span>
-                            </section>
-                            <section className="org-facebook-link flex flex-col ml-auto justify-center pt-5 xl:pt-10">
-                                <a
-                                    href={org.fb_link}
-                                    className="w-full"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="h-6 w-6"
-                                        fill="#F83F65"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path
-                                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
-                                        />
-                                    </svg>
-                                </a>
                             </section>
                         </div>
                     </div>
@@ -67,7 +50,7 @@ const BottomPageOrg = ({ org }) => {
                         <img
                             src={org.memURL}
                             alt="membership-pub"
-                            className="w-full object-contain rounded-lg border-2 border-[#242640] object-scale-down xl:h-[60%] xl:w-[60%] lg:h-[100%] lg:w-[100%]  "
+                            className="w-full h-full object-contain rounded-lg border-2 border-[#242640] xl:h-[60%] xl:w-[60%] lg:h-[100%] lg:w-[100%]"
                         />
                         <section className="org-button flex flex-row gap-2">
                             <a
@@ -76,26 +59,17 @@ const BottomPageOrg = ({ org }) => {
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <button className="btn btn-neutral mt-10  font-monda text-white text-lg text-center h-center drop-shadow-md lg:px-5 lg:p-5 lg:pt-1 xl:px-18 xl:p-11 xl:pt-5">
+                                <button className="btn btn-neutral mt-10  font-monda text-white text-lg text-center h-center drop-shadow-md lg:px-5 lg:p-5 lg:pt-2 xl:px-18 xl:p-11 xl:pt-5">
                                     REGISTER
                                 </button>
                             </a>
                             <a
                                         href={org.fb_link}
-                                        className="btn btn-neutral mt-10  h-center drop-shadow-md lg:px-5 lg:p-5 lg:pt-5  xl:px-10 xl:p-8 "
+                                        className="btn btn-neutral mt-10  h-center drop-shadow-md lg:px-5 lg:p-5 lg:pt-2 xl:px-18 xl:p-11 xl:pt-5"
                                         target="_blank"
                                         rel="noreferrer"
                                     >
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            className="h-6 w-6"
-                                            fill="white"
-                                            viewBox="0 0 24 24"
-                                        >
-                                            <path
-                                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
-                                            />
-                                        </svg>
+                                        <FiFacebook className="text-3xl text-white" />
                             </a>
                         </section>
                         
