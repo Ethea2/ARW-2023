@@ -37,7 +37,7 @@ const OrgSelector = ({
     }, [search]);
 
     return (
-        <div className="p-2 h-full min-h-[524px] w-full flex flex-col items-center bg-no-repeat bg-cover bg-top xl:bg-contain l:large-bg small-bg bg-[#FF4444]">
+        <div className="p-2 h-full min-h-[524px] w-full flex flex-col items-center bg-no-repeat bg-cover bg-top xl:bg-contain l:large-bg small-bg">
             {/*Pokedex-Like Table*/}
             <div className="xl:w-[28%] xl:ml-[15%] md:w-[80%] mb-6 w-[80%] mt-2">
                 <div className="bg-[#B60000] p-2 rounded-t-md flex justify-between">
