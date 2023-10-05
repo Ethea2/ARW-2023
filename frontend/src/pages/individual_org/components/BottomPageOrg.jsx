@@ -1,3 +1,5 @@
+import { FiFacebook } from "react-icons/fi";
+
 const BottomPageOrg = ({ org }) => {
     return (
         <>
@@ -22,31 +24,12 @@ const BottomPageOrg = ({ org }) => {
                                     {org.desc}
                                 </span>
                             </section>
-                            <section className="org-facebook-link flex flex-col ml-auto justify-center pt-5 xl:pt-10">
-                                <a
-                                    href={org.fb_link}
-                                    className="w-full"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        className="h-6 w-6"
-                                        fill="#F83F65"
-                                        viewBox="0 0 24 24"
-                                    >
-                                        <path
-                                            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"
-                                        />
-                                    </svg>
-                                </a>
-                            </section>
                         </div>
                     </div>
 
                     <div className="vision-mission grid grid-cols-1 lg:grid-cols-2 content-start mt-14">
                         <section className="mission flex flex-col content-start lg:pr-10 pb-10">
-                            <span className="text-3xl lg:text-3xl xl:text-4xl font-header text-center font-bold text-black mb-10">
+                            <span className="text-3xl lg:text-3xl xl:text-4xl font-header text-center lg:text-left font-bold text-black mb-10">
                                 Mission
                             </span>
                             <span className="text-md xl:text-lg font-monda font-normal text-black text-justify">
@@ -54,7 +37,7 @@ const BottomPageOrg = ({ org }) => {
                             </span>
                         </section>
                         <section className="vision flex flex-col lg:pl-10 pb-10">
-                            <span className="text-3xl lg:text-3xl xl:text-4xl font-header text-center font-bold text-black mb-10">
+                            <span className="text-3xl lg:text-3xl xl:text-4xl font-header text-center lg:text-left font-bold text-black mb-10">
                                 Vision
                             </span>
                             <span className="text-md xl:text-lg font-monda font-normal text-black text-justify">
@@ -63,22 +46,34 @@ const BottomPageOrg = ({ org }) => {
                         </section>
                     </div>
 
-                    <section className="org-membership-pub mx-5 text-center mt-10">
+                    <section className="org-membership-pub mx-5 text-center flex flex-col  items-center mt-10">
                         <img
                             src={org.memURL}
                             alt="membership-pub"
-                            className="w-full object-contain rounded-lg border-2 border-[#242640]"
+                            className="w-full h-full object-contain rounded-lg border-2 border-[#242640] xl:h-[60%] xl:w-[60%] lg:h-[100%] lg:w-[100%]"
                         />
-                        <a
-                            href={org.regURL}
-                            className="w-full"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <button className="btn btn-neutral mt-10 px-18 p-11 pt-5 font-monda text-white text-lg text-center h-center drop-shadow-md">
-                                REGISTER
-                            </button>
-                        </a>
+                        <section className="org-button flex flex-row gap-2">
+                            <a
+                                href={org.regURL}
+                                className="w-full"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <button className="btn btn-neutral mt-10  font-monda text-white text-lg text-center h-center drop-shadow-md lg:px-5 lg:p-5 lg:pt-2 xl:px-18 xl:p-11 xl:pt-5">
+                                    REGISTER
+                                </button>
+                            </a>
+                            <a
+                                        href={org.fb_link}
+                                        className="btn btn-neutral mt-10  h-center drop-shadow-md lg:px-5 lg:p-5 lg:pt-2 xl:px-18 xl:p-11 xl:pt-5"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        <FiFacebook className="text-3xl text-white" />
+                            </a>
+                        </section>
+                        
+
                     </section>
                 </div>
             </div>

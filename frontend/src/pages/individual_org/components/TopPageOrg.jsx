@@ -1,28 +1,31 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
+import { Carousel } from "react-daisyui";
 
 const TopPageOrg = ({ org }) => {
     const [activeSlide, setActiveSlide] = useState(1);
 
     const goToPreviousSlide = () => {
-        if (activeSlide === 1) return setActiveSlide(org?.imageURL.length);
-        setActiveSlide(activeSlide - 1);
+        console.log(activeSlide);
+        setActiveSlide((prevSlide) => {
+            if (prevSlide === 1) {
+                return org?.imageURL.length;
+            } else {
+                return prevSlide - 1;
+            }
+        });
     };
 
     const goToNextSlide = () => {
-        if (activeSlide === org?.imageURL.length) return setActiveSlide(1);
-        setActiveSlide(activeSlide + 1);
+        console.log(activeSlide);
+        setActiveSlide((prevSlide) => {
+            if (prevSlide === org?.imageURL.length) {
+                return 1;
+            } else {
+                return prevSlide + 1;
+            }
+        });
     };
-
-    useEffect(() => {
-        if (window.location.hash === "") {
-            window.location.hash = `#item${activeSlide}`;
-            window.scrollTo(0, 0);
-        } 
-        else
-            window.location.hash = `#item${activeSlide}`;
-    }, [activeSlide]);
-
     return (
         <>
             <div
@@ -46,37 +49,41 @@ const TopPageOrg = ({ org }) => {
 
                 <div className="relative">
                     {/* Left navigation button inside the carousel */}
-                    <button
-                        type="button"
+                    <a
+                        href={`#item${
+                            activeSlide === 1
+                                ? org?.imageURL.length
+                                : activeSlide
+                        }`}
                         className="bg-black/50 btn btn-circle left-button absolute top-1/2 left-4 transform -translate-y-1/2 text-white text-2xl z-10"
                         onClick={goToPreviousSlide}
                     >
                         ❮
-                    </button>
+                    </a>
 
                     {/* Right navigation button inside the carousel */}
-                    <button
-                        type="button"
+                    <a
+                        href={`#item${
+                            activeSlide === org?.imageURL.length
+                                ? 1
+                                : activeSlide
+                        }`}
                         className="bg-black/50 right-button btn btn-circle absolute top-1/2 right-4 transform -translate-y-1/2 text-white text-2xl z-10"
                         onClick={goToNextSlide}
                     >
                         ❯
-                    </button>
+                    </a>
 
-                    <div className="carousel w-full lg:py-7">
+                    <Carousel className="w-full lg:py-7">
                         {org.imageURL.map((image, index) => (
-                            <div
+                            <Carousel.Item
+                                key={index + 1}
                                 id={"item" + (index + 1)}
                                 className="carousel-item w-full rounded-lg"
-                            >
-                                <img
-                                    src={image}
-                                    alt={"item-" + (index + 1)}
-                                    className="w-full h-full object-contain rounded-lg drop-shadow-lg"
-                                />
-                            </div>
+                                src={image}
+                            ></Carousel.Item>
                         ))}
-                    </div>
+                    </Carousel>
                 </div>
 
                 <div className="bg-[#242640] bg-opacity-80 flex flex-col justify-center items-center rounded-lg drop-shadow-lg md:mt-10 lg:mt-5">
@@ -90,7 +97,7 @@ const TopPageOrg = ({ org }) => {
                         <img
                             src={org.logoURL}
                             alt="org-logo"
-                            className="w-1/4 object-contain rounded-lg"
+                            className="w-1/2 object-contain rounded-lg"
                         />
                     </section>
                 </div>
