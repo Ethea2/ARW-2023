@@ -29,7 +29,7 @@ const BottomPageOrg = ({ org }) => {
 
                     <div className="vision-mission grid grid-cols-1 lg:grid-cols-2 content-start mt-14">
                         <section className="mission flex flex-col content-start lg:pr-10 pb-10">
-                            <span className="text-3xl lg:text-3xl xl:text-4xl font-header text-center font-bold text-black mb-10">
+                            <span className="text-3xl lg:text-3xl xl:text-4xl font-header text-center lg:text-left font-bold text-black mb-10">
                                 Mission
                             </span>
                             <span className="text-md xl:text-lg font-monda font-normal text-black text-justify">
@@ -37,7 +37,7 @@ const BottomPageOrg = ({ org }) => {
                             </span>
                         </section>
                         <section className="vision flex flex-col lg:pl-10 pb-10">
-                            <span className="text-3xl lg:text-3xl xl:text-4xl font-header text-center font-bold text-black mb-10">
+                            <span className="text-3xl lg:text-3xl xl:text-4xl font-header text-center lg:text-left font-bold text-black mb-10">
                                 Vision
                             </span>
                             <span className="text-md xl:text-lg font-monda font-normal text-black text-justify">
