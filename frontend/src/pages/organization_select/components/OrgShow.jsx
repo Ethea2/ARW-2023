@@ -27,7 +27,7 @@ const OrgShow = ({ org, error, initial }) => {
                 <div className="flex p-5 justify-center items-center w-[100%] h-[100%] ">
                     {console.log(org)}
                     <div className="p-2 h-full w-[80%] flex flex-col items-center justify-center sm:w-[70%] md:w-[70%] lg:w-[70%] xl:w-[50%] 2xl:w-[40%]">
-                        <div className="mt-12 sm:w-[100%] xl:w-[90%] xl:mt-0">
+                        <div className="mt-10 sm:w-[100%] xl:w-[90%] xl:mt-0">
                             <div className="bg-[#B60000] p-2 rounded-t-md flex justify-between sm:p-5">
                                 <div>
                                     <p
@@ -38,7 +38,7 @@ const OrgShow = ({ org, error, initial }) => {
                                 </div>
                             </div>
 
-                            <div className="flex flex-wrap flex-row bg-[#C6C6C6] rounded-b-md md:flex-nowrap sm:w-[100%] items-start justify-center">
+                            <div className="flex flex-wrap flex-row bg-[#C6C6C6] shadow-2xl rounded-b-md md:flex-nowrap sm:w-[100%] items-start justify-center">
   <div className="p-5 flex md:items-start justify-center sm:p-0">
     <div className="w-44 carousel rounded-box sm:w-48 md:w-64">
       <div className="carousel-item w-full">
