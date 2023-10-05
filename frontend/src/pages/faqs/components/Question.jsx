@@ -9,7 +9,7 @@ const Question = ({ question, answer }) => {
         <motion.div
             animate={open ? "open" : "closed"}
             className={`m-4 rounded-xl border-[1px] border-slate-700 px-4 transition-colors ${
-                open ? "bg-[#00FF88]/80" : "bg-[#00F6FF]/80"
+                open ? "bg-[#ff2955]/80" : "bg-pink-400/80"
             }`}
         >
             <button
@@ -17,8 +17,8 @@ const Question = ({ question, answer }) => {
                 className="flex w-full items-center justify-between gap-4 py-4"
             >
                 <span
-                    className={`text-left text-lg font-medium transition-colors ${
-                        open ? "text-black" : "text-black"
+                    className={`font-bold text-left text-lg transition-colors ${
+                        open ? "text-white" : "text-black"
                     }`}
                 >
                     {question}
@@ -46,7 +46,7 @@ const Question = ({ question, answer }) => {
                     height: open ? "fit-content" : "0px",
                     marginBottom: open ? "24px" : "0px",
                 }}
-                className="overflow-hidden text-slate-400"
+                className="overflow-hidden text-white"
             >
                 <p>{answer}</p>
             </motion.div>
