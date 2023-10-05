@@ -9,6 +9,12 @@ const clashSchema = new Schema({
     level: {
         Type: Number
     },
+    showteams: {
+      Type: Boolean
+    },
+    showgame: {
+      Type: Boolean
+    },
     gamelogo: {
         Type: String
     },

@@ -30,11 +30,23 @@
     .text-outline-champion {
         text-shadow: -2px -2px #FFD524, 2px -2px #FFD524, -2px 2px #FFD524, 2px 2px #FFD524;
     }
+
+    .text-outline-leaderboard{
+        text-shadow: -2px -2px #451F4D, 2px -2px #451F4D, -2px 2px #451F4D, 2px 2px #451F4D;
+    }
+
+    .text-outline{
+        text-shadow: -2px -2px #451F4D, 2px -2px #451F4D, -2px 2px #451F4D, 2px 2px #451F4D;
+    }
 }
 
 
 @media (max-width: 768px) {
     .text-outline{
+        text-shadow: -2px -2px #451F4D, 2px -2px #451F4D, -2px 2px #451F4D, 2px 2px #451F4D;
+    }
+
+    .text-outline-leaderboard{
         text-shadow: -2px -2px #451F4D, 2px -2px #451F4D, -2px 2px #451F4D, 2px 2px #451F4D;
     }
 }
