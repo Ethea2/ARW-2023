@@ -29,7 +29,17 @@ const CyberClash = () => {
 
                         <div className="w-full flex flex-col items-center gap-6">
                             {cyberClash?.map((game) => (
-                                <GameContainer game={game} className="" />
+                                <>
+                                    {game.showgame ? (
+                                        <GameContainer
+                                            game={game}
+                                            className=""
+                                            showteams={game.showteams}
+                                        />
+                                    ) : (
+                                        ""
+                                    )}
+                                </>
                             ))}
                         </div>
                     </div>
