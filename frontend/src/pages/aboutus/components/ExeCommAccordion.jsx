@@ -50,28 +50,34 @@ const orgrel = {
     teamHeads: [
         "Susan Ho",
         "Conrad Cabildo Jr.",
-        "Gaby Panlilio",
-        "Tina Tiongson",
+        "Diane Gabrielle Panlilio",
+        "Cristina Tiongson",
         "Ember Alaan",
+        "Rhicki Bermudez",
     ],
     assistantTeamHeads: [
-        "Lou Rodriguez",
-        "Elijah Raphael Reala",
-        "Sophia George Reyes",
-        "Lucas Antonio Tujan",
-        "Joyceanne Chua",
-        "Dianthus Junea Dizon",
-        "Ma. Kimberly Cariño",
-        "Ysabela Angela Fernandez",
-        "Denise Lauren Picardal",
+        "Amara Ysabela Morkya",
         "Cassandra Aaron Ilagan",
+        "Denise Ashley Sobremonte ",
+        "Denise Lauren Picardal",
+        "Dianthus Junea Dizon",
+        "Edwin Concepcion Jr",
+        "Elijah Raphael Reala",
+        "Eryca Mei Sulian",
+        "Faith Cerise Mercado",
+        "Irish Magcamit",
+        "Joyceanne Chua",
         "Justine Michaela Barrera",
         "Juztine Bridgette Bunda",
-        "Edwin Concepcion Jr.",
-        "Irish Magcamit",
-        "Mary Grace Domingo",
-        "Sophia Marie Navalta",
         "Kristine Marielle Leung",
+        "Lou Rodriguez",
+        "Lucas Antonio Tujan",
+        "Ma. Kimberly Cariño",
+        "Mary Grace Domingo",
+        "Moira Noelle Pulumbarit",
+        "Sophia George Reyes",
+        "Sophia Marie Navalta",
+        "Ysabela Angela Fernandez",
     ],
 };
 
@@ -81,6 +87,7 @@ const imcc = {
         "Joanna Elaine Desiderio",
         "Carl Anading",
         "Riane Katlyn Go",
+        "Julian Reantaso",
     ],
     assistantTeamHeads: [
         "Gercy Mandela Babilonia",
@@ -100,6 +107,7 @@ const imcc = {
         "Charm Stephanie Tan",
         "Jaceann Caitlin Orosco",
         "Quisha Lianne Felicitas",
+        "Nickolai Juat",
     ],
 };
 
@@ -107,7 +115,7 @@ const imcp = {
     teamHeads: [
         "Sharibelle Angelika Lao",
         "Alexandra Nicole Tenorio",
-        "Rock San Juan",
+        "Rock San Juan VIII",
         "Matthew Andre Geronimo",
     ],
     assistantTeamHeads: [
@@ -122,11 +130,23 @@ const imcp = {
         "Alisha Stephanie Chua",
         "Kisha Ghermay Quiñones",
         "Maria Anya Patricia Nacuda",
+        "Katrina Marie Sze",
+        "Gabrielle Antonia Gordove",
+        "Pauline Trinidad",
+        "Yvonne Bea Marcia",
+        "Gerrold Mallari Rillo",
+        "Timothy Brian Tiu",
+        "Johsua Nathaniel Louis Torres",
     ],
 };
 
 const corprel = {
-    teamHeads: ["Sheina Alyssa Domingo", "Yu Li Bel Dizon"],
+    teamHeads: [
+        "Sheina Alyssa Domingo",
+        "Yu Li Bel Dizon",
+        "Jose Manuel Subido",
+        "Carla Katrine Lucero",
+    ],
     assistantTeamHeads: [
         "John Ignatius Vera Cruz",
         "Kathlyn Tio ",
@@ -144,17 +164,29 @@ const corprel = {
         "Aaron Vincent Po",
         "Joana Sheryn Sales",
         "Yinyin Uy",
+        "Gabrielle Bernardo",
+        "Jaster Aihne Oliver 'Liv' M. Baylon",
+        "Bea Bianca 'Adi' Benedicto",
+        "Bleseter Ryan Baldado",
+        "Aisline Wizel Dy",
+        "Hans Matthew Sze",
+        "Myreign Wenlee Ng",
+        "Elaine Agnes Wong",
+        "Frances Bianca Yzobelle Rivera",
+        "Allyana Vale Peña",
+        "Gian Kyle Masinda",
     ],
 };
 
 const webdev = {
     teamHeads: [
-        "Nathan Andres",
+        "Wray Nathan Andres",
         "Kyle Francis Campit",
-        "Luke Cuello",
-        "J-em Pareja",
+        "Raphael Luke Cuello",
+        "John Emmanuel Pareja",
     ],
     assistantTeamHeads: [
+        "Aldwin Bennett Liobing",
         "Yivan Andrei Padsoyan",
         "John Kovie Niño",
         "Orrin Landon Uy",
@@ -162,88 +194,68 @@ const webdev = {
         "Shanky de Gracia",
         "Paula Enxi Pacheco",
         "Marissa Ann Villaceran",
-        "Joel Miguel Leysa",
         "Joshua Corpuz",
         "William Jefferson Ngo",
         "John Dominic Ocampo",
         "Patricia Arao",
         "Richard John Pecson Jr.",
         "Gabrielle Vincenza Tongol",
+        "Arhela Maxine Drapiza",
+        "Christian James C. Pascasio",
+        "Isaiah Pascual",
+        "Joel Miguel Leysa",
     ],
 };
 
 const docu = {
-    teamHeads: ["", "", "", "", ""],
+    teamHeads: [
+        "Julianne Katrina So",
+        "Joan Paula Oliveros",
+        "Melvin Angelo Buendia",
+        "Franxezka Africa",
+    ],
     assistantTeamHeads: [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "Johanna Reane Marquez",
+        "Josh Reinard Tia",
+        "Kathleen Mae Young",
+        "Kole Ikee Chan",
+        "Marc Jose Cortes",
+        "Zea Castelo",
     ],
 };
 
 const fin = {
-    teamHeads: ["", "", "", "", ""],
+    teamHeads: ["Lance Tulagan", "James Louie Malanog"],
     assistantTeamHeads: [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "Andrea Torres",
+        "Cherwin Lam",
+        "Elisha Nissi Ancajas",
+        "Lynette Go",
+        "Reinee Rivera",
     ],
 };
 
 const techlog = {
-    teamHeads: ["", "", "", "", ""],
+    teamHeads: [
+        "Migelle Jihro Malinis",
+        "James Matthew Cua",
+        "Yanina Tajonera",
+        "James Miguel Paumig",
+    ],
     assistantTeamHeads: [
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
-        "",
+        "Allyzza Miles Aquino",
+        "Imee Nicole Chua",
+        "Jhoana Yeo",
+        "Marcus Luis Chua",
+        "Patricia Ginnel Solis",
+        "Patricia Gochingco",
+        "Phebe Ong",
+        "Raphael Ivan Goh To Kang",
+        "Carlos Ferdinand Sebastian Satuito",
+        "Joshua Languban",
+        "Peter Pimentel V",
+        "Andrea Claire Newman",
+        "Eric Johann Garcia",
     ],
 };
 
@@ -262,28 +274,32 @@ const committees = {
 const ExeCommAccordion = (props) => {
     const chosenComm = committees[props.committee];
     return (
-        <div>
-            <div className="collapse bg-base-200 mb-3">
+        <div className="md:mx-12 lg:mx-[100px]">
+            <div className="collapse mb-3">
                 <input type="radio" name="my-accordion-1" />
-                <div className="collapse-title text-2xl text-primary bg-white font-bold font-bit">
-                    {props.committee}
+                <div className="collapse-title text-2xl text-primary bg-white font-bold font-bit md:text-4xl lg:text-5xl">
+                    <p className="ml-8">{props.committee}</p>
                 </div>
                 <div className="collapse-content bg-white">
-                    <p className="text-neutral text-sm font-bold font-bit">
+                    <p className="text-neutral text-xl font-bold font-bit md:text-3xl lg:text-4xl">
                         Team Heads
                     </p>
                     <ul className="list-group">
                         {chosenComm["teamHeads"].map((item) => (
-                            <li className="font-bit text-xs">{item}</li>
+                            <li className="font-monda text-base md:text-2xl lg:text-3xl">
+                                {item}
+                            </li>
                         ))}
                     </ul>
 
-                    <p className="text-neutral text-sm mt-5 font-bold font-bit">
+                    <p className="text-neutral text-xl mt-5 font-bold font-bit md:text-3xl lg:text-4xl">
                         Assistant Team Heads
                     </p>
                     <ul className="list-group">
                         {chosenComm["assistantTeamHeads"].map((item) => (
-                            <li className="font-bit text-xs">{item}</li>
+                            <li className="font-monda text-base md:text-2xl ">
+                                {item}
+                            </li>
                         ))}
                     </ul>
                 </div>

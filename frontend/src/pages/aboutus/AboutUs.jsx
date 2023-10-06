@@ -32,52 +32,52 @@ const AboutUs = () => {
                     className="relative h-full flex flex-col justify-center items-center"
                 >
                     {/* Set Page Background - edit in spaceBackground.jsx in components*/}
-                    <SpaceBackground />
+                    <SpaceBackground bgSize="auto" />
 
-                    <div className="my-28 z-10 text-center">
+                    <div className="my-28 z-10 text-center w-screen">
                         {/* ABOUT ARW - edit in ARWDescription.jsx in components*/}
                         <ARWDesc></ARWDesc>
 
                         <div className="mx-8">
                             {/* Central Committee Project Heads */}
-                            <div className="mt-20">
-                                <span className="font-bold font-bit text-4xl sm:text-6xl lg:text-9xl text-primary">
+                            <div className="mt-20 md:mt-28">
+                                <span className="font-bold font-bit text-4xl md:text-7xl lg:text-9xl text-primary">
                                     ARW 2023
                                 </span>
                                 <br />
-                                <span className="font-bold font-bit text-4xl sm:text-2xl lg:text-6xl text-neutral">
+                                <span className="font-bold font-bit text-3xl md:text-6xl lg:text-7xl text-neutral">
                                     CENTRAL COMMITTEE
                                 </span>
                                 <div>
-                                    <span className="font-bold font-bit text-4xl sm:text-2xl lg:text-6xl text-neutral">
+                                    <span className="font-bold font-bit text-3xl md:text-6xl lg:text-7xl text-neutral">
                                         PROJECT HEADS
                                     </span>
                                     <br />
                                     <div className="mt-10 mx-2 grid grid-cols-2 gap-5 lg:grid-cols-4 md:gap-10 md:mx-10">
                                         <Card
-                                            name="Person 1"
+                                            name="Charm Andrea Griengo"
                                             imgURL={phead1}
                                         ></Card>
                                         <Card
-                                            name="Person 2"
+                                            name="Vince Evane Tiangco"
                                             imgURL={phead1}
                                         ></Card>
                                         <Card
-                                            name="Person 3"
+                                            name="John Louise Bungay"
                                             imgURL={phead1}
                                         ></Card>
                                         <Card
-                                            name="Person 4"
+                                            name="Ma. Hannah Isabella Ruiz"
                                             imgURL={phead1}
                                         ></Card>
                                     </div>
                                 </div>
                             </div>
                             {/* Executive Committee */}
-                            <div className="mt-20">
-                                <span className="font-bold font-bit text-4xl sm:text-2xl lg:text-6xl text-neutral">
+                            <div className="mt-16 md:mt-28">
+                                <p className="md:mb-5 font-bold font-bit text-3xl md:text-6xl lg:text-7xl text-neutral lg:mx-10">
                                     EXECUTIVE COMMITTEE
-                                </span>
+                                </p>
                                 <br></br>
                                 <ExeCommAccordion committee="EVENTS" />
                                 <ExeCommAccordion committee="ORGREL" />
