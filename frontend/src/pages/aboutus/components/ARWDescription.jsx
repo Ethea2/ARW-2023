@@ -6,7 +6,7 @@ import containerBottom from "../../../assets/aboutus/bit-container-bottom.svg";
 const arwDesciption = () => {
     return (
         <div>
-            <p className="font-bold font-bit text-4xl md:text-7xl lg:text-9xl text-primary lg:my-20">
+            <p className="font-bold font-bit text-4xl md:text-7xl lg:text-8xl text-primary lg:my-20">
                 ABOUT US
             </p>
 
@@ -24,11 +24,11 @@ const arwDesciption = () => {
                     backgroundImage: `url(${containerMid})`,
                 }}
             >
-                <div className="p-5 border-8 rounded-3xl border-[#FF2955] border-solid bg-white md:mx-12 md:p-10 md:border-[11px]">
-                    <span className="font-bit text-primary md:text-3xl lg:text-5xl">
+                <div className="p-5 border-8 rounded-3xl border-[#FF2955] border-solid bg-white md:mx-12 md:p-10 md:border-[11px] lg:mx-36">
+                    <span className="font-bit text-primary md:text-3xl lg:text-4xl">
                         ANNUAL RECRUITMENT WEEK <br></br>
                     </span>
-                    <p className="text-black font-monda mt-2 md:text-3xl lg:text-4xl">
+                    <p className="text-black font-monda mt-2 md:text-3xl lg:text-2xl">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam, quis nostrud

@@ -15,7 +15,15 @@ const spaceBackground = (props) => {
                 }}
             ></div>
             {/* Bugs SVG - bottom left corner of page */}
-            <img className="absolute bottom-0 left-0" src={bugs} alt="Logo" />
+            <img
+                className={
+                    props.bgSize === "cover"
+                        ? "absolute bottom-0 left-0 md:scale-[3] md:-translate-y-full lg:invisible"
+                        : "absolute bottom-0 left-0 md:scale-[3] md:-translate-y-full"
+                }
+                src={bugs}
+                alt="Logo"
+            />
         </div>
     );
 };

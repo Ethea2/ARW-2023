@@ -297,7 +297,7 @@ const ExeCommAccordion = (props) => {
                     </p>
                     <ul className="list-group">
                         {chosenComm["assistantTeamHeads"].map((item) => (
-                            <li className="font-monda text-base md:text-2xl ">
+                            <li className="font-monda text-base md:text-2xl lg:text-3xl">
                                 {item}
                             </li>
                         ))}

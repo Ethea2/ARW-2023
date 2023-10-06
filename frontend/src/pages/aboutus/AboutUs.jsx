@@ -4,11 +4,12 @@ import Card from "./components/Card";
 import ARWDesc from "./components/ARWDesciption";
 import SpaceBackground from "./components/spaceBackground";
 import { motion } from "framer-motion"; // Import motion from Framer Motion
+import PlayButton from "./components/PlayButton";
+import ExeCommAccordion from "./components/ExeCommAccordion";
 
 // Import Images
-import phead1 from "../../assets/aboutus/TaoHu.gif";
 import invaders from "../../assets/aboutus/invaders.svg";
-import ExeCommAccordion from "./components/ExeCommAccordion";
+import ProjectHeads from "./ProjectHeads";
 
 const AboutUs = () => {
     const [showContent, setShowContent] = useState(false);
@@ -39,40 +40,9 @@ const AboutUs = () => {
                         <ARWDesc></ARWDesc>
 
                         <div className="mx-8">
-                            {/* Central Committee Project Heads */}
-                            <div className="mt-20 md:mt-28">
-                                <span className="font-bold font-bit text-4xl md:text-7xl lg:text-9xl text-primary">
-                                    ARW 2023
-                                </span>
-                                <br />
-                                <span className="font-bold font-bit text-3xl md:text-6xl lg:text-7xl text-neutral">
-                                    CENTRAL COMMITTEE
-                                </span>
-                                <div>
-                                    <span className="font-bold font-bit text-3xl md:text-6xl lg:text-7xl text-neutral">
-                                        PROJECT HEADS
-                                    </span>
-                                    <br />
-                                    <div className="mt-10 mx-2 grid grid-cols-2 gap-5 lg:grid-cols-4 md:gap-10 md:mx-10">
-                                        <Card
-                                            name="Charm Andrea Griengo"
-                                            imgURL={phead1}
-                                        ></Card>
-                                        <Card
-                                            name="Vince Evane Tiangco"
-                                            imgURL={phead1}
-                                        ></Card>
-                                        <Card
-                                            name="John Louise Bungay"
-                                            imgURL={phead1}
-                                        ></Card>
-                                        <Card
-                                            name="Ma. Hannah Isabella Ruiz"
-                                            imgURL={phead1}
-                                        ></Card>
-                                    </div>
-                                </div>
-                            </div>
+                            {/* Central Committee Project Heads - edit in ProjectHeads.jsx in components*/}
+                            <ProjectHeads />
+
                             {/* Executive Committee */}
                             <div className="mt-16 md:mt-28">
                                 <p className="md:mb-5 font-bold font-bit text-3xl md:text-6xl lg:text-7xl text-neutral lg:mx-10">
@@ -97,20 +67,19 @@ const AboutUs = () => {
                 <div className="w-full h-screen flex flex-col justify-center items-center">
                     {/* Set Page Background - edit in spaceBackground.jsx in components*/}
                     <SpaceBackground bgSize="cover" />
-                    {/* Invaders SVG - to fix for both desktop and mobile*/}
-                    <img className="relative mb-20" src={invaders} alt="Logo" />
+                    {/* Invaders SVG */}
+                    <img
+                        className="relative mb-12 w-11/12 lg:w-8/12 lg:mb-8"
+                        src={invaders}
+                        alt="Logo"
+                    />
 
-                    <div className="relative z-10 p-8 text-center">
-                        <span className="font-bold font-bit text-4xl sm:text-6xl lg:text-9xl text-primary">
+                    <div className="relative z-10 p-4 text-center">
+                        <span className="font-bold font-bit text-4xl sm:text-6xl lg:text-7xl text-primary">
                             ABOUT US
                         </span>
-                        <div className="mt-4">
-                            <button
-                                className="btn btn-primary"
-                                onClick={handlePlayClick}
-                            >
-                                PLAY
-                            </button>
+                        <div className="mt-5">
+                            <PlayButton onClick={handlePlayClick} />
                         </div>
                     </div>
                 </div>
