@@ -81,8 +81,8 @@ const AboutUs = () => {
                                 <br></br>
                                 <ExeCommAccordion committee="EVENTS" />
                                 <ExeCommAccordion committee="ORGREL" />
-                                <ExeCommAccordion committee="IMC-C" />
-                                <ExeCommAccordion committee="IMC-P" />
+                                <ExeCommAccordion committee="IMCC" />
+                                <ExeCommAccordion committee="IMCP" />
                                 <ExeCommAccordion committee="CORPREL" />
                                 <ExeCommAccordion committee="DOCU" />
                                 <ExeCommAccordion committee="FIN" />

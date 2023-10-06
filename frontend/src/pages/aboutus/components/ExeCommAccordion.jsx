@@ -2,15 +2,14 @@ import React from "react";
 
 const events = {
     teamHeads: [
-        "Alexa Abary",
-        "Melka Antipolo",
+        "Alexa Andrea Abary",
+        "Melka Pearl Antipolo",
         "Mandy Cipres",
         "Reece Polancos",
-        "Andreia Valderrama",
+        "Andreia Valderama",
         "Trisha Divinagracia",
         "Denise Cudal",
         "Therese Dondonay",
-        "Izha Divinagracia",
     ],
     assistantTeamHeads: [
         "Aira Nicole Rabago",
@@ -32,6 +31,18 @@ const events = {
         "Franklin Osis Jr.",
         "Sophia Ysabelle Uy",
         "Mary Magnifica Legaspi",
+        "Allianah Marie QCuerdo",
+        "Czar Baguio",
+        "Emiri Kirstin Kawamura",
+        "Francis Ayala",
+        "Gwyneth Jao",
+        "Hannah Kimberlyn Chua",
+        "Justin Bisuna",
+        "Maria Isobelle Anne Cleofas",
+        "Marielle Angelene Atienza",
+        "Raphaelle Jazmine Rodriguez",
+        "Stefanie Mhai G. Cabral",
+        "Stephanie Arabella Iligan",
     ],
 };
 
@@ -114,7 +125,7 @@ const imcp = {
     ],
 };
 
-const corprels = {
+const corprel = {
     teamHeads: ["Sheina Alyssa Domingo", "Yu Li Bel Dizon"],
     assistantTeamHeads: [
         "John Ignatius Vera Cruz",
@@ -133,23 +144,6 @@ const corprels = {
         "Aaron Vincent Po",
         "Joana Sheryn Sales",
         "Yinyin Uy",
-    ],
-};
-
-const corprelm = {
-    teamHeads: ["Jose Manuel Subido", "Carla Katrine Lucero"],
-    assistantTeamHeads: [
-        "Gabrielle Bernardo",
-        "Jaster Aihne Oliver 'Liv' Baylon",
-        "Bea Bianca 'Adi' Benedicto",
-        "Bleseter Ryan Baldado",
-        "Aisline Wizel Dy",
-        "Hans Matthew Sze",
-        "Myreign Wenlee Ng",
-        "Elaine Agnes Wong",
-        "Frances Bianca Yzobelle Rivera",
-        "Allyana Vale Peña",
-        "Gian Kyle Masinda",
     ],
 };
 
@@ -178,7 +172,7 @@ const webdev = {
     ],
 };
 
-const uwu = {
+const docu = {
     teamHeads: ["", "", "", "", ""],
     assistantTeamHeads: [
         "",
@@ -203,7 +197,70 @@ const uwu = {
     ],
 };
 
+const fin = {
+    teamHeads: ["", "", "", "", ""],
+    assistantTeamHeads: [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+    ],
+};
+
+const techlog = {
+    teamHeads: ["", "", "", "", ""],
+    assistantTeamHeads: [
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+    ],
+};
+
+const committees = {
+    EVENTS: events,
+    ORGREL: orgrel,
+    IMCC: imcc,
+    IMCP: imcp,
+    CORPREL: corprel,
+    DOCU: docu,
+    FIN: fin,
+    WEBDEV: webdev,
+    TECHLOG: techlog,
+};
+
 const ExeCommAccordion = (props) => {
+    const chosenComm = committees[props.committee];
     return (
         <div>
             <div className="collapse bg-base-200 mb-3">
@@ -216,7 +273,7 @@ const ExeCommAccordion = (props) => {
                         Team Heads
                     </p>
                     <ul className="list-group">
-                        {events["teamHeads"].map((item) => (
+                        {chosenComm["teamHeads"].map((item) => (
                             <li className="font-bit text-xs">{item}</li>
                         ))}
                     </ul>
@@ -225,7 +282,7 @@ const ExeCommAccordion = (props) => {
                         Assistant Team Heads
                     </p>
                     <ul className="list-group">
-                        {events["assistantTeamHeads"].map((item) => (
+                        {chosenComm["assistantTeamHeads"].map((item) => (
                             <li className="font-bit text-xs">{item}</li>
                         ))}
                     </ul>
