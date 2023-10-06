@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Drawer from "../../components/drawer/Drawer";
-import Card from "./components/Card";
-import ARWDesc from "./components/ARWDesciption";
+import ARWDesc from "./components/ARWDescription";
 import SpaceBackground from "./components/spaceBackground";
 import { motion } from "framer-motion"; // Import motion from Framer Motion
 import PlayButton from "./components/PlayButton";

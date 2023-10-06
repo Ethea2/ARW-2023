@@ -3,7 +3,7 @@ import containerMid from "../../../assets/aboutus/bit-container-body.svg";
 import containerTop from "../../../assets/aboutus/bit-container-top.svg";
 import containerBottom from "../../../assets/aboutus/bit-container-bottom.svg";
 
-const arwDesciption = () => {
+const arwDescription = () => {
     return (
         <div>
             <p className="font-bold font-bit text-4xl md:text-7xl lg:text-8xl text-primary lg:my-20">
@@ -47,4 +47,4 @@ const arwDesciption = () => {
     );
 };
 
-export default arwDesciption;
+export default arwDescription;
