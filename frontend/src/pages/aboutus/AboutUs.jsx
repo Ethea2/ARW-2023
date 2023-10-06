@@ -8,6 +8,7 @@ import { motion } from "framer-motion"; // Import motion from Framer Motion
 // Import Images
 import phead1 from "../../assets/aboutus/TaoHu.gif";
 import invaders from "../../assets/aboutus/invaders.svg";
+import ExeCommAccordion from "./components/ExeCommAccordion";
 
 const AboutUs = () => {
     const [showContent, setShowContent] = useState(false);
@@ -78,9 +79,15 @@ const AboutUs = () => {
                                     EXECUTIVE COMMITTEE
                                 </span>
                                 <br></br>
-                                <div className="mt-6 p-5 border-8 rounded-3xl border-red-900 border-solid bg-white">
-                                    PLACEHOLDER
-                                </div>
+                                <ExeCommAccordion committee="EVENTS" />
+                                <ExeCommAccordion committee="ORGREL" />
+                                <ExeCommAccordion committee="IMC-C" />
+                                <ExeCommAccordion committee="IMC-P" />
+                                <ExeCommAccordion committee="CORPREL" />
+                                <ExeCommAccordion committee="DOCU" />
+                                <ExeCommAccordion committee="FIN" />
+                                <ExeCommAccordion committee="WEBDEV" />
+                                <ExeCommAccordion committee="TECHLOG" />
                             </div>
                         </div>
                     </div>
