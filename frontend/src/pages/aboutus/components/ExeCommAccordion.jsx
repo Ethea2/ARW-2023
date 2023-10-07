@@ -155,6 +155,7 @@ const webdev = {
         "J-em Pareja",
     ],
     assistantTeamHeads: [
+        "Patricia Arao",
         "Yivan Andrei Padsoyan",
         "John Kovie Niño",
         "Orrin Landon Uy",
@@ -166,7 +167,6 @@ const webdev = {
         "Joshua Corpuz",
         "William Jefferson Ngo",
         "John Dominic Ocampo",
-        "Patricia Arao",
         "Richard John Pecson Jr.",
         "Gabrielle Vincenza Tongol",
     ],
@@ -263,12 +263,12 @@ const ExeCommAccordion = (props) => {
     const chosenComm = committees[props.committee];
     return (
         <div>
-            <div className="collapse bg-base-200 mb-3">
+            <div className="collapse bg-base-200 mb-3 w-full">
                 <input type="radio" name="my-accordion-1" />
-                <div className="collapse-title text-2xl text-primary bg-white font-bold font-bit">
-                    {props.committee}
+                <div className="collapse-title text-2xl text-primary bg-white/25 font-bold font-bit text-center p-0 flex justify-center items-center">
+                    <p className="w-full">{props.committee}</p>
                 </div>
-                <div className="collapse-content bg-white">
+                <div className="collapse-content bg-white/25">
                     <p className="text-neutral text-sm font-bold font-bit">
                         Team Heads
                     </p>

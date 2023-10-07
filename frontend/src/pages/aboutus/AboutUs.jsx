@@ -79,15 +79,17 @@ const AboutUs = () => {
                                     EXECUTIVE COMMITTEE
                                 </span>
                                 <br></br>
-                                <ExeCommAccordion committee="EVENTS" />
-                                <ExeCommAccordion committee="ORGREL" />
-                                <ExeCommAccordion committee="IMCC" />
-                                <ExeCommAccordion committee="IMCP" />
-                                <ExeCommAccordion committee="CORPREL" />
-                                <ExeCommAccordion committee="DOCU" />
-                                <ExeCommAccordion committee="FIN" />
-                                <ExeCommAccordion committee="WEBDEV" />
-                                <ExeCommAccordion committee="TECHLOG" />
+                                <div className="w-full flex flex-col justify-start items-center">
+                                    <ExeCommAccordion committee="EVENTS" />
+                                    <ExeCommAccordion committee="ORGREL" />
+                                    <ExeCommAccordion committee="IMCC" />
+                                    <ExeCommAccordion committee="IMCP" />
+                                    <ExeCommAccordion committee="CORPREL" />
+                                    <ExeCommAccordion committee="DOCU" />
+                                    <ExeCommAccordion committee="FIN" />
+                                    <ExeCommAccordion committee="WEBDEV" />
+                                    <ExeCommAccordion committee="TECHLOG" />
+                                </div>
                             </div>
                         </div>
                     </div>
