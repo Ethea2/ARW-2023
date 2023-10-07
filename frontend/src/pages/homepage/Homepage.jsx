@@ -196,6 +196,7 @@ const Homepage = () => {
                         </div>
                     </div>
                 </div>
+                {/* FIX SPONSORS */}
                 <div className="flex w-full overflow-hidden">
                     <TranslateWrapper>
                         <LogoItemsTop />
