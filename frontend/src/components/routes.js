@@ -12,7 +12,9 @@ import { LiaCrownSolid } from "react-icons/lia";
 import { BsShield } from "react-icons/bs";
 import { AiOutlineQuestionCircle } from "react-icons/ai";
 import { IoMdInformationCircleOutline } from "react-icons/io";
+import { FiMap } from "react-icons/fi"
 import AboutUs from "../pages/aboutus/AboutUs";
+import Maps from "../pages/maps/Maps";
 
 const routes = [
     //for now countdown is root route
@@ -36,6 +38,12 @@ const routes = [
         element: <CyberClash />,
         name: "Cyber Clash",
         icon: <BsShield />,
+    },
+    {
+        path: "/maps",
+        element: <Maps />,
+        name: "Booth Maps",
+        icon: <FiMap />
     },
     {
         path: "/faqs",
