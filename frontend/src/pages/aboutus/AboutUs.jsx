@@ -19,7 +19,7 @@ const AboutUs = () => {
     };
 
     return (
-        <div className="w-full min-h-screen bg-black">
+        <div className="w-full min-h-screen bg-black overflow-x-hidden">
             <Drawer />
 
             {showContent ? (
