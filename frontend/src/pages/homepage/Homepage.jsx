@@ -4,55 +4,14 @@ import { useEffect, useState } from "react";
 import routes from "../../components/routes";
 import TranslateWrapper from "./components/TranslateWrapper";
 import { LogoItemsBottom, LogoItemsTop } from "./components/LogoTest";
+import HomepageCarousel from "./components/HomepageCarousel";
+
+const carousel = HomepageCarousel;
 const name = "ARW 2023";
 
-/* Temporary pictures (public domain) */
-const carousel = [
-    {
-        imageSrc:
-            "https://upload.wikimedia.org/wikipedia/commons/d/d8/Noli_Me_Tangere_Picture_1.jpg",
-        imageAlt: "Noli Me Tangere Picture 1",
-    },
-    {
-        imageSrc:
-            "https://upload.wikimedia.org/wikipedia/commons/e/e3/Noli_Me_Tangere_Picture_4.jpg",
-        imageAlt: "Noli Me Tangere Picture 4",
-    },
-    {
-        imageSrc:
-            "https://upload.wikimedia.org/wikipedia/commons/c/c0/Noli_Me_Tangere_Picture_5.jpg",
-        imageAlt: "Noli Me Tangere Picture 5",
-    },
-    {
-        imageSrc:
-            "https://upload.wikimedia.org/wikipedia/commons/5/53/Noli_Me_Tangere_Picture_6.jpg",
-        imageAlt: "Noli Me Tangere Picture 6",
-    },
-    {
-        imageSrc:
-            "https://upload.wikimedia.org/wikipedia/commons/4/48/Noli_Me_Tangere_Picture_7.jpg",
-        imageAlt: "Noli Me Tangere Picture 7",
-    },
-    {
-        imageSrc:
-            "https://upload.wikimedia.org/wikipedia/commons/f/fc/Noli_Me_Tangere_Picture_8.jpg",
-        imageAlt: "Noli Me Tangere Picture 8",
-    },
-    {
-        imageSrc:
-            "https://upload.wikimedia.org/wikipedia/commons/d/de/Noli_Me_Tangere_Picture_9.jpg",
-        imageAlt: "Noli Me Tangere Picture 9",
-    },
-    {
-        imageSrc:
-            "https://upload.wikimedia.org/wikipedia/commons/2/2c/Noli_Me_Tangere_Picture_10.jpg",
-        imageAlt: "Noli Me Tangere Picture 10",
-    },
-];
 
 const Homepage = () => {
     const [activeSlide, setActiveSlide] = useState(0);
-    console.log(new Date())
 
     const goToPreviousSlide = () => {
         if (activeSlide === 0) return setActiveSlide(carousel.length - 1);
@@ -148,28 +107,27 @@ const Homepage = () => {
                         >
                             {/* Image carousel */}
                             <div
-                                className="rounded-xl border-4 border-teal-300 text-center carousel w-full  h-60 lg:h-96 relative"
+                                className="rounded-xl border-4 border-teal-300 text-center w-full h-60 lg:h-96 relative"
                                 style={{ ...glowInner }}
                             >
                                 <div
-                                    className="rounded-xl text-center carousel w-full relative"
+                                    className="rounded-xl text-center w-full carousel max-h-60 lg:max-h-96"
                                     style={{ ...glowInner }}
                                 >
                                     {carousel.map((value, index) => (
                                         <div
                                             key={`photo-${index}`}
-                                            className={`carousel-item ${
-                                                index === activeSlide
-                                                    ? "active"
-                                                    : ""
-                                            }`}
+                                            className={`carousel-item overflow-hidden w-full ${index === activeSlide
+                                                ? "active"
+                                                : ""
+                                                }`}
                                             id={`photo-${index}`}
                                         >
                                             <img
                                                 src={value.imageSrc}
                                                 alt={value.imageAlt}
                                                 title={value.imageAlt}
-                                                className="object-contain"
+                                                className="object-cover object-center w-full"
                                             />
                                         </div>
                                     ))}
