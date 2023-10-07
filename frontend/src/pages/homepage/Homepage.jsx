@@ -52,6 +52,7 @@ const carousel = [
 
 const Homepage = () => {
     const [activeSlide, setActiveSlide] = useState(0);
+    console.log(new Date())
 
     const goToPreviousSlide = () => {
         if (activeSlide === 0) return setActiveSlide(carousel.length - 1);
