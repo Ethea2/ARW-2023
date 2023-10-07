@@ -8,8 +8,10 @@ const Question = ({ question, answer }) => {
     return (
         <motion.div
             animate={open ? "open" : "closed"}
-            className={`m-4 rounded-xl border-[1px] border-slate-700 px-4 transition-colors ${
-                open ? "bg-[#ff2955]/80" : "bg-pink-400/80"
+            className={`rounded-md px-4 border-2 border-white transition-colors ${
+                open
+                    ? "bg-gradient-to-b from-[#FFD524]/50 to-[#451F4D]/50"
+                    : "bg-gradient-to-b from-[#FFD524]/50 to-[#451F4D]/50"
             }`}
         >
             <button
@@ -17,8 +19,8 @@ const Question = ({ question, answer }) => {
                 className="flex w-full items-center justify-between gap-4 py-4"
             >
                 <span
-                    className={`font-bold text-left text-lg transition-colors ${
-                        open ? "text-white" : "text-black"
+                    className={`text-left text-lg transition-colors ${
+                        open ? "text-white" : "text-white"
                     }`}
                 >
                     {question}
@@ -35,7 +37,7 @@ const Question = ({ question, answer }) => {
                 >
                     <FiPlus
                         className={`text-2xl transition-colors ${
-                            open ? "text-slate-50" : "text-slate-400"
+                            open ? "text-white" : "text-yellow-300"
                         }`}
                     />
                 </motion.span>
@@ -48,7 +50,7 @@ const Question = ({ question, answer }) => {
                 }}
                 className="overflow-hidden text-white"
             >
-                <p>{answer}</p>
+                <p className="py-4 text-justify">{answer}</p>
             </motion.div>
         </motion.div>
     );

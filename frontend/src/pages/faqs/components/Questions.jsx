@@ -6,7 +6,7 @@ import { QUESTIONS } from "../constants/queries";
 
 const Questions = ({ selected }) => {
     return (
-        <div className="mx-auto mt-12 max-w-3xl">
+        <div className="mb-10">
             <AnimatePresence mode="wait">
                 {Object.entries(QUESTIONS).map(([tab, questions]) => {
                     return selected === tab ? (
