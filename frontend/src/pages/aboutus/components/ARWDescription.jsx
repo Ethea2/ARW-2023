@@ -3,28 +3,32 @@ import containerMid from "../../../assets/aboutus/bit-container-body.svg";
 import containerTop from "../../../assets/aboutus/bit-container-top.svg";
 import containerBottom from "../../../assets/aboutus/bit-container-bottom.svg";
 
-const arwDesciption = () => {
+const arwDescription = () => {
     return (
         <div>
-            <span className="font-bold font-bit text-4xl sm:text-6xl lg:text-9xl text-primary">
+            <p className="font-bold font-bit text-4xl md:text-7xl lg:text-8xl text-primary lg:my-20">
                 ABOUT US
-            </span>
+            </p>
 
             {/* Top portion of container */}
-            <img className="w-screen mt-10" src={containerTop} alt="bit-top" />
+            <img
+                className="w-full mt-10 md:mt-20"
+                src={containerTop}
+                alt="bit-top"
+            />
 
             {/* Middle portion of container / Content */}
             <div
-                className="bg-no-repeat bg-cover px-8 -my-1"
+                className="w-full px-8 -my-1"
                 style={{
                     backgroundImage: `url(${containerMid})`,
                 }}
             >
-                <div className="p-5 border-8 rounded-3xl border-red-900 border-solid bg-white md:mx-12">
-                    <span className="font-bit">
+                <div className="p-5 border-8 rounded-3xl border-[#FF2955] border-solid bg-white md:mx-12 md:p-10 md:border-[11px] lg:mx-36">
+                    <span className="font-bit text-primary md:text-3xl lg:text-4xl">
                         ANNUAL RECRUITMENT WEEK <br></br>
                     </span>
-                    <span className="text-black">
+                    <p className="text-black font-monda mt-2 md:text-3xl lg:text-2xl">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -34,13 +38,13 @@ const arwDesciption = () => {
                         fugiat nulla pariatur. Excepteur sint occaecat cupidatat
                         non proident, sunt in culpa qui officia deserunt mollit
                         anim id est laborum.
-                    </span>
+                    </p>
                 </div>
             </div>
             {/* Bottom portion of container */}
-            <img className="w-screen" src={containerBottom} alt="bit-bottom" />
+            <img className="w-full" src={containerBottom} alt="bit-bottom" />
         </div>
     );
 };
 
-export default arwDesciption;
+export default arwDescription;
