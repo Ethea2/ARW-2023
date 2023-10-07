@@ -8,8 +8,19 @@ import motivoph from "../../../assets/homepage/sponsors/partnercompanies/diamond
 import papak from "../../../assets/homepage/sponsors/partnercompanies/diamond/papak.png";
 
 //plat
+import cocacola from "../../../assets/homepage/sponsors/partnercompanies/platinum/cocacola.png";
+import vibelle from "../../../assets/homepage/sponsors/partnercompanies/platinum/vibelle.png";
 
 //gold
+import akipopph from "../../../assets/homepage/sponsors/partnercompanies/gold/akipopph.png";
+import franchisemanila from "../../../assets/homepage/sponsors/partnercompanies/gold/franchisemanila.png";
+import laminaraviation from "../../../assets/homepage/sponsors/partnercompanies/gold/laminaraviation.png";
+
+//silver
+import tencentart from "../../../assets/homepage/sponsors/partnercompanies/silver/tencentart.png";
+
+//bronze
+import knivesbythebros from "../../../assets/homepage/sponsors/partnercompanies/bronze/knivesbythebros.png";
 
 const Bronze = () => {
     return <div>Bronze</div>;
