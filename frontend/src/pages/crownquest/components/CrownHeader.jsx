@@ -25,7 +25,7 @@ const CrownHeader = ({ activeElite }) => {
                         {activeElite.orgname}
                     </motion.p>
                 ) : (
-                    "Choose Your Elite!"
+                    "Choose your character!"
                 )}
             </div>
             <div className="font-header text-xs lg:text-sm text-center text-[#FFF]">

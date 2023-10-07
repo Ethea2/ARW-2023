@@ -10,6 +10,7 @@ const OrgSelect = () => {
     const { data: clusters } = useFetch("/api/clusters/");
     const [org, setOrg] = useState(null)
     const [orgCluster, setOrgCluster] = useState(null)
+    useEffect(() => console.log(orgs), [orgs])
 
     const handleOrgSelect = (event, id) => {
         event.preventDefault();
