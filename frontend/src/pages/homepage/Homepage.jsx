@@ -117,11 +117,10 @@ const Homepage = () => {
                                     {carousel.map((value, index) => (
                                         <div
                                             key={`photo-${index}`}
-                                            className={`carousel-item overflow-hidden w-full ${
-                                                index === activeSlide
+                                            className={`carousel-item overflow-hidden w-full ${index === activeSlide
                                                     ? "active"
                                                     : ""
-                                            }`}
+                                                }`}
                                             id={`photo-${index}`}
                                         >
                                             <img
@@ -180,20 +179,18 @@ const Homepage = () => {
 
                         {/* Sponsors */}
 
-                        <div className="h-[30%] bg-red-800 flex flex-col items-center justify-center">
-                            <div>
-                                <p
-                                    className="font-bit text-xl w-full lg:text-4xl text-emerald-300 p-4"
-                                    style={{
-                                        textShadow:
-                                            "0px 0px 15px rgb(110,231,183)", //glow effect
-                                        filter: "drop-shadow(0 1px 2px rgb(94,234,212))",
-                                    }}
-                                >
-                                    SPONSORS
-                                </p>
-                            </div>
-                            <div className="w-full">
+                        <div className="h-[40%] flex flex-col items-center justify-center gap-8 my-8">
+                            <p
+                                className="font-bit text-xl text-center w-full lg:text-4xl text-emerald-300 p-4"
+                                style={{
+                                    textShadow:
+                                        "0px 0px 15px rgb(110,231,183)", //glow effect
+                                    filter: "drop-shadow(0 1px 2px rgb(94,234,212))",
+                                }}
+                            >
+                                SPONSORS
+                            </p>
+                            <div className="w-full flex justify-center items-center">
                                 <Sponsors />
                             </div>
                         </div>
