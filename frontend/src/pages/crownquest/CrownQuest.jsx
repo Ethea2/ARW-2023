@@ -17,7 +17,6 @@ const CrownQuest = () => {
         setActiveElite(elite);
     };
 
-    useEffect(() => console.log(activeElite), [activeElite]);
 
     return (
         <div className="w-full h-screen flex flex-col justify-center items-center">

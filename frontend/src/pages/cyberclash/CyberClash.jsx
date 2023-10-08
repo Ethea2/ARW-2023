@@ -7,9 +7,6 @@ import Error from "../../components/error/Error";
 
 const CyberClash = () => {
     const { data: cyberClash, loading, error } = useFetch("/api/clash");
-    useEffect(() => {
-        console.log(cyberClash);
-    }, [cyberClash]);
 
     return (
         <div class="w-full min-h-screen flex py-10 px-6">
