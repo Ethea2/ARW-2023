@@ -1,8 +1,6 @@
-import homepage1 from '../../../assets/homepage/homepage1.JPG'
-import homepage2 from '../../../assets/homepage/homepage2.JPG'
-import homepage3 from '../../../assets/homepage/homepage3.JPG'
-import homepage4 from '../../../assets/homepage/homepage4.jpeg'
-import homepage5 from '../../../assets/homepage/homepage5.jpeg'
+import homepage1 from '../../../assets/homepage/1.png'
+import homepage2 from '../../../assets/homepage/2.png'
+import homepage3 from '../../../assets/homepage/3.png'
 
 const HomepageCarousel = [
     {
@@ -16,14 +14,6 @@ const HomepageCarousel = [
     {
         imageSrc: homepage3,
         imageAlt: "Homepage Photo 23"
-    },
-    {
-        imageSrc: homepage4,
-        imageAlt: "Homepage Photo 4"
-    },
-    {
-        imageSrc: homepage5,
-        imageAlt: "Homepage Photo 5"
     },
 ]
 

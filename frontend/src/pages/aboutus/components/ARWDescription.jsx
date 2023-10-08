@@ -29,15 +29,7 @@ const arwDescription = () => {
                         ANNUAL RECRUITMENT WEEK <br></br>
                     </span>
                     <p className="text-black font-monda mt-2 md:text-3xl lg:text-2xl">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
+                        Annual Recruitment Week (ARW) is one of the most awaited annual activities in De La Salle University. Students are given the opportunity to choose among the 49 organizations under the Council of Student Organizations in pursuit of being able to meet people of similar interests and hone their skills outside of academic responsibilities.
                     </p>
                 </div>
             </div>

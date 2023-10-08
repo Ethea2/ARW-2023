@@ -14,15 +14,23 @@ const Homepage = () => {
     const [activeSlide, setActiveSlide] = useState(0);
 
     const goToPreviousSlide = () => {
-        if (activeSlide === 0) return setActiveSlide(carousel.length - 1);
+        if (activeSlide === 0) {
+
+            window.location.hash = `#photo-${carousel.length - 1}`;
+            return setActiveSlide(carousel.length - 1);
+        }
         setActiveSlide(activeSlide - 1);
-        window.location.hash = `#photo-${activeSlide}`;
+        window.location.hash = `#photo-${activeSlide - 1}`;
     };
 
     const goToNextSlide = () => {
-        if (activeSlide === carousel.length - 1) return setActiveSlide(0);
+        if (activeSlide === carousel.length - 1) {
+
+            window.location.hash = `#photo-${0}`;
+            return setActiveSlide(0);
+        }
         setActiveSlide(activeSlide + 1);
-        window.location.hash = `#photo-${activeSlide}`;
+        window.location.hash = `#photo-${activeSlide + 1}`;
     };
 
     const glowOuter = {
@@ -117,11 +125,10 @@ const Homepage = () => {
                                     {carousel.map((value, index) => (
                                         <div
                                             key={`photo-${index}`}
-                                            className={`carousel-item overflow-hidden w-full ${
-                                                index === activeSlide
+                                            className={`carousel-item overflow-hidden w-full ${index === activeSlide
                                                     ? "active"
                                                     : ""
-                                            }`}
+                                                }`}
                                             id={`photo-${index}`}
                                         >
                                             <img
