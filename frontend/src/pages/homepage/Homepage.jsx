@@ -105,7 +105,6 @@ const Homepage = () => {
                         <div
                             className="border-4 border-purple-800 text-white p-4 lg:p-6 bg-black"
                             style={{
-                                ...glowOuter,
                                 marginLeft: `calc(0.75rem + ${screenInset})`,
                                 marginRight: `calc(0.75rem + ${screenInset})`,
                                 maxWidth: `calc(${maxWidth} - 2 * ${screenInset})`,
@@ -113,17 +112,17 @@ const Homepage = () => {
                         >
                             {/* Image carousel */}
                             <div
-                                className="rounded-xl border-4 border-teal-300 text-center w-full h-60 lg:h-96 relative"
+                                className="rounded-xl border-4 border-teal-300 text-center w-full lg:h-96 relative"
                                 style={{ ...glowInner }}
                             >
                                 <div
-                                    className="rounded-xl text-center w-full carousel max-h-60 lg:max-h-96"
+                                    className="rounded-xl text-center w-full carousel lg:max-h-96"
                                     style={{ ...glowInner }}
                                 >
                                     {carousel.map((value, index) => (
                                         <div
                                             key={`photo-${index}`}
-                                            className={`carousel-item overflow-hidden w-full ${index === activeSlide
+                                            className={`carousel-item overflow-hidden w-full h-full ${index === activeSlide
                                                     ? "active"
                                                     : ""
                                                 }`}
@@ -161,7 +160,6 @@ const Homepage = () => {
                         <div className="w-full flex justify-center items-center">
                             <div
                                 className="grid grid-flow-row md:grid-cols-4 gap-5 items-center justify-center font-monda p-2 md:w-full w-[90%] border-4 border-purple-800 min-h-1/5 rounded-md bg-black bg"
-                                style={{ ...glowOuter }}
                             >
                                 {routes.map(
                                     (route, index) =>
