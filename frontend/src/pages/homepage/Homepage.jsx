@@ -117,10 +117,11 @@ const Homepage = () => {
                                     {carousel.map((value, index) => (
                                         <div
                                             key={`photo-${index}`}
-                                            className={`carousel-item overflow-hidden w-full ${index === activeSlide
+                                            className={`carousel-item overflow-hidden w-full ${
+                                                index === activeSlide
                                                     ? "active"
                                                     : ""
-                                                }`}
+                                            }`}
                                             id={`photo-${index}`}
                                         >
                                             <img
@@ -154,13 +155,12 @@ const Homepage = () => {
                         {/* Divider Line */}
                         <div className="w-full flex justify-center items-center">
                             <div
-                                className="grid grid-flow-row md:grid-cols-3 gap-5 justify-center font-monda p-2 md:w-full w-[90%] border-4 border-purple-800 min-h-1/5 rounded-md bg-black"
+                                className="grid grid-flow-row md:grid-cols-4 gap-5 items-center justify-center font-monda p-2 md:w-full w-[90%] border-4 border-purple-800 min-h-1/5 rounded-md bg-black bg"
                                 style={{ ...glowOuter }}
                             >
                                 {routes.map(
                                     (route, index) =>
-                                        route.name && 
-                                        (
+                                        route.name && (
                                             <div className="flex justify-center items-center">
                                                 <div className="group relative w-fit transition-transform duration-300 active:scale-95">
                                                     <Link to={route.path}>
@@ -184,8 +184,7 @@ const Homepage = () => {
                             <p
                                 className="font-bit text-xl text-center w-full lg:text-4xl text-emerald-300 p-4"
                                 style={{
-                                    textShadow:
-                                        "0px 0px 15px rgb(110,231,183)", //glow effect
+                                    textShadow: "0px 0px 15px rgb(110,231,183)", //glow effect
                                     filter: "drop-shadow(0 1px 2px rgb(94,234,212))",
                                 }}
                             >
