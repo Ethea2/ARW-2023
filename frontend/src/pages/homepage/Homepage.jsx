@@ -5,10 +5,10 @@ import routes from "../../components/routes";
 import TranslateWrapper from "./components/TranslateWrapper";
 import { LogoItemsBottom, LogoItemsTop } from "./components/LogoTest";
 import HomepageCarousel from "./components/HomepageCarousel";
+import Sponsors from "./Sponsors";
 
 const carousel = HomepageCarousel;
 const name = "ARW 2023";
-
 
 const Homepage = () => {
     const [activeSlide, setActiveSlide] = useState(0);
@@ -48,7 +48,7 @@ const Homepage = () => {
                     backgroundSize: "cover",
                 }}
             />
-            <div className="w-full h-screen block items-center justify-center bg-black/50">
+            <div className="w-full h-screen overflow-x-hidden block items-center justify-center bg-black/50">
                 {/* TOP PART*/}
 
                 <div className="flex justify-center w-screen">
@@ -118,8 +118,8 @@ const Homepage = () => {
                                         <div
                                             key={`photo-${index}`}
                                             className={`carousel-item overflow-hidden w-full ${index === activeSlide
-                                                ? "active"
-                                                : ""
+                                                    ? "active"
+                                                    : ""
                                                 }`}
                                             id={`photo-${index}`}
                                         >
@@ -176,27 +176,28 @@ const Homepage = () => {
                                 )}
                             </div>
                         </div>
+
                         {/* Sponsors */}
 
-                        <div
-                            className="glitch layers relative mt-3"
-                            style={{
-                                zIndex: 2,
-                            }}
-                        >
-                            <span
-                                className="font-bit text-xl w-full flex justify-center items-center lg:text-4xl text-emerald-300"
+                        <div className="h-[40%] flex flex-col items-center justify-center gap-8 my-8">
+                            <p
+                                className="font-bit text-xl text-center w-full lg:text-4xl text-emerald-300 p-4"
                                 style={{
-                                    textShadow: "0px 0px 15px rgb(110,231,183)", //glow effect
+                                    textShadow:
+                                        "0px 0px 15px rgb(110,231,183)", //glow effect
                                     filter: "drop-shadow(0 1px 2px rgb(94,234,212))",
                                 }}
                             >
                                 SPONSORS
-                            </span>
+                            </p>
+                            <div className="w-full flex justify-center items-center">
+                                <Sponsors />
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div className="flex w-full overflow-hidden">
+                {/* FIX SPONSORS */}
+                {/* <div className="flex w-full overflow-hidden">
                     <TranslateWrapper>
                         <LogoItemsTop />
                     </TranslateWrapper>
@@ -217,7 +218,7 @@ const Homepage = () => {
                     <TranslateWrapper reverse>
                         <LogoItemsBottom />
                     </TranslateWrapper>
-                </div>
+                </div> */}
             </div>
         </>
     );
