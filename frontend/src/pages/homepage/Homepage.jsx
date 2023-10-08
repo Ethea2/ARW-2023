@@ -48,7 +48,7 @@ const Homepage = () => {
                     backgroundSize: "cover",
                 }}
             />
-            <div className="w-full h-screen block items-center justify-center bg-black/50">
+            <div className="w-full h-screen overflow-x-hidden block items-center justify-center bg-black/50">
                 {/* TOP PART*/}
 
                 <div className="flex justify-center w-screen">
@@ -180,7 +180,7 @@ const Homepage = () => {
 
                         {/* Sponsors */}
 
-                        <div className="glitch layers relative mt-10 z-[2] flex flex-col justify-center items-center bg-black/80 p-4">
+                        <div className="h-[30%] bg-red-800 flex flex-col items-center justify-center">
                             <div>
                                 <p
                                     className="font-bit text-xl w-full lg:text-4xl text-emerald-300 p-4"
@@ -193,7 +193,7 @@ const Homepage = () => {
                                     SPONSORS
                                 </p>
                             </div>
-                            <div className="w-full ">
+                            <div className="w-full">
                                 <Sponsors />
                             </div>
                         </div>

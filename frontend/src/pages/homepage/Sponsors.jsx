@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 import {
     Bronze,
@@ -7,14 +7,14 @@ import {
     Gold,
     Platinum,
     Diamond,
-} from "./sponsorscomps/PartnerCompanies";
+} from "./components/sponsorscomps/PartnerCompanies";
 
 import {
     Official,
     Primary,
     Major,
     Internal,
-} from "./sponsorscomps/MediaPartners";
+} from "./components/sponsorscomps/MediaPartners";
 
 const Sponsors = () => {
     const partners = [
@@ -39,18 +39,30 @@ const Sponsors = () => {
     }, [partners.length]);
 
     return (
-        <div className="flex justify-center">
-            {/* <motion.div
+        <AnimatePresence mode="wait">
+            <motion.div
+                className="w-full flex items-center justify-center"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
+                transition={{ duration: 0.7, ease: "easeInOut" }} // Set the duration as per your preference
             >
                 {partners[currentComponent]}
-            </motion.div> */}
-
-            <Diamond />
-        </div>
+            </motion.div>
+        </AnimatePresence>
     );
 };
 
 export default Sponsors;
+
+{
+    /* <Diamond />
+            <Platinum />
+            <Gold />
+            <Silver />
+            <Bronze />
+            <Official />
+            <Primary />
+            <Major />
+            <Internal /> */
+}
