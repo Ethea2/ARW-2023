@@ -8,14 +8,14 @@ const Tabs = ({ selected, setSelected }) => {
             {TABS.map((tab) => (
                 <button
                     onClick={() => setSelected(tab)}
-                    className={`relative rounded-md px-3 py-1.5 md:text-sm text-xs overflow-hidden transition-colors bg-black/10 duration-500 ${
+                    className={`relative rounded-md px-2 py-1.5 md:text-sm text-xs overflow-hidden transition-colors bg-black/10 duration-500 ${
                         selected === tab ? "text-white" : "text-white"
                     }`}
                     key={tab}
                 >
-                    <span className="relative z-[1]  text-md font-semibold">
+                    <p className="relative z-[1] text-md font-semibold">
                         {tab}
-                    </span>
+                    </p>
                     <AnimatePresence>
                         {selected === tab && (
                             <motion.span

@@ -1,7 +1,7 @@
-export const TABS = ["How to join an organization", "Membership questions", "Membership fee"];
+export const TABS = ["Join an organization", "Membership FAQs", "Membership fee"];
 
 export const QUESTIONS = {
-  "How to join an organization": [
+  "Join an organization": [
     {
       question: "Step 1",
       answer:
@@ -48,7 +48,7 @@ export const QUESTIONS = {
         "To learn more about the Council of Student Organizations (CSO), kindly visit their Facebook page: facebook.com/CSO.DLSU ",
     },
   ],
-  "Membership questions": [
+  "Membership FAQs": [
     {
       question: "Am I required to attend the events and games of the organizations?",
       answer:
