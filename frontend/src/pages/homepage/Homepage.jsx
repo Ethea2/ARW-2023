@@ -159,7 +159,8 @@ const Homepage = () => {
                             >
                                 {routes.map(
                                     (route, index) =>
-                                        route.name && (
+                                        route.name && 
+                                        (
                                             <div className="flex justify-center items-center">
                                                 <div className="group relative w-fit transition-transform duration-300 active:scale-95">
                                                     <Link to={route.path}>
