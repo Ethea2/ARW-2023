@@ -15,7 +15,6 @@ const Homepage = () => {
 
     const goToPreviousSlide = () => {
         if (activeSlide === 0) {
-
             window.location.hash = `#photo-${carousel.length - 1}`;
             return setActiveSlide(carousel.length - 1);
         }
@@ -69,7 +68,6 @@ const Homepage = () => {
                             <div
                                 className="rounded-xl border-4 border-teal-300 text-center p-5 relative"
                                 style={{
-                                    ...glowInner,
                                     letterSpacing: "10px",
                                 }}
                             >

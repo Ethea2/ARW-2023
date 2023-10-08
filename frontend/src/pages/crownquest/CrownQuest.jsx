@@ -37,7 +37,7 @@ const CrownQuest = () => {
                         <LockedDetails activeElite={activeElite}/>
                     </div>
 
-                    <div className="footer w-full h-[30%]">
+                    <div className="footer w-full h-[50%]">
                         <CrownSelector
                             elites={elites}
                             handleSelect={handleSelect}

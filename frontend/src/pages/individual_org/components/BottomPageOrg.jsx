@@ -47,11 +47,13 @@ const BottomPageOrg = ({ org }) => {
                     </div>
 
                     <section className="org-membership-pub mx-5 text-center flex flex-col  items-center mt-10">
-                        <img
-                            src={org.memURL}
-                            alt="membership-pub"
-                            className="w-full h-full object-contain rounded-lg border-2 border-[#242640] xl:h-[60%] xl:w-[60%] lg:h-[100%] lg:w-[100%]"
-                        />
+                        {org.memURL &&
+                            <img
+                                src={org.memURL}
+                                alt="membership-pub"
+                                className="w-full h-full object-contain rounded-lg border-2 border-[#242640] xl:h-[60%] xl:w-[60%] lg:h-[100%] lg:w-[100%]"
+                            />}
+
                         <section className="org-button flex flex-row gap-2">
                             <a
                                 href={org.regURL}
@@ -64,15 +66,15 @@ const BottomPageOrg = ({ org }) => {
                                 </button>
                             </a>
                             <a
-                                        href={org.fb_link}
-                                        className="btn btn-neutral mt-10  h-center drop-shadow-md lg:px-5 lg:p-5 lg:pt-2 xl:px-18 xl:p-11 xl:pt-5"
-                                        target="_blank"
-                                        rel="noreferrer"
-                                    >
-                                        <FiFacebook className="text-3xl text-white" />
+                                href={org.fb_link}
+                                className="btn btn-neutral mt-10  h-center drop-shadow-md lg:px-5 lg:p-5 lg:pt-2 xl:px-18 xl:p-11 xl:pt-5"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <FiFacebook className="text-3xl text-white" />
                             </a>
                         </section>
-                        
+
 
                     </section>
                 </div>

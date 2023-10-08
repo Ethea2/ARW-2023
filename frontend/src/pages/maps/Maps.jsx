@@ -2,7 +2,7 @@ import maps_per_day from "./components/maps"
 import formatDate from "../../utils/dateFuncs"
 
 const Maps = () => {
-    const dateExists = maps_per_day.hasOwnProperty(formatDate(new Date("October 9, 2023")))
+    const dateExists = maps_per_day.hasOwnProperty(formatDate(new Date()))
     return (
         <>
             <div
@@ -27,7 +27,7 @@ const Maps = () => {
                         {
                             dateExists
                                 ?
-                                (Object.keys(maps_per_day).filter((day) => formatDate(new Date("October 9, 2023")) === day))
+                                (Object.keys(maps_per_day).filter((day) => formatDate(new Date()) === day))
                                 :
                                 "ARW HAS NOT STARTED YET"
 
@@ -36,7 +36,7 @@ const Maps = () => {
                     {
                         dateExists
                             ?
-                            maps_per_day[formatDate(new Date("October 9, 2023"))]
+                            maps_per_day[formatDate(new Date())]
                                 ?.map((image) => (
                                     <img src={image} className="object-fill mx-4 mb-2 rounded-lg" />
                                 ))

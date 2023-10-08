@@ -40,7 +40,7 @@ const OrgShow = ({ org, error, initial }) => {
                             </div>
                         </div>
 
-                        <div className="flex flex-wrap flex-row bg-[#C6C6C6] shadow-2xl rounded-b-md md:flex-nowrap sm:w-[100%] items-start justify-center">
+                        <div className="flex flex-wrap flex-row bg-[#C6C6C6] shadow-2xl rounded-b-md md:flex-nowrap sm:w-[100%] items-center justify-center">
                             <div className="p-5 flex md:items-start justify-center sm:p-0">
                                 <div className="w-44 carousel rounded-box sm:w-48 md:w-64">
                                     <div className="carousel-item w-full">

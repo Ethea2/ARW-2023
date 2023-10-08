@@ -2,6 +2,7 @@ import '../css/OrgSelect.css'
 import icon_map from "../../../assets/icon-map.png";
 import { useEffect, useState } from "react";
 import { FaSearch } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const OrgSelector = ({
     orgCluster,
@@ -42,7 +43,7 @@ const OrgSelector = ({
             <div className="xl:w-[28%] xl:ml-[15%] md:w-[80%] mb-6 w-[80%] mt-2">
                 <div className="bg-[#B60000] p-2 rounded-t-md flex justify-between">
                     <div>
-                        <img src={icon_map} alt="" className=" w-8 h-8" />
+                        <Link to="/maps"><img src={icon_map} alt="" className=" w-8 h-8" /></Link>
                     </div>
                     <div className="flex items-center w-[80%] md:w-[40%]">
                         <input
@@ -52,7 +53,7 @@ const OrgSelector = ({
                             className="w-full rounded-md px-4 py-1 outline-none focus:ring focus:border-blue-300 text-black text-[.7rem]" // Changed text color to black
                             placeholder="Search..."
                         />
-                        <FaSearch className="text-black/50 bg-white text-xl relative right-8" />
+                        <FaSearch className="text-black/50 bg-white text-xl relative right-8 cursor-pointer" />
                     </div>
                 </div>
                 {/*Buttons Grid*/}
@@ -73,27 +74,27 @@ const OrgSelector = ({
                     <div className="flex flex-col pt-4 px-4 max-h-[408px] overflow-y-auto">
                         {filtered
                             ? filtered.map((org) => (
-                                  <button
-                                      className="btn btn-primary mb-2 text-[.6rem]"
-                                      key={org._id}
-                                      onClick={(e) =>
-                                          handleOrgSelect(e, org._id)
-                                      }
-                                  >
-                                      {org.abbrv_name}
-                                  </button>
-                              ))
+                                <button
+                                    className="btn btn-primary mb-2 text-[.6rem]"
+                                    key={org._id}
+                                    onClick={(e) =>
+                                        handleOrgSelect(e, org._id)
+                                    }
+                                >
+                                    {org.abbrv_name}
+                                </button>
+                            ))
                             : orgCluster?.map((org) => (
-                                  <button
-                                      className="btn btn-primary mb-2 text-[.6rem]"
-                                      key={org._id}
-                                      onClick={(e) =>
-                                          handleOrgSelect(e, org._id)
-                                      }
-                                  >
-                                      {org.abbrv_name}
-                                  </button>
-                              ))}
+                                <button
+                                    className="btn btn-primary mb-2 text-[.6rem]"
+                                    key={org._id}
+                                    onClick={(e) =>
+                                        handleOrgSelect(e, org._id)
+                                    }
+                                >
+                                    {org.abbrv_name}
+                                </button>
+                            ))}
                     </div>
                 </div>
             </div>
