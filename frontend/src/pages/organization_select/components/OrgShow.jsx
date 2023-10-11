@@ -16,7 +16,16 @@ const OrgShow = ({ org, error, initial }) => {
     }, [org]);
 
     const handleClick = () => {
-        nav("/" + org?.abbrv_name);
+        var org_name = org?.abbrv_name
+        if (org_name == "DLSU-FC") {
+            window.open("https://forms.gle/1N16NfF8vSeN7QCU7")
+        } else if (org_name == "OCCS") {
+            window.open("https://bit.ly/SRepApply")
+        } 
+        else {
+            nav("/" + org?.abbrv_name);
+        }
+        
     };
     if (error) {
         return <Error error={error} />;
@@ -59,10 +68,6 @@ const OrgShow = ({ org, error, initial }) => {
                                         <div>
                                             <h1
                                                 className="px-5 text-4xl md:pt-10"
-                                                style={{
-                                                    fontFamily: "tomorrow",
-                                                    fontWeight: "bold",
-                                                }}
                                             >
                                                 {noOrg
                                                     ? ""
@@ -71,9 +76,6 @@ const OrgShow = ({ org, error, initial }) => {
 
                                             <h1
                                                 className="px-5 text-2xl md:text-xl pt-3"
-                                                style={{
-                                                    fontFamily: "tomorrow",
-                                                }}
                                             >
                                                 {noOrg ? "" : org.comp_name}
                                             </h1>
