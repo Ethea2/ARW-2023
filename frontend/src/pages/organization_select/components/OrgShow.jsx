@@ -17,9 +17,9 @@ const OrgShow = ({ org, error, initial }) => {
 
     const handleClick = () => {
         var org_name = org?.abbrv_name
-        if (org_name == "DLSU-FC") {
+        if (org_name === "DLSU-FC") {
             window.open("https://forms.gle/1N16NfF8vSeN7QCU7")
-        } else if (org_name == "OCCS") {
+        } else if (org_name === "OCCS") {
             window.open("https://bit.ly/SRepApply")
         } 
         else {

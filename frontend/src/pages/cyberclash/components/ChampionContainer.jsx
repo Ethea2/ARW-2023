@@ -19,7 +19,7 @@ const ChampionContatiner = ({ cyberClash }) => {
                 </div>
 
                 <div className="w-full h-full bg-black/50 border-2 border-[#FFD524] rounded-md flex items-center justify-center p-2">
-                    <h1 className="font-monda font-bold text-white">?</h1>
+                    <h1 className="font-monda font-bold text-white">Junior Entrepreneurs' Marketing Association (JEMA)</h1>
                 </div>
             </div>
         </div>
