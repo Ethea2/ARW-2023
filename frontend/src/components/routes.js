@@ -39,12 +39,12 @@ const routes = [
         name: "Cyber Clash",
         icon: <BsShield />,
     },
-    {
-        path: "/maps",
-        element: <Maps />,
-        name: "Booth Maps",
-        icon: <FiMap />
-    },
+    // {
+    //     path: "/maps",
+    //     element: <Maps />,
+    //     name: "Booth Maps",
+    //     icon: <FiMap />
+    // },
     {
         path: "/faqs",
         element: <FAQs />,
