@@ -31,6 +31,7 @@ const routes = [
     { path: "/OCCS", element: <OrgSelect /> },
     { path: "/VA", element: <OrgSelect /> },
     { path: "/ECES", element: <OrgSelect /> },
+    { path: "/CEO-DLSU", element: <OrgSelect /> },
     {
         path: "/crownquest",
         element: <CrownQuest />,
