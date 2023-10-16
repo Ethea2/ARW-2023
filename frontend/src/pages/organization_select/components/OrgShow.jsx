@@ -17,10 +17,14 @@ const OrgShow = ({ org, error, initial }) => {
 
     const handleClick = () => {
         var org_name = org?.abbrv_name
-        if (org_name === "DLSU-FC") {
-            window.open("https://forms.gle/1N16NfF8vSeN7QCU7")
+        if (org_name === "DLSU-RCYC") {
+            window.open("https://www.facebook.com/DLSRCY")
         } else if (org_name === "OCCS") {
-            window.open("https://bit.ly/SRepApply")
+            window.open("https://www.facebook.com/DLSUCareerServices")
+        } else if (org_name === "VA") {
+            window.open("https://www.facebook.com/viridisarcus")
+        } else if (org_name === "ECES") {
+            window.open("https://www.facebook.com/ECES.dlsu")
         } 
         else {
             nav("/" + org?.abbrv_name);

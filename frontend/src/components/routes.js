@@ -27,6 +27,10 @@ const routes = [
         icon: <VscOrganization />,
     },
     { path: "/:orgname", element: <IndivOrgPage /> },
+    { path: "/DLSU-RCYC", element: <OrgSelect /> },
+    { path: "/OCCS", element: <OrgSelect /> },
+    { path: "/VA", element: <OrgSelect /> },
+    { path: "/ECES", element: <OrgSelect /> },
     {
         path: "/crownquest",
         element: <CrownQuest />,
