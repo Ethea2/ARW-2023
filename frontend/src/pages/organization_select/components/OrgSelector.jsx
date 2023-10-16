@@ -60,6 +60,12 @@ const OrgSelector = ({
                 <div className="grid grid-cols-2 bg-[#C6C6C6] rounded-b-md">
                     {/*Clusters*/}
                     <div className="flex flex-col border-r-[.4rem] border-white pt-4 px-4">
+                            <button
+                                className="btn btn-primary mb-2 text-[.6rem]"
+                                onClick={(e) => handleCluster(e, "CSO")}
+                            >
+                                CSO
+                            </button>
                         {clusters?.map((cluster) => (
                             <button
                                 className="btn btn-primary mb-2 text-[.6rem]"

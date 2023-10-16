@@ -25,6 +25,8 @@ const OrgShow = ({ org, error, initial }) => {
             window.open("https://www.facebook.com/viridisarcus")
         } else if (org_name === "ECES") {
             window.open("https://www.facebook.com/ECES.dlsu")
+        } else if (org === null) {
+            nav("/CSO");
         } 
         else {
             nav("/" + org?.abbrv_name);
@@ -46,7 +48,7 @@ const OrgShow = ({ org, error, initial }) => {
                                     className="rounded-t-md w-full px-1 text-white" // Changed text color to black
                                 >
                                     {noOrg
-                                        ? "Please Select An Org"
+                                        ? "CSO"
                                         : org.cluster}
                                 </p>
                             </div>
@@ -57,7 +59,7 @@ const OrgShow = ({ org, error, initial }) => {
                                 <div className="w-44 carousel rounded-box sm:w-48 md:w-64">
                                     <div className="carousel-item w-full">
                                         <img
-                                            src={noOrg ? "" : org.logoURL}
+                                            src={noOrg ? "https://res.cloudinary.com/dayugisub/image/upload/v1696250843/cso/cso_logo1.png" : org.logoURL}
                                             className="w-full px-5 md:p-5 sm:w[50%]"
                                             alt=""
                                         />
@@ -74,21 +76,26 @@ const OrgShow = ({ org, error, initial }) => {
                                                 className="px-5 text-4xl md:pt-10"
                                             >
                                                 {noOrg
-                                                    ? ""
+                                                    ? "CSO"
                                                     : org.abbrv_name}
                                             </h1>
 
                                             <h1
                                                 className="px-5 text-2xl md:text-xl pt-3"
                                             >
-                                                {noOrg ? "" : org.comp_name}
+                                                {noOrg ? "Council of Student Organizations" : org.comp_name}
                                             </h1>
                                         </div>
                                     </div>
 
                                     <div className="flex flex-col gap-5">
                                         {noOrg ? (
-                                            ""
+                                            <button
+                                            className="btn btn-xs rounded-full sm:btn-sm md:btn-md lg:btn-lg bg-[#B60000]"
+                                            onClick={handleClick}
+                                        >
+                                            LEARN MORE
+                                        </button>
                                         ) : (
                                             <button
                                                 className="btn btn-xs rounded-full sm:btn-sm md:btn-md lg:btn-lg bg-[#B60000]"
