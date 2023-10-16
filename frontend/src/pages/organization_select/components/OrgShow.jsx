@@ -27,6 +27,8 @@ const OrgShow = ({ org, error, initial }) => {
             window.open("https://www.facebook.com/ECES.dlsu")
         } else if (org_name === "CEO-DLSU") {
             window.open("https://www.facebook.com/CEODLSU")
+        } else if (org_name == null) {
+            nav("/CSO");
         }
         else {
             nav("/" + org?.abbrv_name);
