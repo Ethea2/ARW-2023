@@ -32,8 +32,8 @@ const CrownQuest = () => {
 
                     <div className="body w-full h-[75%] flex flex-col lg:flex-row">
                         <CrownImage activeElite={activeElite} />
-                        {/* <CrownDetails activeElite={activeElite} /> */}
-                        <LockedDetails activeElite={activeElite}/>
+                        <CrownDetails activeElite={activeElite} />
+                        {/* <LockedDetails activeElite={activeElite}/> */}
                     </div>
 
                     <div className="footer w-full h-[50%]">
